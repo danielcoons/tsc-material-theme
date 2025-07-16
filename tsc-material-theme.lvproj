@@ -2,6 +2,7 @@
 <Project Type="Project" LVVersion="21008000">
 	<Property Name="NI.LV.All.SaveVersion" Type="Str">21.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -53,8 +54,8 @@
 			<Item Name="button-close.ctl" Type="VI" URL="../other-buttons/button-close.ctl"/>
 			<Item Name="button-download.ctl" Type="VI" URL="../other-buttons/button-download.ctl"/>
 			<Item Name="button-file explore.ctl" Type="VI" URL="../other-buttons/button-file explore.ctl"/>
-			<Item Name="button-info (white).ctl" Type="VI" URL="../other-buttons/button-info (white).ctl"/>
-			<Item Name="button-info.ctl" Type="VI" URL="../other-buttons/button-info.ctl"/>
+			<Item Name="button-info (white).ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_TSC/TSC Material/other-buttons/button-info (white).ctl"/>
+			<Item Name="button-info.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_TSC/TSC Material/other-buttons/button-info.ctl"/>
 			<Item Name="button-log.ctl" Type="VI" URL="../other-buttons/button-log.ctl"/>
 			<Item Name="button-visible password.ctl" Type="VI" URL="../other-buttons/button-visible password.ctl"/>
 			<Item Name="dark light--switch.ctl" Type="VI" URL="../other-buttons/dark light--switch.ctl"/>
