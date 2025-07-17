@@ -15,6 +15,10 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_Material Theme SubVIs" Type="Folder">
 			<Item Name="button-editor-ui.rtm" Type="Document" URL="../_Material Theme SubVIs/button-editor-ui.rtm"/>
+			<Item Name="Color to HSL.vi" Type="VI" URL="../_Material Theme SubVIs/Color to HSL.vi"/>
+			<Item Name="Color to Luminance.vi" Type="VI" URL="../_Material Theme SubVIs/Color to Luminance.vi"/>
+			<Item Name="Contrast Ratio Checker.vi" Type="VI" URL="../_Material Theme SubVIs/Contrast Ratio Checker.vi"/>
+			<Item Name="HSL to Color.vi" Type="VI" URL="../_Material Theme SubVIs/HSL to Color.vi"/>
 			<Item Name="material json palette.ctl" Type="VI" URL="../_Material Theme SubVIs/material json palette.ctl"/>
 			<Item Name="material json scheme.ctl" Type="VI" URL="../_Material Theme SubVIs/material json scheme.ctl"/>
 			<Item Name="material theme.ctl" Type="VI" URL="../_Material Theme SubVIs/material theme.ctl"/>
@@ -73,12 +77,6 @@
 				<Item Name="Set Control Level.ctl" Type="VI" URL="../right-click-menus/Set Control Level.llb/Set Control Level.ctl"/>
 				<Item Name="Set Control Level.vi" Type="VI" URL="../right-click-menus/Set Control Level.llb/Set Control Level.vi"/>
 			</Item>
-		</Item>
-		<Item Name="subVIs" Type="Folder">
-			<Item Name="Color to HSL.vi" Type="VI" URL="../subVIs/Color to HSL.vi"/>
-			<Item Name="Color to Luminance.vi" Type="VI" URL="../subVIs/Color to Luminance.vi"/>
-			<Item Name="Contrast Ratio Checker.vi" Type="VI" URL="../subVIs/Contrast Ratio Checker.vi"/>
-			<Item Name="HSL to Color.vi" Type="VI" URL="../subVIs/HSL to Color.vi"/>
 		</Item>
 		<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../Convert Material JSON to LabVIEW Theme.vi"/>
 		<Item Name="Edit a Button--Material.vi" Type="VI" URL="../Edit a Button--Material.vi"/>
