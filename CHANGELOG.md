@@ -20,6 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Additional button types and image sizes to add
 - Dynamically hook into an icon library???
 
+## [2.0.1] - 2025.08.09
+### Fixed
+- Bug fix for VIP file locations for Tools
+
 ## [2.0.0] - 2025.08.05
 ### Added
 - Released the tool as a public, open-source project
