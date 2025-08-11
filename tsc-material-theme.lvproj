@@ -93,11 +93,13 @@
 			</Item>
 		</Item>
 		<Item Name="sandbox" Type="Folder">
+			<Item Name="Change the Theme.vi" Type="VI" URL="../sandbox/Change the Theme.vi"/>
+			<Item Name="Create FP Label.vi" Type="VI" URL="../sandbox/Create FP Label.vi"/>
+			<Item Name="Delete Type Tags.vi" Type="VI" URL="../sandbox/Delete Type Tags.vi"/>
 			<Item Name="test--scripting.vi" Type="VI" URL="../sandbox/test--scripting.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
 		<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../Convert Material JSON to LabVIEW Theme.vi"/>
-		<Item Name="Create FP Label.vi" Type="VI" URL="../sandbox/Create FP Label.vi"/>
 		<Item Name="Edit a Button--Material.vi" Type="VI" URL="../Edit a Button--Material.vi"/>
 		<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
