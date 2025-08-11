@@ -20,6 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Additional button types and image sizes to add
 - Dynamically hook into an icon library???
 
+## [2.0.2] - 2025.08.10
+### Fixed
+- Hex to Color tool was saved in a different internal reuse package; made copy for the material library
+
 ## [2.0.1] - 2025.08.09
 ### Fixed
 - Bug fix for VIP file locations for Tools

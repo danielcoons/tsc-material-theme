@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-08-09 21:17:07" Creator="daniel.coons" Comments="" ID="39aa91df8a4b6ebbec9666336f78c43f">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-08-10 20:52:53" Creator="daniel.coons" Comments="" ID="e437ac7b672b253098a60fc6fb8b51c4">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>2.0.1.2</Library_Version>
+    <Library_Version>2.0.2.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -34,7 +34,10 @@
       <Copyright>Copyright (c) 2025, Technology Service Corporation</Copyright>
       <Packager/>
       <URL>https://github.com/danielcoons/tsc-material-theme</URL>
-      <Release_Notes>v2.0.1
+      <Release_Notes>v2.0.2
+-bug fix to include missing reuse function
+
+v2.0.1
 -bug fix for paths of Tools Menu support
 
 v2.0
@@ -384,7 +387,7 @@ v1.1
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8BBED34826842852BBA36BFED6AB51F9</GUID>
+      <GUID>C25039441E8BB9C1BD08CC208FEC23B5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -475,7 +478,7 @@ v1.1
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FB0C6F91C6E2DDD80EDC410B51542F97</GUID>
+      <GUID>AC1D7E5AF2F50A0702CEFC502323FA3C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -510,7 +513,7 @@ v1.1
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1F51AD81CCED2DDE9EF92B204C5DB099</GUID>
+      <GUID>2AF81DF9275B991601898999712AF586</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -545,7 +548,7 @@ v1.1
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6160AD0090F466BD568197110B8B4690</GUID>
+      <GUID>9D13A95734C3A8A9DC6E10ED8ED6B86F</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -776,7 +779,7 @@ v1.1
         <Path>..\other-buttons\ring--colorable.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7D686E554C74C46056AC4D73EE7E3FD6</GUID>
+      <GUID>8F4CCC5FD8A0216EC86D8F39643C8961</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1049,7 +1052,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>82AF4BC7C7F35C72A87EF35C9F42B83B</GUID>
+      <GUID>6D17B2E9F270D85FC1C97DCE6FB14F36</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1238,7 +1241,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>3F4B1EB72CD96A74E7C3A1C881205736</GUID>
+      <GUID>F185CC17A30A8E2BF12E74ABFB0D08BD</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1287,7 +1290,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>B19739B56ED8BAF4C25ACF4910216775</GUID>
+      <GUID>027962162DFF873AAF64005ECA324026</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1322,7 +1325,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>4296974AEEF1C14AD7F6F185350E9153</GUID>
+      <GUID>844CD07D78D4B8E61DDFB300ED1EDAF5</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1357,7 +1360,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>451F0F4B242DA35106D2CE92BA89E076</GUID>
+      <GUID>92FCA3132D6F373A9D2AC2F5C9A437B5</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
