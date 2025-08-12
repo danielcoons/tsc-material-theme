@@ -24,6 +24,8 @@
 			<Item Name="material theme.ctl" Type="VI" URL="../_Material Theme SubVIs/material theme.ctl"/>
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
+			<Item Name="TSC Material Boolean Type--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--global.vi"/>
+			<Item Name="TSC Material UI Theme Level--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--global.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
 			<Item Name="Update Custom UI for Button.vi" Type="VI" URL="../_Material Theme SubVIs/Update Custom UI for Button.vi"/>
 			<Item Name="User Event Close.vi" Type="VI" URL="../_Material Theme SubVIs/User Event Close.vi"/>
@@ -94,8 +96,12 @@
 		</Item>
 		<Item Name="sandbox" Type="Folder">
 			<Item Name="Change the Theme.vi" Type="VI" URL="../sandbox/Change the Theme.vi"/>
+			<Item Name="control info.ctl" Type="VI" URL="../sandbox/control info.ctl"/>
 			<Item Name="Create FP Label.vi" Type="VI" URL="../sandbox/Create FP Label.vi"/>
 			<Item Name="Delete Type Tags.vi" Type="VI" URL="../sandbox/Delete Type Tags.vi"/>
+			<Item Name="Get Controls.vi" Type="VI" URL="../sandbox/Get Controls.vi"/>
+			<Item Name="Save Button Info.vi" Type="VI" URL="../sandbox/Save Button Info.vi"/>
+			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
 			<Item Name="test--scripting.vi" Type="VI" URL="../sandbox/test--scripting.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
@@ -103,6 +109,7 @@
 		<Item Name="Edit a Button--Material.vi" Type="VI" URL="../Edit a Button--Material.vi"/>
 		<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
+		<Item Name="tsc_Search Ring.vi" Type="VI" URL="../sandbox/tsc_Search Ring.vi"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
