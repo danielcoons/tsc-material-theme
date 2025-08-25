@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-08-22 18:35:46" Creator="daniel.coons" Comments="" ID="ff7d4d5c4f7e2b57b7c8427748988cd7">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-08-25 08:17:55" Creator="daniel.coons" Comments="" ID="a46c53f3dcadcf29f36ba8dca358f986">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>2.1.0.10</Library_Version>
+    <Library_Version>2.1.0.12</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -204,6 +204,30 @@ v1.1
         <Additional_Destination>true</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Change Boolean Image Color.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Change Boolean Image.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Set Boolean Type.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Set Control Level.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -357,7 +381,7 @@ v1.1
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>65F47C2FCB0F7085672EC98BC94DC3C5</GUID>
+      <GUID>9A284D02ADC2DE944A670462433B5A06</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -448,7 +472,7 @@ v1.1
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>ED7CC693A55E9E6560F66056CFCE964E</GUID>
+      <GUID>DB2566318E52349EBCD4106EEB0F08E1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -483,7 +507,7 @@ v1.1
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>877406C8C2B04E38AD68690A22D9ED29</GUID>
+      <GUID>79FCE793C004F9216958D5321F0C3B91</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -518,7 +542,7 @@ v1.1
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4AA30AE6593344C6B35E1A2B7C466DB2</GUID>
+      <GUID>8594FE9210D90A14820BBBBFE5831414</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -749,7 +773,7 @@ v1.1
         <Path>..\other-buttons\ring--colorable.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>507CAB200E7A37C154C04CB6BC75A0FD</GUID>
+      <GUID>61B806BB4D08E026C322EAB52147E230</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1022,7 +1046,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>C3D77D46529D2947C191BDB8CC23CE67</GUID>
+      <GUID>A388024B8DF1CB31F4FD761D1B739407</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1211,7 +1235,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>DAF13787B6E7467AA440A6E7484CA47E</GUID>
+      <GUID>6BF32EDE3CA86E1C7A0EA12BC15E1328</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1260,7 +1284,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>1D11D8BF5BBFF0A1A3E7DDFD428BD162</GUID>
+      <GUID>A81207619FD6C65B0328D02F27AD6D50</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1295,7 +1319,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>3F2ED7CF129F061EC79F0E52E8808A02</GUID>
+      <GUID>3B223DDBCEFF3668642A1CEBACC62D02</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1330,7 +1354,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>8ECF7517108846EA0EF10B00BCA12AC7</GUID>
+      <GUID>72D7DA31365EE57FC387DF99B10E1A0E</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
