@@ -26,11 +26,15 @@
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
 			<Item Name="TSC Material Boolean Type--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--global.vi"/>
 			<Item Name="TSC Material UI Theme Level--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--global.vi"/>
+			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
 			<Item Name="Update Custom UI for Button.vi" Type="VI" URL="../_Material Theme SubVIs/Update Custom UI for Button.vi"/>
 			<Item Name="User Event Close.vi" Type="VI" URL="../_Material Theme SubVIs/User Event Close.vi"/>
 			<Item Name="User Event Init.vi" Type="VI" URL="../_Material Theme SubVIs/User Event Init.vi"/>
 			<Item Name="User Events.ctl" Type="VI" URL="../_Material Theme SubVIs/User Events.ctl"/>
+			<Item Name="VI Reference To IWin32Window Reference.vi" Type="VI" URL="../_Material Theme SubVIs/VI Reference To IWin32Window Reference.vi"/>
+			<Item Name="Win32 Window Handle Wrapper.vi" Type="VI" URL="../_Material Theme SubVIs/Win32 Window Handle Wrapper.vi"/>
+			<Item Name="WindowWrapper.dll" Type="Document" URL="../_Material Theme SubVIs/WindowWrapper.dll"/>
 		</Item>
 		<Item Name="assets" Type="Folder">
 			<Item Name="images" Type="Folder">
@@ -74,11 +78,12 @@
 			<Item Name="button-close.ctl" Type="VI" URL="../other-buttons/button-close.ctl"/>
 			<Item Name="button-download.ctl" Type="VI" URL="../other-buttons/button-download.ctl"/>
 			<Item Name="button-file explore.ctl" Type="VI" URL="../other-buttons/button-file explore.ctl"/>
-			<Item Name="button-info (white).ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_TSC/TSC Material/other-buttons/button-info (white).ctl"/>
-			<Item Name="button-info.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_TSC/TSC Material/other-buttons/button-info.ctl"/>
+			<Item Name="button-help.ctl" Type="VI" URL="../other-buttons/button-help.ctl"/>
+			<Item Name="button-info (white).ctl" Type="VI" URL="../other-buttons/button-info (white).ctl"/>
+			<Item Name="button-info.ctl" Type="VI" URL="../other-buttons/button-info.ctl"/>
 			<Item Name="button-log.ctl" Type="VI" URL="../other-buttons/button-log.ctl"/>
 			<Item Name="button-visible password.ctl" Type="VI" URL="../other-buttons/button-visible password.ctl"/>
-			<Item Name="dark light--switch.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_TSC/TSC Material/other-buttons/dark light--switch.ctl"/>
+			<Item Name="dark light--switch.ctl" Type="VI" URL="../other-buttons/dark light--switch.ctl"/>
 			<Item Name="ring--colorable (24px).ctl" Type="VI" URL="../other-buttons/ring--colorable (24px).ctl"/>
 			<Item Name="ring--colorable.ctl" Type="VI" URL="../other-buttons/ring--colorable.ctl"/>
 		</Item>
@@ -97,6 +102,17 @@
 			<Item Name="TSC Theme Application.vi" Type="VI" URL="../Quick Drop Plugins/TSC Theme Application.vi"/>
 		</Item>
 		<Item Name="right-click-menus" Type="Folder">
+			<Item Name="Change Boolean Image Color.llb" Type="Folder">
+				<Item Name="Change Boolean Image Color.ctl" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/Change Boolean Image Color.ctl"/>
+				<Item Name="Change Boolean Image Color.vi" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/Change Boolean Image Color.vi"/>
+				<Item Name="Execute Change Boolean Image Color.vi" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/Execute Change Boolean Image Color.vi"/>
+				<Item Name="tsc--Show Color Picker.vi" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/tsc--Show Color Picker.vi"/>
+			</Item>
+			<Item Name="Change Boolean Image.llb" Type="Folder">
+				<Item Name="Change Boolean Image.ctl" Type="VI" URL="../right-click-menus/Change Boolean Image.llb/Change Boolean Image.ctl"/>
+				<Item Name="Change Boolean Image.vi" Type="VI" URL="../right-click-menus/Change Boolean Image.llb/Change Boolean Image.vi"/>
+				<Item Name="Execute Change Boolean Image.vi" Type="VI" URL="../right-click-menus/Change Boolean Image.llb/Execute Change Boolean Image.vi"/>
+			</Item>
 			<Item Name="Set Boolean Type.llb" Type="Folder">
 				<Item Name="Execute Set Boolean Type.vi" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Execute Set Boolean Type.vi"/>
 				<Item Name="Set Boolean Type.ctl" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Set Boolean Type.ctl"/>
@@ -189,7 +205,6 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
-				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Unflatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Unflatten Pixmap.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
@@ -203,6 +218,9 @@
 			<Item Name="Relative Position.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Relative Position.ctl"/>
 			<Item Name="Shortcut Menu Item Definition.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Shortcut Menu Item Definition.ctl"/>
 			<Item Name="System.Drawing" Type="Document" URL="System.Drawing">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="System.Windows.Forms" Type="Document" URL="System.Windows.Forms">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Transaction Control.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Transaction Control.ctl"/>
