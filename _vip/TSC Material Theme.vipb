@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-08-25 08:17:55" Creator="daniel.coons" Comments="" ID="a46c53f3dcadcf29f36ba8dca358f986">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-08-25 10:00:02" Creator="daniel.coons" Comments="" ID="0b2278d64b2f05099759ce1ca6c4fd58">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
     <Library_Version>2.1.0.12</Library_Version>
@@ -17,7 +17,10 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>jki_lib_json_serialization &gt;=1.1.10.37</Additional_External_Dependencies>
+      <External_Dependencies>jdp_science_jsontext &gt;= 1.8.2.122</External_Dependencies>
+      <External_Dependencies>jdp_science_lib_common_utilities &gt;= 1.4.0.17</External_Dependencies>
+      <Direct_Dependencies>jdp_science_jsontext-1.8.2.122</Direct_Dependencies>
+      <Direct_Dependencies>jdp_science_lib_common_utilities-1.4.0.17</Direct_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -295,8 +298,8 @@ v1.1
       <Windows_7>true</Windows_7>
       <Windows_Vista>true</Windows_Vista>
       <Windows_XP>true</Windows_XP>
-      <Mac_OS>true</Mac_OS>
-      <Linux>true</Linux>
+      <Mac_OS>false</Mac_OS>
+      <Linux>false</Linux>
       <Built_LV_Version>false</Built_LV_Version>
       <Built_LV_Version_or_greater>true</Built_LV_Version_or_greater>
       <Windows_8>true</Windows_8>
@@ -381,7 +384,7 @@ v1.1
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9A284D02ADC2DE944A670462433B5A06</GUID>
+      <GUID>E50882517AAB56EE5C8F2E3003A938AC</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -472,7 +475,7 @@ v1.1
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DB2566318E52349EBCD4106EEB0F08E1</GUID>
+      <GUID>27A96BF5AB4CB8E45A7306B36B04D38F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -507,7 +510,7 @@ v1.1
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>79FCE793C004F9216958D5321F0C3B91</GUID>
+      <GUID>BD383DC6F3D03DF5094950347A8B7967</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -542,7 +545,7 @@ v1.1
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8594FE9210D90A14820BBBBFE5831414</GUID>
+      <GUID>AFC98A9FF3D0A245D134FA261B95B5EB</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -773,7 +776,7 @@ v1.1
         <Path>..\other-buttons\ring--colorable.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>61B806BB4D08E026C322EAB52147E230</GUID>
+      <GUID>991F7CB8499E8008113BD74972FCF572</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1046,7 +1049,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>A388024B8DF1CB31F4FD761D1B739407</GUID>
+      <GUID>686F117511F029AB3538EA1CE65EA646</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1235,7 +1238,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>6BF32EDE3CA86E1C7A0EA12BC15E1328</GUID>
+      <GUID>1DFC84458DB5EE8DE0A01136EFAA2841</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1284,7 +1287,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>A81207619FD6C65B0328D02F27AD6D50</GUID>
+      <GUID>288A97E16AF6A25E2369AAA44AB16E04</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1319,7 +1322,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>3B223DDBCEFF3668642A1CEBACC62D02</GUID>
+      <GUID>BB39F6AE4A5D9BFD8DCA0F135413B032</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1354,7 +1357,7 @@ v1.1
         <Path/>
         <VI_Title/>
       </Items_Data>
-      <GUID>72D7DA31365EE57FC387DF99B10E1A0E</GUID>
+      <GUID>B844B18F2B3E45EC75E338AC86446E00</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
