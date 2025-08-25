@@ -15,10 +15,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - Experiment with substitution of Panel->Controls property node with Traverse for GObjects
 - Implement support for cursors on plots
-- Allow for Edit-Time choice of scheme-ing
-  - Current functionality is mostly for running code, but could be made easier for development of new VIs
 - Additional button types and image sizes to add
 - Dynamically hook into an icon library???
+
+## [2.1.0] - 2025.08.25
+### Added
+- Addressed comments about Edit-Time choice of scheme to a VI
+- Added Quick Drop shortcut to apply theme levels to all controls on a Front Panel at Edit Time (Quick Drop + `Ctrl+M` default) will show a list of all front panel controls/indicators to allow easy application of tag data
+- Added Quick Drop shortcut to apply theme file directly to Front Panel at Edit Time (Quick Drop + `Ctrl+A` default) to allow developer to choose a theme XML file
+- Added right-click menu to change the Boolean image at Edit Time (navigate to path on drive for new PNG file)
+- Added right-click menu to change the Boolean image color at Edit Time (use the colorbox dialog to choose a new color for the image on the button)
+
+### Changed
+- Replaced the dependency of parsing a JSON string to the JSONtext library from JDP Science
+
+### Fixed
+- `tonal--icon--rectangular` button type did not have the Boolean text set up correctly -> shape of Boolean box accidentally applied to "Boolean Text" part and was causing incorrect label scaling 
 
 ## [2.0.2] - 2025.08.10
 ### Fixed
