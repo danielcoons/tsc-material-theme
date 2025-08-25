@@ -1,5 +1,7 @@
 # tsc-material-theme
 
+Find the VIP here: [![Image](https://www.vipm.io/package/tsc_lib_tsc_material_theme/badge.svg?metric=installs)](https://www.vipm.io/package/tsc_lib_tsc_material_theme/) [![Image](https://www.vipm.io/package/tsc_lib_tsc_material_theme/badge.svg?metric=stars)](https://www.vipm.io/package/tsc_lib_tsc_material_theme/)
+
 This code is based on Google's Material 3: https://m3.material.io
 
 It implements the theory and application of color schemes to LabVIEW front panels. Installing the **VIP** file will add two menu items to the LabVIEW Tools bar:
