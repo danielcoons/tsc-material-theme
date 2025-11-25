@@ -14,10 +14,16 @@ The following interface shows the UI that can be accessed in order to verify the
 
 **Note:** The theme JSON file can be created at <https://material-foundation.github.io/material-theme-builder/> or using other Material helper tools such as Figma 
 
-Press the **preview** button to see an example UI that includes many different types of LabVIEW front panel controls that apply the theme. 
+Press the **preview** button to see an example UI that includes many different types of LabVIEW front panel controls that apply the theme. To see the color code information (r,g,b) and xHex - hover mouse over the colorbox. `Click` to change.
 
 Save the theme for use in LabVIEW with the **disk** FAB or using `Ctrl+S`. For the TSC Material Theme application, the data is saved in a flattened XML file using LabVIEW classes.
-<img src="./assets/images/Theme Converter UI.png" alt = "Theme Converter UI" /> 
+
+### UPDATED CONVERTER v2.2.0!
+<img src="./assets/images/2025.11.25 - material theme 2.2.0.png" alt = "Theme Converter UI" /> 
+
+`New Feature Alert` : also use the Color Picker tool to directly enter a hex color code or adjust the colors with slider bar inputs.
+
+<img src="./assets/images/color-picker.png" alt = "Color Picker" /> 
 
 ## Apply Theme to LabVIEW Code
 There are two main VIs used to apply the LabVIEW theme to a given VI
