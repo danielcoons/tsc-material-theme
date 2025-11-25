@@ -27,6 +27,7 @@
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
 			<Item Name="TSC Material Boolean Type--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--global.vi"/>
 			<Item Name="TSC Material UI Theme Level--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--global.vi"/>
+			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
 			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
 			<Item Name="Update Custom UI for Button.vi" Type="VI" URL="../_Material Theme SubVIs/Update Custom UI for Button.vi"/>
@@ -126,7 +127,6 @@
 			</Item>
 		</Item>
 		<Item Name="sandbox" Type="Folder">
-			<Item Name="color-picker.vi" Type="VI" URL="../sandbox/color-picker.vi"/>
 			<Item Name="test--changes.vi" Type="VI" URL="../sandbox/test--changes.vi"/>
 			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
