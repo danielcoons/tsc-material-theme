@@ -18,6 +18,7 @@
 			<Item Name="Color to HSL.vi" Type="VI" URL="../_Material Theme SubVIs/Color to HSL.vi"/>
 			<Item Name="Color to Luminance.vi" Type="VI" URL="../_Material Theme SubVIs/Color to Luminance.vi"/>
 			<Item Name="Contrast Ratio Checker.vi" Type="VI" URL="../_Material Theme SubVIs/Contrast Ratio Checker.vi"/>
+			<Item Name="convert color string summary.vi" Type="VI" URL="../_Material Theme SubVIs/convert color string summary.vi"/>
 			<Item Name="HSL to Color.vi" Type="VI" URL="../_Material Theme SubVIs/HSL to Color.vi"/>
 			<Item Name="material json palette.ctl" Type="VI" URL="../_Material Theme SubVIs/material json palette.ctl"/>
 			<Item Name="material json scheme.ctl" Type="VI" URL="../_Material Theme SubVIs/material json scheme.ctl"/>
@@ -138,7 +139,6 @@
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
-		<Item Name="underliner.ctl" Type="VI" URL="../../../../Users/daniel.coons/OneDrive - Technology Service Corporation/Desktop/error Folder/underliner.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
