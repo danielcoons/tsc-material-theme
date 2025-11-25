@@ -125,16 +125,20 @@
 			</Item>
 		</Item>
 		<Item Name="sandbox" Type="Folder">
+			<Item Name="color-picker.vi" Type="VI" URL="../sandbox/color-picker.vi"/>
 			<Item Name="test--changes.vi" Type="VI" URL="../sandbox/test--changes.vi"/>
 			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
 		<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../Convert Material JSON to LabVIEW Theme.vi"/>
 		<Item Name="Edit a Button--Material.vi" Type="VI" URL="../Edit a Button--Material.vi"/>
+		<Item Name="json.ctl" Type="VI" URL="../../../../Users/daniel.coons/OneDrive - Technology Service Corporation/Desktop/error Folder/json.ctl"/>
+		<Item Name="palette.ctl" Type="VI" URL="../../../../Users/daniel.coons/OneDrive - Technology Service Corporation/Desktop/error Folder/palette.ctl"/>
 		<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
+		<Item Name="underliner.ctl" Type="VI" URL="../../../../Users/daniel.coons/OneDrive - Technology Service Corporation/Desktop/error Folder/underliner.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
