@@ -13,10 +13,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Security` in case of vulnerabilities.
 
 ## [Unreleased]
-- Experiment with substitution of Panel->Controls property node with Traverse for GObjects
 - Implement support for cursors on plots
 - Additional button types and image sizes to add
 - Dynamically hook into an icon library???
+
+## [2.2.0] - 2025.11.25
+### Added
+- Updated the JSON importer to show *.xml file extension as the pattern when saving
+- Updated the JSON importer to allow for color editing (Issue #7) - click in the color scheme to show a new color picker and hover to see the color details
+- Brand new color picker VI utility that allows RGB slider selection and/or HEX code entry for a color
+- Updated the JSON importer UI -> gave it a cleaner look and feel
+
+### Changed
+- Substituted Panel.Controls[] and Panel.Decorations[] with `Traverse for GObjects` which eliminates the need for the recursion in tab controls (Issue #2)
+
+### Fixed
+- Labels on Clusters were not being changed with text coloring; that is fixed (Issue #8)
 
 ## [2.1.0] - 2025.08.25
 ### Added
