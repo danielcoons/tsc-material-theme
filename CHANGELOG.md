@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Labels on Clusters were not being changed with text coloring; that is fixed (Issue #8)
+- Handled the blank image in the button editor so replaced with a backup (Issue #11)
 
 ## [2.1.0] - 2025.08.25
 ### Added
