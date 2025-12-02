@@ -662,13 +662,19 @@
 				<Item Name="double.ctl" Type="VI" URL="../numeric/double.ctl"/>
 				<Item Name="double2.ctl" Type="VI" URL="../numeric/double2.ctl"/>
 				<Item Name="hex word.ctl" Type="VI" URL="../numeric/hex word.ctl"/>
-				<Item Name="horiztonal slide.ctl" Type="VI" URL="../numeric/horiztonal slide.ctl"/>
+				<Item Name="horiztonal slide (tsc).ctl" Type="VI" URL="../numeric/horiztonal slide (tsc).ctl"/>
 				<Item Name="integer.ctl" Type="VI" URL="../numeric/integer.ctl"/>
-				<Item Name="round color box.ctl" Type="VI" URL="../numeric/round color box.ctl"/>
-				<Item Name="vertical slide.ctl" Type="VI" URL="../numeric/vertical slide.ctl"/>
+				<Item Name="round color box (tsc).ctl" Type="VI" URL="../numeric/round color box (tsc).ctl"/>
+				<Item Name="vertical slide (tsc).ctl" Type="VI" URL="../numeric/vertical slide (tsc).ctl"/>
+			</Item>
+			<Item Name="string &amp; path" Type="Folder">
+				<Item Name="path control (tsc).ctl" Type="VI" URL="../string &amp; path/path control (tsc).ctl"/>
+				<Item Name="string (tsc).ctl" Type="VI" URL="../string &amp; path/string (tsc).ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Make a Token.vi" Type="VI" URL="../Make a Token.vi"/>
+		<Item Name="Save Ctl Image to File.vi" Type="VI" URL="../../../../Material-Scheme/Save Ctl Image to File.vi"/>
+		<Item Name="template--token--dark.ctl" Type="VI" URL="../template--token--dark.ctl"/>
 		<Item Name="template--token.ctl" Type="VI" URL="../template--token.ctl"/>
 		<Item Name="test fp.vi" Type="VI" URL="../test fp.vi"/>
 		<Item Name="token--image--dark.vi" Type="VI" URL="../token--image--dark.vi"/>
