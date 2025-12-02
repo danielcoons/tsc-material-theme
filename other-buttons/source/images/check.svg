@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="22mm"
+   height="22mm"
+   viewBox="0 0 22 22"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="check.svg"
+   inkscape:export-filename=".\blank.png"
+   inkscape:export-xdpi="42.090275"
+   inkscape:export-ydpi="42.090275"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.245064"
+     inkscape:cx="50.332641"
+     inkscape:cy="54.564146"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="22"
+       height="22"
+       id="page1"
+       margin="0"
+       bleed="0"
+       inkscape:label="check"
+       inkscape:export-filename=".\checkbox\checkbox-click.png"
+       inkscape:export-xdpi="25.399998"
+       inkscape:export-ydpi="25.399998" />
+    <inkscape:page
+       x="37.083336"
+       y="-2.6666667"
+       width="30"
+       height="30"
+       id="page2"
+       margin="0"
+       bleed="0"
+       inkscape:label="checkbox-frame" />
+    <inkscape:page
+       x="-4.0833335"
+       y="30.916668"
+       width="30"
+       height="30"
+       id="page3"
+       inkscape:label="checkbox-click"
+       margin="0"
+       bleed="0" />
+    <inkscape:page
+       x="37.750004"
+       y="30.833334"
+       width="30"
+       height="30"
+       id="page4"
+       margin="0"
+       bleed="0"
+       inkscape:label="checkbox-hover"
+       inkscape:export-filename=".\checkbox-click.png"
+       inkscape:export-xdpi="25.399998"
+       inkscape:export-ydpi="25.399998" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-17.239863,-33.065907)">
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#505050;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 29.168153,35.944595 2.946278,4.89082 9.545942,-9.663792"
+       id="path1"
+       inkscape:path-effect="#path-effect1"
+       inkscape:original-d="m 29.168153,35.944595 c 1.001736,1.59099 2.946278,4.89082 2.946278,4.89082 0,0 9.545942,-9.663792 9.545942,-9.663792"
+       transform="translate(-7.25,8.5416667)" />
+    <rect
+       style="fill:#e1e1e1;fill-opacity:0.70212764;stroke:#787878;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect1"
+       width="28"
+       height="28"
+       x="55.989864"
+       y="64.899239"
+       ry="3.7123106"
+       rx="3.7123106" />
+    <rect
+       style="fill:none;fill-opacity:0.8;stroke:#505050;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:0.7492401;paint-order:markers fill stroke"
+       id="rect1-8"
+       width="25"
+       height="25"
+       x="15.656529"
+       y="66.482574"
+       ry="3.7123103"
+       rx="3.7123103" />
+    <rect
+       style="fill:none;fill-opacity:0.8;stroke:#b4b4b4;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect1-0"
+       width="23"
+       height="23"
+       x="57.823196"
+       y="33.899239"
+       ry="3.7123106"
+       rx="3.7123106" />
+  </g>
+</svg>

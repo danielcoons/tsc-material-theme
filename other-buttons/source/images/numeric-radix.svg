@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6mm"
+   height="15mm"
+   viewBox="0 0 6 15"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="numeric-radix.svg"
+   inkscape:export-filename=".\d.png"
+   inkscape:export-xdpi="60.20071"
+   inkscape:export-ydpi="60.20071"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.175"
+     inkscape:cx="53.228347"
+     inkscape:cy="-48.031497"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2">
+    <inkscape:page
+       x="-1.4325655e-06"
+       y="-8.798493e-08"
+       width="6.0000005"
+       height="15"
+       id="page2"
+       margin="0"
+       bleed="0"
+       inkscape:label="radix-d" />
+    <inkscape:page
+       x="9.0000134"
+       y="0.16666594"
+       width="6.0000005"
+       height="15"
+       id="page3"
+       inkscape:label="radix-b"
+       margin="0"
+       bleed="0" />
+    <inkscape:page
+       x="19.166677"
+       y="0.41666785"
+       width="6.0000005"
+       height="15"
+       id="page4"
+       margin="0"
+       bleed="0"
+       inkscape:label="radix-o" />
+    <inkscape:page
+       x="28.416677"
+       y="0.83333391"
+       width="6.0000005"
+       height="15"
+       id="page5"
+       margin="0"
+       bleed="0"
+       inkscape:label="radix-x" />
+    <inkscape:page
+       x="39.333344"
+       y="1.499998"
+       width="6.0000005"
+       height="15"
+       id="page6"
+       margin="0"
+       bleed="0"
+       inkscape:label="radix-p" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer  - d"
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:export-filename=".\d.png"
+     inkscape:export-xdpi="25.830494"
+     inkscape:export-ydpi="25.830494"
+     transform="translate(55.896658,-79.559973)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.0101px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';text-align:center;letter-spacing:2.68476px;word-spacing:1.34237px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="-68.446266"
+       y="71.891129"
+       id="text1-8"
+       transform="scale(0.77665921,1.287566)"
+       inkscape:export-filename=".\o.png"
+       inkscape:export-xdpi="25.830494"
+       inkscape:export-ydpi="25.830494"><tspan
+         sodipodi:role="line"
+         id="tspan1-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.0101px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-dasharray:none;stroke-opacity:1"
+         x="-67.103889"
+         y="71.891129">d</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer  - p"
+     inkscape:groupmode="layer"
+     id="g2"
+     inkscape:export-filename=".\p.png"
+     inkscape:export-xdpi="25.830494"
+     inkscape:export-ydpi="25.830494"
+     transform="translate(118.59346,-79.559973)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6931px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';text-align:center;letter-spacing:2.86795px;word-spacing:1.43397px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="-105.01304"
+       y="66.192368"
+       id="text2"
+       transform="scale(0.72784013,1.3739281)"
+       inkscape:export-filename=".\o.png"
+       inkscape:export-xdpi="25.830494"
+       inkscape:export-ydpi="25.830494"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6931px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-dasharray:none;stroke-opacity:1"
+         x="-103.57906"
+         y="66.192368">p</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="layer - b"
+     transform="translate(53.292211,-79.830805)"
+     inkscape:export-filename=".\b.png"
+     inkscape:export-xdpi="25.830494"
+     inkscape:export-ydpi="25.830494">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.0155px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';text-align:center;letter-spacing:2.68622px;word-spacing:1.3431px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="-52.79932"
+       y="72.14064"
+       id="text1"
+       transform="scale(0.77708145,1.2868664)"
+       inkscape:export-filename=".\o.png"
+       inkscape:export-xdpi="25.830494"
+       inkscape:export-ydpi="25.830494"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.0155px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-dasharray:none;stroke-opacity:1"
+         x="-51.456211"
+         y="72.14064">b</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="layer - x"
+     transform="translate(56.948427,-78.939508)"
+     inkscape:export-filename=".\x.png"
+     inkscape:export-xdpi="25.830494"
+     inkscape:export-ydpi="25.830494">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3925px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';text-align:center;letter-spacing:2.78733px;word-spacing:1.39366px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="-34.140003"
+       y="69.364532"
+       id="text1-8-1"
+       transform="scale(0.74889223,1.3353056)"
+       inkscape:export-filename=".\o.png"
+       inkscape:export-xdpi="25.830494"
+       inkscape:export-ydpi="25.830494"><tspan
+         sodipodi:role="line"
+         id="tspan1-4-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3925px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-dasharray:none;stroke-opacity:1"
+         x="-32.746338"
+         y="69.364532">x</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="layer - o"
+     transform="translate(56.485912,-79.595835)"
+     inkscape:export-filename=".\o.png"
+     inkscape:export-xdpi="25.830494"
+     inkscape:export-ydpi="25.830494">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.0155px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';text-align:center;letter-spacing:2.68622px;word-spacing:1.3431px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       x="-44.304565"
+       y="72.098091"
+       id="text1-8-7"
+       transform="scale(0.77708145,1.2868664)"
+       inkscape:export-filename=".\o.png"
+       inkscape:export-xdpi="25.830494"
+       inkscape:export-ydpi="25.830494"><tspan
+         sodipodi:role="line"
+         id="tspan1-4-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.0155px;font-family:'Futura Bk BT';-inkscape-font-specification:'Futura Bk BT';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-dasharray:none;stroke-opacity:1"
+         x="-42.961456"
+         y="72.098091">o</tspan></text>
+  </g>
+</svg>
