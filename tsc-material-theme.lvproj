@@ -47,6 +47,7 @@
 			</Item>
 		</Item>
 		<Item Name="controls" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="FAB--icon--rounded.ctl" Type="VI" URL="../controls/FAB--icon--rounded.ctl"/>
 			<Item Name="filled--icon--rectangular.ctl" Type="VI" URL="../controls/filled--icon--rectangular.ctl"/>
 			<Item Name="filled--icon--rounded.ctl" Type="VI" URL="../controls/filled--icon--rounded.ctl"/>
@@ -62,6 +63,8 @@
 			<Item Name="outline--icon--rounded.ctl" Type="VI" URL="../controls/outline--icon--rounded.ctl"/>
 			<Item Name="outline--text--rectangular.ctl" Type="VI" URL="../controls/outline--text--rectangular.ctl"/>
 			<Item Name="outline--text--rounded.ctl" Type="VI" URL="../controls/outline--text--rounded.ctl"/>
+			<Item Name="template--token--dark.ctl" Type="VI" URL="../controls/template--token--dark.ctl"/>
+			<Item Name="template--token.ctl" Type="VI" URL="../controls/template--token.ctl"/>
 			<Item Name="subpanel--button preview (copy).vi" Type="VI" URL="../controls/subpanel--button preview (copy).vi"/>
 			<Item Name="subpanel--button preview.vi" Type="VI" URL="../controls/subpanel--button preview.vi"/>
 			<Item Name="test--Get Control Tags.vi" Type="VI" URL="../controls/test--Get Control Tags.vi"/>
@@ -202,6 +205,7 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Unflatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Unflatten Pixmap.vi"/>
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
