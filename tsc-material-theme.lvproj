@@ -143,13 +143,11 @@
 				<Item Name="FAB--rounded--icon--medium.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--medium.ctl"/>
 				<Item Name="FAB--rounded--icon.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon.ctl"/>
 			</Item>
-			<Item Name="(8) Icon Button" Type="Folder">
-				<Item Name="icon--button--dark.ctl" Type="VI" URL="../controls/(8) Icon Button/icon--button--dark.ctl"/>
-				<Item Name="icon--button--light.ctl" Type="VI" URL="../controls/(8) Icon Button/icon--button--light.ctl"/>
-			</Item>
 			<Item Name="helper--Button Color Manual.vi" Type="VI" URL="../controls/helper--Button Color Manual.vi"/>
 			<Item Name="helper--Set Control Tags.vi" Type="VI" URL="../controls/helper--Set Control Tags.vi"/>
 			<Item Name="helper--Tag Editor.vi" Type="VI" URL="../controls/helper--Tag Editor.vi"/>
+			<Item Name="icon--button--dark.ctl" Type="VI" URL="../controls/icon--button--dark.ctl"/>
+			<Item Name="icon--button--light.ctl" Type="VI" URL="../controls/icon--button--light.ctl"/>
 			<Item Name="subpanel--button preview (copy).vi" Type="VI" URL="../controls/subpanel--button preview (copy).vi"/>
 			<Item Name="subpanel--button preview.vi" Type="VI" URL="../controls/subpanel--button preview.vi"/>
 			<Item Name="test--Get Control Tags.vi" Type="VI" URL="../controls/test--Get Control Tags.vi"/>
