@@ -136,7 +136,10 @@
 			</Item>
 			<Item Name="(7) Floating Action Button (FAB)" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="FAB--rounded--icon--extended.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--extended.ctl"/>
+				<Item Name="FAB--rounded--icon--large--extended.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--large--extended.ctl"/>
 				<Item Name="FAB--rounded--icon--large.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--large.ctl"/>
+				<Item Name="FAB--rounded--icon--medium--extended.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--medium--extended.ctl"/>
 				<Item Name="FAB--rounded--icon--medium.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--medium.ctl"/>
 				<Item Name="FAB--rounded--icon.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon.ctl"/>
 			</Item>
