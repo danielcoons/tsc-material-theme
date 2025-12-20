@@ -144,6 +144,7 @@
 				<Item Name="icon--button--dark.ctl" Type="VI" URL="../controls/(8) Icon Button/icon--button--dark.ctl"/>
 				<Item Name="icon--button--light.ctl" Type="VI" URL="../controls/(8) Icon Button/icon--button--light.ctl"/>
 			</Item>
+			<Item Name="helper--Button Color Manual.vi" Type="VI" URL="../controls/helper--Button Color Manual.vi"/>
 			<Item Name="helper--Set Control Tags.vi" Type="VI" URL="../controls/helper--Set Control Tags.vi"/>
 			<Item Name="helper--Tag Editor.vi" Type="VI" URL="../controls/helper--Tag Editor.vi"/>
 			<Item Name="subpanel--button preview (copy).vi" Type="VI" URL="../controls/subpanel--button preview (copy).vi"/>
@@ -153,20 +154,6 @@
 		<Item Name="Example" Type="Folder">
 			<Item Name="main--material example.vi" Type="VI" URL="../Example/main--material example.vi"/>
 			<Item Name="tsc-material.bin3" Type="Document" URL="../Example/tsc-material.bin3"/>
-		</Item>
-		<Item Name="other-buttons" Type="Folder">
-			<Item Name="button-3 circle settings.ctl" Type="VI" URL="../other-buttons/button-3 circle settings.ctl"/>
-			<Item Name="button-close.ctl" Type="VI" URL="../other-buttons/button-close.ctl"/>
-			<Item Name="button-download.ctl" Type="VI" URL="../other-buttons/button-download.ctl"/>
-			<Item Name="button-file explore.ctl" Type="VI" URL="../other-buttons/button-file explore.ctl"/>
-			<Item Name="button-help.ctl" Type="VI" URL="../other-buttons/button-help.ctl"/>
-			<Item Name="button-info (white).ctl" Type="VI" URL="../other-buttons/button-info (white).ctl"/>
-			<Item Name="button-info.ctl" Type="VI" URL="../other-buttons/button-info.ctl"/>
-			<Item Name="button-log.ctl" Type="VI" URL="../other-buttons/button-log.ctl"/>
-			<Item Name="button-visible password.ctl" Type="VI" URL="../other-buttons/button-visible password.ctl"/>
-			<Item Name="dark light--switch.ctl" Type="VI" URL="../other-buttons/dark light--switch.ctl"/>
-			<Item Name="ring--colorable (24px).ctl" Type="VI" URL="../other-buttons/ring--colorable (24px).ctl"/>
-			<Item Name="ring--colorable.ctl" Type="VI" URL="../other-buttons/ring--colorable.ctl"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
@@ -212,6 +199,7 @@
 		</Item>
 		<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../Convert Material JSON to LabVIEW Theme.vi"/>
 		<Item Name="Edit a Button--Material.vi" Type="VI" URL="../Edit a Button--Material.vi"/>
+		<Item Name="state layer calculator.vi" Type="VI" URL="../state layer calculator.vi"/>
 		<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
