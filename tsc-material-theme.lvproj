@@ -14,7 +14,6 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_Material Theme SubVIs" Type="Folder">
-			<Item Name="Array Point to RowCol.vi" Type="VI" URL="../_Material Theme SubVIs/Array Point to RowCol.vi"/>
 			<Item Name="button-editor-ui.rtm" Type="Document" URL="../_Material Theme SubVIs/button-editor-ui.rtm"/>
 			<Item Name="Color to HSL.vi" Type="VI" URL="../_Material Theme SubVIs/Color to HSL.vi"/>
 			<Item Name="Color to Luminance.vi" Type="VI" URL="../_Material Theme SubVIs/Color to Luminance.vi"/>
