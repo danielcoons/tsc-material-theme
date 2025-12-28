@@ -29,7 +29,6 @@
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
 			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
-			<Item Name="Update Custom UI for Button.vi" Type="VI" URL="../project/_button-editor/Update Custom UI for Button.vi"/>
 			<Item Name="VI Reference To IWin32Window Reference.vi" Type="VI" URL="../_Material Theme SubVIs/VI Reference To IWin32Window Reference.vi"/>
 			<Item Name="Win32 Window Handle Wrapper.vi" Type="VI" URL="../_Material Theme SubVIs/Win32 Window Handle Wrapper.vi"/>
 			<Item Name="WindowWrapper.dll" Type="Document" URL="../_Material Theme SubVIs/WindowWrapper.dll"/>
