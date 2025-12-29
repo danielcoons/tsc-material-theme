@@ -29,10 +29,6 @@
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
 			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
-			<Item Name="Update Custom UI for Button.vi" Type="VI" URL="../_Material Theme SubVIs/Update Custom UI for Button.vi"/>
-			<Item Name="User Event Close.vi" Type="VI" URL="../_Material Theme SubVIs/User Event Close.vi"/>
-			<Item Name="User Event Init.vi" Type="VI" URL="../_Material Theme SubVIs/User Event Init.vi"/>
-			<Item Name="User Events.ctl" Type="VI" URL="../_Material Theme SubVIs/User Events.ctl"/>
 			<Item Name="VI Reference To IWin32Window Reference.vi" Type="VI" URL="../_Material Theme SubVIs/VI Reference To IWin32Window Reference.vi"/>
 			<Item Name="Win32 Window Handle Wrapper.vi" Type="VI" URL="../_Material Theme SubVIs/Win32 Window Handle Wrapper.vi"/>
 			<Item Name="WindowWrapper.dll" Type="Document" URL="../_Material Theme SubVIs/WindowWrapper.dll"/>
@@ -47,46 +43,119 @@
 			</Item>
 		</Item>
 		<Item Name="controls" Type="Folder">
-			<Item Name="FAB--icon--rounded.ctl" Type="VI" URL="../controls/FAB--icon--rounded.ctl"/>
-			<Item Name="filled--icon--rectangular.ctl" Type="VI" URL="../controls/filled--icon--rectangular.ctl"/>
-			<Item Name="filled--icon--rounded.ctl" Type="VI" URL="../controls/filled--icon--rounded.ctl"/>
-			<Item Name="filled--text--rectangular.ctl" Type="VI" URL="../controls/filled--text--rectangular.ctl"/>
-			<Item Name="filled--text--rounded.ctl" Type="VI" URL="../controls/filled--text--rounded.ctl"/>
+			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="(1) Small Button Single Image 24px" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="elevated--rectangular--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/elevated--rectangular--icon.ctl"/>
+				<Item Name="elevated--rounded--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/elevated--rounded--icon.ctl"/>
+				<Item Name="filled--rectangular--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/filled--rectangular--icon.ctl"/>
+				<Item Name="filled--rounded--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/filled--rounded--icon.ctl"/>
+				<Item Name="nooutline--rectangular--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/nooutline--rectangular--icon.ctl"/>
+				<Item Name="nooutline--rounded--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/nooutline--rounded--icon.ctl"/>
+				<Item Name="outline--rectangular--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/outline--rectangular--icon.ctl"/>
+				<Item Name="outline--rounded--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/outline--rounded--icon.ctl"/>
+				<Item Name="tonal--rectangular--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/tonal--rectangular--icon.ctl"/>
+				<Item Name="tonal--rounded--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/tonal--rounded--icon.ctl"/>
+				<Item Name="transparent--rectangular--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/transparent--rectangular--icon.ctl"/>
+				<Item Name="transparent--rounded--icon.ctl" Type="VI" URL="../controls/(1) Small Button Single Image 24px/transparent--rounded--icon.ctl"/>
+			</Item>
+			<Item Name="(2) Small Button Text Only" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="elevated--rectangular--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/elevated--rectangular--text.ctl"/>
+				<Item Name="elevated--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/elevated--rounded--text.ctl"/>
+				<Item Name="filled--rectangular--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/filled--rectangular--text.ctl"/>
+				<Item Name="filled--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/filled--rounded--text.ctl"/>
+				<Item Name="nooutline--rectangular--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/nooutline--rectangular--text.ctl"/>
+				<Item Name="nooutline--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/nooutline--rounded--text.ctl"/>
+				<Item Name="outline--rectangular--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/outline--rectangular--text.ctl"/>
+				<Item Name="outline--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/outline--rounded--text.ctl"/>
+				<Item Name="tonal--text--rectangular.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/tonal--text--rectangular.ctl"/>
+				<Item Name="tonal--text--rounded.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/tonal--text--rounded.ctl"/>
+				<Item Name="transparent--rectangular--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/transparent--rectangular--text.ctl"/>
+				<Item Name="transparent--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/transparent--rounded--text.ctl"/>
+			</Item>
+			<Item Name="(3) Large Button Single Image 40px" Type="Folder">
+				<Item Name="elevated--rectangular--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/elevated--rectangular--icon--large.ctl"/>
+				<Item Name="elevated--rounded--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/elevated--rounded--icon--large.ctl"/>
+				<Item Name="filled--rectangular--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/filled--rectangular--icon--large.ctl"/>
+				<Item Name="filled--rounded--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/filled--rounded--icon--large.ctl"/>
+				<Item Name="nooutline--rectangular--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/nooutline--rectangular--icon--large.ctl"/>
+				<Item Name="nooutline--rounded--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/nooutline--rounded--icon--large.ctl"/>
+				<Item Name="outline--rectangular--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/outline--rectangular--icon--large.ctl"/>
+				<Item Name="outline--rounded--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/outline--rounded--icon--large.ctl"/>
+				<Item Name="tonal--rectangular--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/tonal--rectangular--icon--large.ctl"/>
+				<Item Name="tonal--rounded--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/tonal--rounded--icon--large.ctl"/>
+				<Item Name="transparent--rectangular--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/transparent--rectangular--icon--large.ctl"/>
+				<Item Name="transparent--rounded--icon--large.ctl" Type="VI" URL="../controls/(3) Large Button Single Image 40px/transparent--rounded--icon--large.ctl"/>
+			</Item>
+			<Item Name="(4) Large Button Text Only" Type="Folder">
+				<Item Name="elevated--rectangular--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/elevated--rectangular--text--large.ctl"/>
+				<Item Name="elevated--rounded--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/elevated--rounded--text--large.ctl"/>
+				<Item Name="filled--rectangular--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/filled--rectangular--text--large.ctl"/>
+				<Item Name="filled--rounded--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/filled--rounded--text--large.ctl"/>
+				<Item Name="nooutline--rectangular--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/nooutline--rectangular--text--large.ctl"/>
+				<Item Name="nooutline--rounded--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/nooutline--rounded--text--large.ctl"/>
+				<Item Name="outline--rectangular--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/outline--rectangular--text--large.ctl"/>
+				<Item Name="outline--rounded--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/outline--rounded--text--large.ctl"/>
+				<Item Name="tonal--text--rectangular--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/tonal--text--rectangular--large.ctl"/>
+				<Item Name="tonal--text--rounded--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/tonal--text--rounded--large.ctl"/>
+				<Item Name="transparent--rectangular--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/transparent--rectangular--text--large.ctl"/>
+				<Item Name="transparent--rounded--text--large.ctl" Type="VI" URL="../controls/(4) Large Button Text Only/transparent--rounded--text--large.ctl"/>
+			</Item>
+			<Item Name="(5) Small Button Multi Image 24px" Type="Folder">
+				<Item Name="elevated--rectangular--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/elevated--rectangular--icon--mulitple.ctl"/>
+				<Item Name="elevated--rounded--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/elevated--rounded--icon--mulitple.ctl"/>
+				<Item Name="filled--rectangular--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/filled--rectangular--icon--mulitple.ctl"/>
+				<Item Name="filled--rounded--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/filled--rounded--icon--mulitple.ctl"/>
+				<Item Name="nooutline--rectangular--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/nooutline--rectangular--icon--mulitple.ctl"/>
+				<Item Name="nooutline--rounded--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/nooutline--rounded--icon--mulitple.ctl"/>
+				<Item Name="outline--rectangular--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/outline--rectangular--icon--mulitple.ctl"/>
+				<Item Name="outline--rounded--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/outline--rounded--icon--mulitple.ctl"/>
+				<Item Name="tonal--rectangular--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/tonal--rectangular--icon--mulitple.ctl"/>
+				<Item Name="tonal--rounded--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/tonal--rounded--icon--mulitple.ctl"/>
+				<Item Name="transparent--rectangular--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/transparent--rectangular--icon--mulitple.ctl"/>
+				<Item Name="transparent--rounded--icon--mulitple.ctl" Type="VI" URL="../controls/(5) Small Button Multi Image 24px/transparent--rounded--icon--mulitple.ctl"/>
+			</Item>
+			<Item Name="(6) Large Button Multi Image 40px" Type="Folder">
+				<Item Name="elevated--rectangular--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/elevated--rectangular--icon--mulitple--large.ctl"/>
+				<Item Name="elevated--rounded--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/elevated--rounded--icon--mulitple--large.ctl"/>
+				<Item Name="filled--rectangular--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/filled--rectangular--icon--mulitple--large.ctl"/>
+				<Item Name="filled--rounded--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/filled--rounded--icon--mulitple--large.ctl"/>
+				<Item Name="nooutline--rectangular--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/nooutline--rectangular--icon--mulitple--large.ctl"/>
+				<Item Name="nooutline--rounded--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/nooutline--rounded--icon--mulitple--large.ctl"/>
+				<Item Name="outline--rectangular--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/outline--rectangular--icon--mulitple--large.ctl"/>
+				<Item Name="outline--rounded--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/outline--rounded--icon--mulitple--large.ctl"/>
+				<Item Name="tonal--rectangular--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/tonal--rectangular--icon--mulitple--large.ctl"/>
+				<Item Name="tonal--rounded--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/tonal--rounded--icon--mulitple--large.ctl"/>
+				<Item Name="transparent--rectangular--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/transparent--rectangular--icon--mulitple--large.ctl"/>
+				<Item Name="transparent--rounded--icon--mulitple--large.ctl" Type="VI" URL="../controls/(6) Large Button Multi Image 40px/transparent--rounded--icon--mulitple--large.ctl"/>
+			</Item>
+			<Item Name="(7) Floating Action Button (FAB)" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="FAB--rounded--icon--extended.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--extended.ctl"/>
+				<Item Name="FAB--rounded--icon--large--extended.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--large--extended.ctl"/>
+				<Item Name="FAB--rounded--icon--large.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--large.ctl"/>
+				<Item Name="FAB--rounded--icon--medium--extended.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--medium--extended.ctl"/>
+				<Item Name="FAB--rounded--icon--medium.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon--medium.ctl"/>
+				<Item Name="FAB--rounded--icon.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon.ctl"/>
+			</Item>
+			<Item Name="helper--Button Color Manual.vi" Type="VI" URL="../controls/helper--Button Color Manual.vi"/>
 			<Item Name="helper--Set Control Tags.vi" Type="VI" URL="../controls/helper--Set Control Tags.vi"/>
-			<Item Name="nooutline--icon--rectangular--40x40.ctl" Type="VI" URL="../controls/nooutline--icon--rectangular--40x40.ctl"/>
-			<Item Name="nooutline--icon--rectangular.ctl" Type="VI" URL="../controls/nooutline--icon--rectangular.ctl"/>
-			<Item Name="nooutline--icon--rounded.ctl" Type="VI" URL="../controls/nooutline--icon--rounded.ctl"/>
-			<Item Name="nooutline--text--rectangular.ctl" Type="VI" URL="../controls/nooutline--text--rectangular.ctl"/>
-			<Item Name="nooutline--text--rounded.ctl" Type="VI" URL="../controls/nooutline--text--rounded.ctl"/>
-			<Item Name="outline--icon--rectangular.ctl" Type="VI" URL="../controls/outline--icon--rectangular.ctl"/>
-			<Item Name="outline--icon--rounded.ctl" Type="VI" URL="../controls/outline--icon--rounded.ctl"/>
-			<Item Name="outline--text--rectangular.ctl" Type="VI" URL="../controls/outline--text--rectangular.ctl"/>
-			<Item Name="outline--text--rounded.ctl" Type="VI" URL="../controls/outline--text--rounded.ctl"/>
+			<Item Name="helper--Tag Editor.vi" Type="VI" URL="../controls/helper--Tag Editor.vi"/>
+			<Item Name="icon--button--dark.ctl" Type="VI" URL="../controls/icon--button--dark.ctl"/>
+			<Item Name="icon--button--light.ctl" Type="VI" URL="../controls/icon--button--light.ctl"/>
 			<Item Name="subpanel--button preview (copy).vi" Type="VI" URL="../controls/subpanel--button preview (copy).vi"/>
 			<Item Name="subpanel--button preview.vi" Type="VI" URL="../controls/subpanel--button preview.vi"/>
 			<Item Name="test--Get Control Tags.vi" Type="VI" URL="../controls/test--Get Control Tags.vi"/>
-			<Item Name="tonal--icon--rectangular.ctl" Type="VI" URL="../controls/tonal--icon--rectangular.ctl"/>
-			<Item Name="tonal--icon--rounded.ctl" Type="VI" URL="../controls/tonal--icon--rounded.ctl"/>
-			<Item Name="tonal--text--rectangular.ctl" Type="VI" URL="../controls/tonal--text--rectangular.ctl"/>
-			<Item Name="tonal--text--rounded.ctl" Type="VI" URL="../controls/tonal--text--rounded.ctl"/>
 		</Item>
 		<Item Name="Example" Type="Folder">
 			<Item Name="main--material example.vi" Type="VI" URL="../Example/main--material example.vi"/>
 			<Item Name="tsc-material.bin3" Type="Document" URL="../Example/tsc-material.bin3"/>
 		</Item>
-		<Item Name="other-buttons" Type="Folder">
-			<Item Name="button-3 circle settings.ctl" Type="VI" URL="../other-buttons/button-3 circle settings.ctl"/>
-			<Item Name="button-close.ctl" Type="VI" URL="../other-buttons/button-close.ctl"/>
-			<Item Name="button-download.ctl" Type="VI" URL="../other-buttons/button-download.ctl"/>
-			<Item Name="button-file explore.ctl" Type="VI" URL="../other-buttons/button-file explore.ctl"/>
-			<Item Name="button-help.ctl" Type="VI" URL="../other-buttons/button-help.ctl"/>
-			<Item Name="button-info (white).ctl" Type="VI" URL="../other-buttons/button-info (white).ctl"/>
-			<Item Name="button-info.ctl" Type="VI" URL="../other-buttons/button-info.ctl"/>
-			<Item Name="button-log.ctl" Type="VI" URL="../other-buttons/button-log.ctl"/>
-			<Item Name="button-visible password.ctl" Type="VI" URL="../other-buttons/button-visible password.ctl"/>
-			<Item Name="dark light--switch.ctl" Type="VI" URL="../other-buttons/dark light--switch.ctl"/>
-			<Item Name="ring--colorable (24px).ctl" Type="VI" URL="../other-buttons/ring--colorable (24px).ctl"/>
-			<Item Name="ring--colorable.ctl" Type="VI" URL="../other-buttons/ring--colorable.ctl"/>
+		<Item Name="project" Type="Folder">
+			<Item Name="_button-editor" Type="Folder">
+				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
+			</Item>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
@@ -128,13 +197,11 @@
 		<Item Name="sandbox" Type="Folder">
 			<Item Name="test--changes.vi" Type="VI" URL="../sandbox/test--changes.vi"/>
 			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
+			<Item Name="test--load all the images in a directory.vi" Type="VI" URL="../sandbox/test--load all the images in a directory.vi"/>
+			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
 		<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../Convert Material JSON to LabVIEW Theme.vi"/>
-		<Item Name="Edit a Button--Material.vi" Type="VI" URL="../Edit a Button--Material.vi"/>
-		<Item Name="json.ctl" Type="VI" URL="../../../../Users/daniel.coons/OneDrive - Technology Service Corporation/Desktop/error Folder/json.ctl"/>
-		<Item Name="palette.ctl" Type="VI" URL="../../../../Users/daniel.coons/OneDrive - Technology Service Corporation/Desktop/error Folder/palette.ctl"/>
-		<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
@@ -142,25 +209,32 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Base64/Base64 Support.lvlib"/>
+				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Color Table Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Color Table Size.vi"/>
 				<Item Name="Check Data Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Data Size.vi"/>
 				<Item Name="Check File Permissions.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check File Permissions.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
+				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
+				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
@@ -175,6 +249,7 @@
 				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
 				<Item Name="JSONtext LVClass Serializer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/LVClass Serializer/JSONtext LVClass Serializer.lvclass"/>
 				<Item Name="JSONtext.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/JSONtext.lvlib"/>
+				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
@@ -184,6 +259,8 @@
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="LVTextColorsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVTextColorsTypeDef.ctl"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="QuickDrop Parse Plugin Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/QuickDrop Parse Plugin Variant.vi"/>
 				<Item Name="QuickDrop Plugin Data ver1.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/QuickDrop Plugin Data ver1.ctl"/>
@@ -191,6 +268,8 @@
 				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
 				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
 				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi"/>
+				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
+				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -204,7 +283,6 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
-				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Unflatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Unflatten Pixmap.vi"/>
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
