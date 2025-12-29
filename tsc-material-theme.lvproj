@@ -24,14 +24,11 @@
 			<Item Name="material theme.ctl" Type="VI" URL="../_Material Theme SubVIs/material theme.ctl"/>
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
-			<Item Name="TSC Material Boolean Type--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--global.vi"/>
-			<Item Name="TSC Material UI Theme Level--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--global.vi"/>
+			<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
+			<Item Name="TSC Material UI Theme Level--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--constant.vi"/>
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
 			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
-			<Item Name="VI Reference To IWin32Window Reference.vi" Type="VI" URL="../_Material Theme SubVIs/VI Reference To IWin32Window Reference.vi"/>
-			<Item Name="Win32 Window Handle Wrapper.vi" Type="VI" URL="../_Material Theme SubVIs/Win32 Window Handle Wrapper.vi"/>
-			<Item Name="WindowWrapper.dll" Type="Document" URL="../_Material Theme SubVIs/WindowWrapper.dll"/>
 		</Item>
 		<Item Name="assets" Type="Folder">
 			<Item Name="images" Type="Folder">
@@ -140,13 +137,11 @@
 				<Item Name="FAB--rounded--icon.ctl" Type="VI" URL="../controls/(7) Floating Action Button (FAB)/FAB--rounded--icon.ctl"/>
 			</Item>
 			<Item Name="helper--Button Color Manual.vi" Type="VI" URL="../controls/helper--Button Color Manual.vi"/>
-			<Item Name="helper--Set Control Tags.vi" Type="VI" URL="../controls/helper--Set Control Tags.vi"/>
 			<Item Name="helper--Tag Editor.vi" Type="VI" URL="../controls/helper--Tag Editor.vi"/>
 			<Item Name="icon--button--dark.ctl" Type="VI" URL="../controls/icon--button--dark.ctl"/>
 			<Item Name="icon--button--light.ctl" Type="VI" URL="../controls/icon--button--light.ctl"/>
 			<Item Name="subpanel--button preview (copy).vi" Type="VI" URL="../controls/subpanel--button preview (copy).vi"/>
 			<Item Name="subpanel--button preview.vi" Type="VI" URL="../controls/subpanel--button preview.vi"/>
-			<Item Name="test--Get Control Tags.vi" Type="VI" URL="../controls/test--Get Control Tags.vi"/>
 		</Item>
 		<Item Name="Example" Type="Folder">
 			<Item Name="main--material example.vi" Type="VI" URL="../Example/main--material example.vi"/>
@@ -176,7 +171,6 @@
 				<Item Name="Change Boolean Image Color.ctl" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/Change Boolean Image Color.ctl"/>
 				<Item Name="Change Boolean Image Color.vi" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/Change Boolean Image Color.vi"/>
 				<Item Name="Execute Change Boolean Image Color.vi" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/Execute Change Boolean Image Color.vi"/>
-				<Item Name="tsc--Show Color Picker.vi" Type="VI" URL="../right-click-menus/Change Boolean Image Color.llb/tsc--Show Color Picker.vi"/>
 			</Item>
 			<Item Name="Change Boolean Image.llb" Type="Folder">
 				<Item Name="Change Boolean Image.ctl" Type="VI" URL="../right-click-menus/Change Boolean Image.llb/Change Boolean Image.ctl"/>
@@ -185,6 +179,7 @@
 			</Item>
 			<Item Name="Set Boolean Type.llb" Type="Folder">
 				<Item Name="Execute Set Boolean Type.vi" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Execute Set Boolean Type.vi"/>
+				<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 				<Item Name="Set Boolean Type.ctl" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Set Boolean Type.ctl"/>
 				<Item Name="Set Boolean Type.vi" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Set Boolean Type.vi"/>
 			</Item>
@@ -295,9 +290,6 @@
 			<Item Name="Relative Position.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Relative Position.ctl"/>
 			<Item Name="Shortcut Menu Item Definition.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Shortcut Menu Item Definition.ctl"/>
 			<Item Name="System.Drawing" Type="Document" URL="System.Drawing">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="System.Windows.Forms" Type="Document" URL="System.Windows.Forms">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Transaction Control.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Transaction Control.ctl"/>

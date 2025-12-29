@@ -1,0 +1,552 @@
+== Material-Scheme.lvclass
+
+*Responsibility:*
+The Material-Scheme class defines the coloring categories for a given theme 
+
+*Version:* 1.0.0.3
+
+=== Diagram
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "TSC Material Theme.lvlib:Material-Scheme" {
+{field} +name : String
+{field} -primary : U32
+{field} -surfaceTint : U32
+{field} -onPrimary : U32
+{field} -primaryContainer : U32
+{field} -onPrimaryContainer : U32
+{field} -secondary : U32
+{field} -onSecondary : U32
+{field} -secondaryContainer : U32
+{field} -onSecondaryContainer : U32
+{field} -tertiary : U32
+{field} -onTertiary : U32
+{field} -tertiaryContainer : U32
+{field} -onTertiaryContainer : U32
+{field} -error : U32
+{field} -onError : U32
+{field} -errorContainer : U32
+{field} -onErrorContainer : U32
+{field} +background : U32
+{field} -onBackground : U32
+{field} +surface : U32
+{field} -onSurface : U32
+{field} -surfaceVariant : U32
+{field} -onSurfaceVariant : U32
+{field} -outline : U32
+{field} -outlineVariant : U32
+{field} -shadow : U32
+{field} -scrim : U32
+{field} -inverseSurface : U32
+{field} -inverseOnSurface : U32
+{field} -inversePrimary : U32
+{field} -primaryFixed : U32
+{field} -onPrimaryFixed : U32
+{field} -primaryFixedDim : U32
+{field} -onPrimaryFixedVariant : U32
+{field} -secondaryFixed : U32
+{field} -onSecondaryFixed : U32
+{field} -secondaryFixedDim : U32
+{field} -onSecondaryFixedVariant : U32
+{field} -tertiaryFixed : U32
+{field} -onTertiaryFixed : U32
+{field} -tertiaryFixedDim : U32
+{field} -onTertiaryFixedVariant : U32
+{field} -surfaceDim : U32
+{field} -surfaceBright : U32
+{field} +surfaceContainerLowest : U32
+{field} -surfaceContainerLow : U32
+{field} -surfaceContainer : U32
+{field} -surfaceContainerHigh : U32
+{field} +surfaceContainerHighest : U32
+{field} -CSS variable List : String
+{static} {method} -elevated buttons()
+{static} {method} -fab-outline buttons()
+{static} {method} -filled buttons()
+{static} {method} -nooutline buttons()
+{static} {method} -tonal buttons()
+{static} {method} -transparent buttons()
+{static} {method} -Blend Colors()
+{static} {method} -Color Opacity Calc()
+{static} {method} -convert color string summary()
+{static} {method} -convert color to rgb string()
+{static} {method} -Convert PNG color()
+{static} {method} -Create CSS Variables()
+{static} {method} -Find TSC tEXt Chunk()
+{static} {method} -Insert TSC tEXt Chunk()
+{static} {method} -Is Color Transparent()
+{static} {method} -Mask to Alpha()
+{static} {method} -WaveformChart - Colors()
+{static} {method} -WaveformGraph - Colors()
+{static} {method} +Boolean Update - Colors()
+{static} {method} +Boolean Update()
+{static} {method} +Controls Loop()
+{static} {method} +Decorations Loop()
+{static} {method} +outline buttons()
+{static} {method} +Replace Image()
+{static} {method} +Update Image (Multiple)()
+{static} {method} +Color Grabber()
+{static} {method} +Material.Build Scheme Array()
+{static} {method} +Update Image()
+{static} {method} +View-Scheme()
+
+}
+
+
+
+@enduml
+....
+
+=== Methods
+
+.Functions
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Read background
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_background.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Read background.vi]
+|Data member access method that provides the background color from the Scheme.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read CSS Variables
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_CSS_Variables.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Read CSS Variables.vi]
+|Data member access method to read the CSS Variables from the scheme.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read name
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_name.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Read name.vi]
+|Data member access method to read the name for the Scheme.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read surfaceContainerHighest
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surfaceContainerHighest.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surfaceContainerHighest.vi]
+|Data member access method to read the surfaceContainerHighest color from the scheme.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read surfaceContainerLowest
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surfaceContainerLowest.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surfaceContainerLowest.vi]
+|Data member access method to read the surfaceContainerLowest color from the scheme.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Read surface
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surface.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surface.vi]
+|Data member access method to read the surface color from the scheme.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|elevated buttons
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_elevated_buttons.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:elevated buttons.vi]
+|application of the floating action button transparent buttons (text buttons) rules
+
+https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|fab-outline buttons
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_fab_outline_buttons.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:fab-outline buttons.vi]
+|application of the floating action button (FAB) buttons coloring rules
+
+https://m3.material.io/components/floating-action-button/specs
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|filled buttons
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_filled_buttons.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:filled buttons.vi]
+|application of the FILLED buttons coloring rules
+
+https://m3.material.io/components/buttons/specs#7b9ba06e-d393-491b-830e-ae3fe0816d4b
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|nooutline buttons
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_nooutline_buttons.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:nooutline buttons.vi]
+|application of the NO OUTLINE buttons coloring rules
+
+https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|tonal buttons
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_tonal_buttons.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:tonal buttons.vi]
+|application of the TONAL buttons coloring rules
+
+https://m3.material.io/components/buttons/specs#31a04913-d070-49c5-9c36-41d551f20096
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|transparent buttons
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_transparent_buttons.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:transparent buttons.vi]
+|application of the floating action button transparent buttons (text buttons) rules
+
+https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Blend Colors
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Blend_Colors.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Blend Colors.vi]
+|blend the colors together with a blend ratio
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Color Opacity Calc
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Color_Opacity_Calc.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Color Opacity Calc.vi]
+|apply an opacity percentage to a color
+
+**Note**: opacity input expected to be decimal of the percentage
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:inlined.png[inlined.png]
+
+|convert color string summary
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_convert_color_string_summary.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:convert color string summary.vi]
+|Define the tip strip info for the Scheme -> adds the hex and RGB info to the string
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:inlined.png[inlined.png]
+
+|convert color to rgb string
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_convert_color_to_rgb_string.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:convert color to rgb string.vi]
+|get the RGB string from the color box
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:inlined.png[inlined.png]
+
+|Convert PNG color
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Convert_PNG_color.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Convert PNG color.vi]
+|Change the colors of the png file using .net functions
+
+**Note**: Assumes a single color PNG file - replace old primary with new primary
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Create CSS Variables
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Create_CSS_Variables.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Create CSS Variables.vi]
+|for when new browser plugins get implemented, apply variables for CSS from the color scheme
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Find TSC tEXt Chunk
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Find_TSC_tEXt_Chunk.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Find TSC tEXt Chunk.vi]
+|Look to see if the TSC author tag has been embedded into the PNG
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Insert TSC tEXt Chunk
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Insert_TSC_tEXt_Chunk.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Insert TSC tEXt Chunk.vi]
+|embed the png author text chunk into the image
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Is Color Transparent
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Is_Color_Transparent.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Is Color Transparent.vi]
+|check if original was transparent, if so, don't change it, if it isn't though, pass out the new color
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:inlined.png[inlined.png]
+
+|Mask to Alpha
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Mask_to_Alpha.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Mask to Alpha.vi]
+|convert mask data to alpha layer
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|PNG Write with Alpha
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_PNG_Write_with_Alpha.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:PNG Write with Alpha.vi]
+|Write png file with alpha layer
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|WaveformChart - Colors
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformChart___Colors.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformChart - Colors.vi]
+|Sets the colors of the waveform chart.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|WaveformGraph - Colors
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformGraph___Colors.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformGraph - Colors.vi]
+|Set the colors for a waveform graph type.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Boolean Update - Colors
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Boolean_Update___Colors.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Boolean Update - Colors.vi]
+|update boolean control colors
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Boolean Update
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Boolean_Update.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Boolean Update.vi]
+|Set the boolean scheme - will be the most involved of the control types
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Controls Loop
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Controls_Loop.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Controls Loop.vi]
+|loop through all the controls on a panel in order to change the appearance
+
+-this is a re-entrant VI because it is called recursively when there is a tab control
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Decorations Loop
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Decorations_Loop.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Decorations Loop.vi]
+|Change the coloring on decorations
+-> If it is a text decoration, change the background color only when it wasn't trasnparent before AND change the text color; otherwise, normal decoration just change background/foreground
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|outline buttons
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_outline_buttons.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:outline buttons.vi]
+|application of the  OUTLINE buttons coloring rules
+
+-->this VI is __public__ because it is used in the Button Editor UI
+
+https://m3.material.io/components/buttons/specs#6757c97e-0ae6-4802-a2d5-9e3b134a7231
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Replace Image
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Replace_Image.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Replace Image.vi]
+|This example VI was obtained from this post: 
+
+https://forums.ni.com/t5/LabVIEW-APIs-Discussions/Set-TRUE-FALSE-Image-of-a-boolean-control-automatically-using/m-p/3419083/highlight/true#M868
+
+**WARNING**
+This VI uses a dll call to the resource file for a LabVIEW VI/CTL - it is searching the binary data for the PNG images that the VI or CTL contains
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Update Image (Multiple)
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Update_Image_(Multiple).vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Update Image (Multiple).vi]
+|Update the image of the buttons
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Color Grabber
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Color_Grabber.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Color Grabber.vi]
+|get the colorset for the application and the color-level
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Material.Build Scheme Array
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Material.Build_Scheme_Array.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Material.Build Scheme Array.vi]
+|build the array of scheme objects from the original data
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Update Image
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Update_Image.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:Update Image.vi]
+|Update the image of the buttons
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|View-Scheme
+|image:TSC_Material_Theme.lvlib_Material_Scheme.lvclass_View_Scheme.vi.png[TSC Material Theme.lvlib:Material-Scheme.lvclass:View-Scheme.vi]
+|scheme view UI set up like the material theme display
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community | image:scope-private.png[] -> Private
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Class Constant VIs
+
+[NOTE]
+====
+No Constant VIs Found
+====

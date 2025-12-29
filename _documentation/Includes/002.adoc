@@ -1,0 +1,194 @@
+== Classes overview
+
+This project contains 4 classes and 0 interface.
+
+.Classes list
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Classes |Interfaces
+
+|<<TSC Button Editor.lvclass>>
+|
+
+|<<Material Theme.lvclass>>
+|
+
+|<<Material-Palette.lvclass>>
+|
+
+|<<Material-Scheme.lvclass>>
+|
+|===
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "TSC Button Editor" {
+{field} -image directory : Path
+{field} -last theme : Path
+{field} -Editor Theme : LV Class
+{field} -subpanel VI ref : kLVObjVI
+{field} -subpanel VI path : Path
+{field} -control top level : Path
+{field} -Image Names : Array of String
+{field} -Images : Array of Cluster
+{field} -Filtered Image Names : Array of String
+{static} {method} -Array Point to RowCol()
+{static} {method} -Button Editor Config--constant()
+{static} {method} -Change Image Directory()
+{static} {method} -Check for Image List()
+{static} {method} -Image List Column--constant()
+{static} {method} -Image List--constant()
+{static} {method} -Init Editor Data()
+{static} {method} -Load VI for Subpanel()
+{static} {method} -Save Editor Data()
+{static} {method} -Sort Image Table()
+{static} {method} -Update Custom UI for Button()
+{static} {method} -User Event Close()
+{static} {method} -User Event Init()
+{static} {method} +Edit a Button--Material()
+
+}
+"TSC Button Editor" *-- "TSC Material Theme.lvlib:Material Theme"
+
+
+class "TSC Material Theme.lvlib:Material Theme" {
+{field} -description : String
+{field} -seed : U32
+{field} -coreColors : Cluster
+{field} -Schemes : Array of LV Class
+{field} -Palettes : Array of LV Class
+{static} {method} +Apply TSC Pop Up()
+{static} {method} +Apply UI Theme()
+{static} {method} +convert string to hex()
+{static} {method} +Create JS File()
+{static} {method} +Get Palettes()
+{static} {method} +Get Scheme()
+{static} {method} +Load Material Theme()
+{static} {method} +Material.Convert to LabVIEW()
+
+}
+
+"TSC Material Theme.lvlib:Material Theme" o-- "TSC Material Theme.lvlib:Material-Scheme"
+"TSC Material Theme.lvlib:Material Theme" o-- "TSC Material Theme.lvlib:Material-Palette"
+
+class "TSC Material Theme.lvlib:Material-Palette" {
+{field} -0 : U32
+{field} -5 : U32
+{field} -10 : U32
+{field} -15 : U32
+{field} -20 : U32
+{field} -25 : U32
+{field} -30 : U32
+{field} -35 : U32
+{field} -40 : U32
+{field} -50 : U32
+{field} -60 : U32
+{field} -70 : U32
+{field} -80 : U32
+{field} -90 : U32
+{field} -95 : U32
+{field} -98 : U32
+{field} -99 : U32
+{field} -100 : U32
+{static} {method} +Material.Build Palette Array()
+{static} {method} +View-Palette()
+
+}
+
+
+class "TSC Material Theme.lvlib:Material-Scheme" {
+{field} +name : String
+{field} -primary : U32
+{field} -surfaceTint : U32
+{field} -onPrimary : U32
+{field} -primaryContainer : U32
+{field} -onPrimaryContainer : U32
+{field} -secondary : U32
+{field} -onSecondary : U32
+{field} -secondaryContainer : U32
+{field} -onSecondaryContainer : U32
+{field} -tertiary : U32
+{field} -onTertiary : U32
+{field} -tertiaryContainer : U32
+{field} -onTertiaryContainer : U32
+{field} -error : U32
+{field} -onError : U32
+{field} -errorContainer : U32
+{field} -onErrorContainer : U32
+{field} +background : U32
+{field} -onBackground : U32
+{field} +surface : U32
+{field} -onSurface : U32
+{field} -surfaceVariant : U32
+{field} -onSurfaceVariant : U32
+{field} -outline : U32
+{field} -outlineVariant : U32
+{field} -shadow : U32
+{field} -scrim : U32
+{field} -inverseSurface : U32
+{field} -inverseOnSurface : U32
+{field} -inversePrimary : U32
+{field} -primaryFixed : U32
+{field} -onPrimaryFixed : U32
+{field} -primaryFixedDim : U32
+{field} -onPrimaryFixedVariant : U32
+{field} -secondaryFixed : U32
+{field} -onSecondaryFixed : U32
+{field} -secondaryFixedDim : U32
+{field} -onSecondaryFixedVariant : U32
+{field} -tertiaryFixed : U32
+{field} -onTertiaryFixed : U32
+{field} -tertiaryFixedDim : U32
+{field} -onTertiaryFixedVariant : U32
+{field} -surfaceDim : U32
+{field} -surfaceBright : U32
+{field} +surfaceContainerLowest : U32
+{field} -surfaceContainerLow : U32
+{field} -surfaceContainer : U32
+{field} -surfaceContainerHigh : U32
+{field} +surfaceContainerHighest : U32
+{field} -CSS variable List : String
+{static} {method} -elevated buttons()
+{static} {method} -fab-outline buttons()
+{static} {method} -filled buttons()
+{static} {method} -nooutline buttons()
+{static} {method} -tonal buttons()
+{static} {method} -transparent buttons()
+{static} {method} -Blend Colors()
+{static} {method} -Color Opacity Calc()
+{static} {method} -convert color string summary()
+{static} {method} -convert color to rgb string()
+{static} {method} -Convert PNG color()
+{static} {method} -Create CSS Variables()
+{static} {method} -Find TSC tEXt Chunk()
+{static} {method} -Insert TSC tEXt Chunk()
+{static} {method} -Is Color Transparent()
+{static} {method} -Mask to Alpha()
+{static} {method} -WaveformChart - Colors()
+{static} {method} -WaveformGraph - Colors()
+{static} {method} +Boolean Update - Colors()
+{static} {method} +Boolean Update()
+{static} {method} +Controls Loop()
+{static} {method} +Decorations Loop()
+{static} {method} +outline buttons()
+{static} {method} +Replace Image()
+{static} {method} +Update Image (Multiple)()
+{static} {method} +Color Grabber()
+{static} {method} +Material.Build Scheme Array()
+{static} {method} +Update Image()
+{static} {method} +View-Scheme()
+
+}
+
+
+
+@enduml
+....

@@ -1,0 +1,34 @@
+== TSC Material Theme.lvlib
+
+*Responsibility:*
+Implement the Google Material Theme coloring to LabVIEW
+
+https://m3.material.io/
+
+*Version:* 1.0.0.0
+
+.Nested libraries
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Type
+
+|<<Material Theme.lvclass>>
+|LVClass
+
+|<<Material-Palette.lvclass>>
+|LVClass
+
+|<<Material-Scheme.lvclass>>
+|LVClass
+|===
+
+=== Functions
+
+This library has no functions set to non private scope.
+
+=== Library Constant VIs
+
+[NOTE]
+====
+No Constant VIs Found
+====
