@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-12-29 13:59:40" Creator="daniel.coons" Comments="" ID="48de6bdadc30912fbd4966c7a5b7187f">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2025-12-29 16:08:10" Creator="daniel.coons" Comments="" ID="11bdd3319cf7c285bb3c7d2f929bac26">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>2.3.0.5</Library_Version>
+    <Library_Version>2.3.0.7</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -425,7 +425,7 @@ v1.1
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>82D6A725F76A37C9F7EBB6C0248E39F4</GUID>
+      <GUID>5DDE78E3728E37FC72AF020E10963DB8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -516,7 +516,7 @@ v1.1
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D32FDEDCC3ED98050025996EE1053CFB</GUID>
+      <GUID>75C58CE52A1E2175BC121F07E11A2DEB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -551,7 +551,7 @@ v1.1
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E797D5D9F4143C23765E85989C78AAF6</GUID>
+      <GUID>A459187E23A0799A41352E869AF20404</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -586,7 +586,7 @@ v1.1
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A59C0052F76649F6648780B979FD3293</GUID>
+      <GUID>20B5C48A317B66690E76F0D4A82AC9C3</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
