@@ -25,6 +25,15 @@ Save the theme for use in LabVIEW with the **disk** FAB or using `Ctrl+S`. For t
 
 <img src="./assets/images/color-picker.png" alt = "Color Picker" /> 
 
+## Button Editor UI
+Launch the Button Editor UI to create new buttons following the theme rules easily and quickly. Choose a theme file (`.xml`) and then make choices for the theme type, the color level, the button family, and the button type to see a preview of all changes made. Colors for the six Boolean Actions (`False, True, Click when False, Click when True, Hover when False, and Hover when True`) will load directly from the Material rules, but can be edited. Change other aspects for the Boolean as desired and save when ready. 
+
+**Note:** Hover and click actions will all be visible in the preview pane!
+
+When a mutliple-image type is chosen, there will be paths to load in choices for all `FOUR` button images (`False, True, Click when False, and Click when True`).
+
+<img src="./assets/images/Button Editor UI.png" alt = "Button Editor UI" />
+
 ## Apply Theme to LabVIEW Code
 There are two main VIs used to apply the LabVIEW theme to a given VI
     
@@ -42,6 +51,8 @@ There are two main VIs used to apply the LabVIEW theme to a given VI
 
 ## In Use Info:
 Using the automatic coloring involves setting the "Control UI Level" and if it is a Boolean, the "Button Type". This is set by right-clicking on the different front panel objects.
+
+**Note:** Right clicking on a Boolean control will also give the developer the ability to easily change the Boolean image(s) and/or Image(s) color!
 
 **Note:** Save the VI after setting any of these options
 
@@ -72,20 +83,11 @@ The `Boolean Type Level` is saved as part of the meta-data of a VI using **tags*
 
 ### Values:
 
-- outline--icon--rounded
-- outline--text--rounded
-- nooutline--icon--rounded
-- nooutline--text--rounded
-- tonal--icon--rounded
-- tonal--text--rounded
-- filled--icon--rounded
-- filled--text--rounded
-- outline--icon--rectangular
-- outline--text--rectangular
-- nooutline--icon--rectangular
-- nooutline--text--rectangular
-- tonal--icon--rectangular
-- tonal--text--rectangular
-- filled--icon--rectangular
-- filled--text--rectangular
-- nooutline--icon--rectangular--40x40
+- N/A
+- Outline
+- No-Outline
+- Tonal
+- Filled
+- Transparent
+- FAB
+- Elevated

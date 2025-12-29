@@ -1,0 +1,207 @@
+== TSC Button Editor.lvclass
+
+*Responsibility:*
+The button editor class to keep track of helper functions and shared data
+
+*Version:* 1.0.0.10
+
+=== Diagram
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "TSC Button Editor" {
+{field} -image directory : Path
+{field} -last theme : Path
+{field} -Editor Theme : LV Class
+{field} -subpanel VI ref : kLVObjVI
+{field} -subpanel VI path : Path
+{field} -control top level : Path
+{field} -Image Names : Array of String
+{field} -Images : Array of Cluster
+{field} -Filtered Image Names : Array of String
+{static} {method} -Array Point to RowCol()
+{static} {method} -Button Editor Config--constant()
+{static} {method} -Change Image Directory()
+{static} {method} -Check for Image List()
+{static} {method} -Image List Column--constant()
+{static} {method} -Image List--constant()
+{static} {method} -Init Editor Data()
+{static} {method} -Load VI for Subpanel()
+{static} {method} -Save Editor Data()
+{static} {method} -Sort Image Table()
+{static} {method} -Update Custom UI for Button()
+{static} {method} -User Event Close()
+{static} {method} -User Event Init()
+{static} {method} +Edit a Button--Material()
+
+}
+"TSC Button Editor" *-- "TSC Material Theme.lvlib:Material Theme"
+
+
+
+@enduml
+....
+
+=== Methods
+
+.Functions
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Array Point to RowCol
+|image:TSC_Button_Editor.lvclass_Array_Point_to_RowCol.vi.png[TSC Button Editor.lvclass:Array Point to RowCol.vi]
+|Converts a pixel coordinate to an index into the array.  Returns an array of indices with a length equal to the number of dimensions in the array. This method also returns whether the point is inside the bounds of the content rectangle.
+
+Downloaded from forum post to adapt to this application.
+
+Written by J. David Saunders
+https://forums.ni.com/t5/LabVIEW/get-index-of-an-element-from-an-array-on-mouse-click/td-p/1310143/page/2
+|image:scope-private.png[scope-private.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Change Image Directory
+|image:TSC_Button_Editor.lvclass_Change_Image_Directory.vi.png[TSC Button Editor.lvclass:Change Image Directory.vi]
+|This VI will change the image directory and load the images from that location.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Check for Image List
+|image:TSC_Button_Editor.lvclass_Check_for_Image_List.vi.png[TSC Button Editor.lvclass:Check for Image List.vi]
+|This VI will look to see if an image directory binary file exists.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Init Editor Data
+|image:TSC_Button_Editor.lvclass_Init_Editor_Data.vi.png[TSC Button Editor.lvclass:Init Editor Data.vi]
+|This VI will load the initial information from the configuration for the button editor if it exists to initialize the class.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Load VI for Subpanel
+|image:TSC_Button_Editor.lvclass_Load_VI_for_Subpanel.vi.png[TSC Button Editor.lvclass:Load VI for Subpanel.vi]
+|This VI loads in the subpanel VI at program start which contains a sample Boolean control.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Save Editor Data
+|image:TSC_Button_Editor.lvclass_Save_Editor_Data.vi.png[TSC Button Editor.lvclass:Save Editor Data.vi]
+|This VI is called when the button editor finishes to write the object-data to an XML file for loading on next launch.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Sort Image Table
+|image:TSC_Button_Editor.lvclass_Sort_Image_Table.vi.png[TSC Button Editor.lvclass:Sort Image Table.vi]
+|This VI reshapes the array of images into the display for the button editor UI.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Update Custom UI for Button
+|image:TSC_Button_Editor.lvclass_Update_Custom_UI_for_Button.vi.png[TSC Button Editor.lvclass:Update Custom UI for Button.vi]
+|Remove the existing control and replace with the selected custom button.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|User Event Close
+|image:TSC_Button_Editor.lvclass_User_Event_Close.vi.png[TSC Button Editor.lvclass:User Event Close.vi]
+|close all user events
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|User Event Init
+|image:TSC_Button_Editor.lvclass_User_Event_Init.vi.png[TSC Button Editor.lvclass:User Event Init.vi]
+|create user events for the button editor.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:scope-private.png[scope-private.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Edit a Button--Material
+|image:TSC_Button_Editor.lvclass_Edit_a_Button__Material.vi.png[TSC Button Editor.lvclass:Edit a Button--Material.vi]
+|Edit/create buttons based on a few built-in templates.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community | image:scope-private.png[] -> Private
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Class Constant VIs
+
+.Constant VIs Found
+[cols="<.<3d,<.<3d,<.<6d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|VI Name |Data Type |Value
+
+|Button Editor Config--constant.vi
+|Path
+|tsc\button-editor.xml
+
+|Image List Column--constant.vi
+|I32
+|8
+
+|Image List--constant.vi
+|Path
+|tsc\image-list.bin
+|===

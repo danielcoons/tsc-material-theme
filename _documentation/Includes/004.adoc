@@ -1,0 +1,151 @@
+== Material Theme.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.3
+
+=== Diagram
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "TSC Material Theme.lvlib:Material Theme" {
+{field} -description : String
+{field} -seed : U32
+{field} -coreColors : Cluster
+{field} -Schemes : Array of LV Class
+{field} -Palettes : Array of LV Class
+{static} {method} +Apply TSC Pop Up()
+{static} {method} +Apply UI Theme()
+{static} {method} +convert string to hex()
+{static} {method} +Create JS File()
+{static} {method} +Get Palettes()
+{static} {method} +Get Scheme()
+{static} {method} +Load Material Theme()
+{static} {method} +Material.Convert to LabVIEW()
+
+}
+
+"TSC Material Theme.lvlib:Material Theme" o-- "TSC Material Theme.lvlib:Material-Scheme"
+"TSC Material Theme.lvlib:Material Theme" o-- "TSC Material Theme.lvlib:Material-Palette"
+
+
+@enduml
+....
+
+=== Methods
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Apply TSC Pop Up
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Apply_TSC_Pop_Up.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Apply TSC Pop Up.vi]
+|Apply a loaded theme to the TSC Pop Up Library
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Apply UI Theme
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Apply_UI_Theme.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Apply UI Theme.vi]
+|Apply a loaded theme to a VI - will update the panel and the controls/indicators
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|convert string to hex
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_convert_string_to_hex.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:convert string to hex.vi]
+|convert an ARGB text string to the equivalent hex value
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:inlined.png[inlined.png]
+
+|Create JS File
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Create_JS_File.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Create JS File.vi]
+|I have no recollection of why I made this or what it's purpose is. I am just going to leave it in case it is important........
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Get Palettes
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Get_Palettes.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Get Palettes.vi]
+|Get the defined scheme from the loaded theme
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Get Scheme
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Get_Scheme.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Get Scheme.vi]
+|Get the defined scheme from the loaded theme
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:empty.png[empty.png]
+
+|Load Material Theme
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Load_Material_Theme.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Load Material Theme.vi]
+|load a material theme from disk
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Material.Convert to LabVIEW
+|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Material.Convert_to_LabVIEW.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Material.Convert to LabVIEW.vi]
+|populate the material theme from the original Material JSON that was exported
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Class Constant VIs
+
+[NOTE]
+====
+No Constant VIs Found
+====

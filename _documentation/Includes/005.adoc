@@ -1,0 +1,90 @@
+== Material-Palette.lvclass
+
+*Responsibility:*
+The Material-Palette class defines the gradients of colors
+
+*Version:* 1.0.0.0
+
+=== Diagram
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "TSC Material Theme.lvlib:Material-Palette" {
+{field} -0 : U32
+{field} -5 : U32
+{field} -10 : U32
+{field} -15 : U32
+{field} -20 : U32
+{field} -25 : U32
+{field} -30 : U32
+{field} -35 : U32
+{field} -40 : U32
+{field} -50 : U32
+{field} -60 : U32
+{field} -70 : U32
+{field} -80 : U32
+{field} -90 : U32
+{field} -95 : U32
+{field} -98 : U32
+{field} -99 : U32
+{field} -100 : U32
+{static} {method} +Material.Build Palette Array()
+{static} {method} +View-Palette()
+
+}
+
+
+
+@enduml
+....
+
+=== Methods
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Material.Build Palette Array
+|image:TSC_Material_Theme.lvlib_Material_Palette.lvclass_Material.Build_Palette_Array.vi.png[TSC Material Theme.lvlib:Material-Palette.lvclass:Material.Build Palette Array.vi]
+|Convert the json represenation of the palette colors into array of class palettes.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|View-Palette
+|image:TSC_Material_Theme.lvlib_Material_Palette.lvclass_View_Palette.vi.png[TSC Material Theme.lvlib:Material-Palette.lvclass:View-Palette.vi]
+|read material palette data
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Class Constant VIs
+
+[NOTE]
+====
+No Constant VIs Found
+====
