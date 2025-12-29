@@ -14,8 +14,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 - Implement support for cursors on plots
-- Additional button types and image sizes to add
 - Dynamically hook into an icon library???
+
+## [2.3.0] - 2025.12.29
+### Added
+- Added MULTI-IMAGE buttons!!! [#4](https://github.com/danielcoons/tsc-material-theme/issues/4) categorized the button families and button types more
+- Added additional size options to the different types [#4](https://github.com/danielcoons/tsc-material-theme/issues/4) - now set up for choices between 24px and 40px options
+- An image directory definition [#11](https://github.com/danielcoons/tsc-material-theme/issues/11) - in the Button Editor UI, a user can define a directory of png images; that directory loads all images into a 2D table and allows for drag and drop to the single or multiple image path fields
+
+### Changed
+- Tags were made a little more generic for the `Boolean Type` -> the granularity they had was a little unecessary; left in backwards compatibility
+- Implemented the coloring patterns slightly differently based on the Google Material spec for the button types
+- Default Quickdrop shortcuts for Change Control Levels (`Ctrl+C`) and Apply Theme (`Ctrl+M`)
+- Updated right click menu to allow changing all four images of a multi-image button (one dialog with ability to highlight multiples)
+- Updated right click menu to allow color changing for all four images of a multi-image button 
+- Implemented the better color picker to define button colors
+
+### Removed
+- Removed the `other buttons` options for the Material Theme library - no more functions palette; see the [TSC UI Components](https://github.com/danielcoons/tsc-ui-components) toolkit for better UI controls/indicators
+
+### Fixed
+- Fixed the bugs that popped in the Button Editor when image or theme were blank; provided a backup image and theme to use in those cases [#10](https://github.com/danielcoons/tsc-material-theme/issues/10)
 
 ## [2.2.0] - 2025.11.25
 ### Added
@@ -29,7 +48,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Labels on Clusters were not being changed with text coloring; that is fixed (Issue #8)
-- Handled the blank image in the button editor so replaced with a backup (Issue #11)
+- Handled the blank image in the button editor so replaced with a backup (Issue #10)
 
 ## [2.1.0] - 2025.08.25
 ### Added
