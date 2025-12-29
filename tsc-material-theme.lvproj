@@ -29,10 +29,6 @@
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
 			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
-			<Item Name="Update Custom UI for Button.vi" Type="VI" URL="../_Material Theme SubVIs/Update Custom UI for Button.vi"/>
-			<Item Name="User Event Close.vi" Type="VI" URL="../_Material Theme SubVIs/User Event Close.vi"/>
-			<Item Name="User Event Init.vi" Type="VI" URL="../_Material Theme SubVIs/User Event Init.vi"/>
-			<Item Name="User Events.ctl" Type="VI" URL="../_Material Theme SubVIs/User Events.ctl"/>
 			<Item Name="VI Reference To IWin32Window Reference.vi" Type="VI" URL="../_Material Theme SubVIs/VI Reference To IWin32Window Reference.vi"/>
 			<Item Name="Win32 Window Handle Wrapper.vi" Type="VI" URL="../_Material Theme SubVIs/Win32 Window Handle Wrapper.vi"/>
 			<Item Name="WindowWrapper.dll" Type="Document" URL="../_Material Theme SubVIs/WindowWrapper.dll"/>
@@ -156,6 +152,11 @@
 			<Item Name="main--material example.vi" Type="VI" URL="../Example/main--material example.vi"/>
 			<Item Name="tsc-material.bin3" Type="Document" URL="../Example/tsc-material.bin3"/>
 		</Item>
+		<Item Name="project" Type="Folder">
+			<Item Name="_button-editor" Type="Folder">
+				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
+			</Item>
+		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
 				<Item Name="control info.ctl" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/control info.ctl"/>
@@ -196,11 +197,11 @@
 		<Item Name="sandbox" Type="Folder">
 			<Item Name="test--changes.vi" Type="VI" URL="../sandbox/test--changes.vi"/>
 			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
+			<Item Name="test--load all the images in a directory.vi" Type="VI" URL="../sandbox/test--load all the images in a directory.vi"/>
+			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
 		<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../Convert Material JSON to LabVIEW Theme.vi"/>
-		<Item Name="Edit a Button--Material.vi" Type="VI" URL="../Edit a Button--Material.vi"/>
-		<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
@@ -208,25 +209,32 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Base64/Base64 Support.lvlib"/>
+				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Color Table Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Color Table Size.vi"/>
 				<Item Name="Check Data Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Data Size.vi"/>
 				<Item Name="Check File Permissions.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check File Permissions.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
+				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
+				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
@@ -251,6 +259,8 @@
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="LVTextColorsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVTextColorsTypeDef.ctl"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="QuickDrop Parse Plugin Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/QuickDrop Parse Plugin Variant.vi"/>
 				<Item Name="QuickDrop Plugin Data ver1.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/QuickDropSupport/QuickDrop Plugin Data ver1.ctl"/>
@@ -258,6 +268,7 @@
 				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
 				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
 				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi"/>
+				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
