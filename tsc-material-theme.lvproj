@@ -23,7 +23,6 @@
 			<Item Name="material json scheme.ctl" Type="VI" URL="../_Material Theme SubVIs/material json scheme.ctl"/>
 			<Item Name="material theme.ctl" Type="VI" URL="../_Material Theme SubVIs/material theme.ctl"/>
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
-			<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
 			<Item Name="TSC Material Boolean Type--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--global.vi"/>
 			<Item Name="TSC Material UI Theme Level--global.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--global.vi"/>
@@ -186,6 +185,7 @@
 			</Item>
 			<Item Name="Set Boolean Type.llb" Type="Folder">
 				<Item Name="Execute Set Boolean Type.vi" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Execute Set Boolean Type.vi"/>
+				<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 				<Item Name="Set Boolean Type.ctl" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Set Boolean Type.ctl"/>
 				<Item Name="Set Boolean Type.vi" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Set Boolean Type.vi"/>
 			</Item>
