@@ -455,9 +455,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_classes">3. Classes</a>
 <ul class="sectlevel2">
 <li><a href="#_classes_overview">3.1. Classes overview</a></li>
-<li><a href="#_material_theme_lvclass">3.2. Material Theme.lvclass</a></li>
-<li><a href="#_material_palette_lvclass">3.3. Material-Palette.lvclass</a></li>
-<li><a href="#_material_scheme_lvclass">3.4. Material-Scheme.lvclass</a></li>
+<li><a href="#_tsc_button_editor_lvclass">3.2. TSC Button Editor.lvclass</a></li>
+<li><a href="#_material_theme_lvclass">3.3. Material Theme.lvclass</a></li>
+<li><a href="#_material_palette_lvclass">3.4. Material-Palette.lvclass</a></li>
+<li><a href="#_material_scheme_lvclass">3.5. Material-Scheme.lvclass</a></li>
 </ul>
 </li>
 <li><a href="#_legal_information">4. Legal Information</a>
@@ -558,7 +559,7 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 <div class="sect2">
 <h3 id="_classes_overview"><a class="anchor" href="#_classes_overview"></a><a class="link" href="#_classes_overview">3.1. Classes overview</a></h3>
 <div class="paragraph">
-<p>This project contains 3 classes and 0 interface.</p>
+<p>This project contains 4 classes and 0 interface.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
 <caption class="title">Table 2. Classes list</caption>
@@ -573,6 +574,10 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_tsc_button_editor_lvclass">TSC Button Editor.lvclass</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_material_theme_lvclass">Material Theme.lvclass</a></p></td>
 <td class="tableblock halign-left valign-top"></td>
@@ -589,12 +594,299 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 </table>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-2b8557341e25e651178d20721806954833eed82c5c09582cc442caa145d017d7.svg" alt="Diagram">
+<img src="Images/diag-320e69ea2634579e9dd38c5993825540fceb4766809cd797386ca9d48716a558.svg" alt="Diagram">
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_material_theme_lvclass"><a class="anchor" href="#_material_theme_lvclass"></a><a class="link" href="#_material_theme_lvclass">3.2. Material Theme.lvclass</a></h3>
+<h3 id="_tsc_button_editor_lvclass"><a class="anchor" href="#_tsc_button_editor_lvclass"></a><a class="link" href="#_tsc_button_editor_lvclass">3.2. TSC Button Editor.lvclass</a></h3>
+<div class="paragraph">
+<p><strong>Responsibility:</strong>
+The button editor class to keep track of helper functions and shared data</p>
+</div>
+<div class="paragraph">
+<p><strong>Version:</strong> 1.0.0.10</p>
+</div>
+<div class="sect3">
+<h4 id="_diagram"><a class="anchor" href="#_diagram"></a><a class="link" href="#_diagram">3.2.1. Diagram</a></h4>
+<div class="imageblock text-center kroki">
+<div class="content">
+<img src="Images/diag-00115380939041252c30380779fea4e911e8d94bcb1af16dec56657079d2980a.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_methods"><a class="anchor" href="#_methods"></a><a class="link" href="#_methods">3.2.2. Methods</a></h4>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 3. Functions</caption>
+<colgroup>
+<col style="width: 14.8148%;">
+<col style="width: 29.6296%;">
+<col style="width: 44.4444%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7038%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Connector pane</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">S.</th>
+<th class="tableblock halign-left valign-top">R.</th>
+<th class="tableblock halign-left valign-top">I.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Array Point to RowCol</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Array_Point_to_RowCol.vi.png" alt="TSC Button Editor.lvclass:Array Point to RowCol.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Converts a pixel coordinate to an index into the array.  Returns an array of indices with a length equal to the number of dimensions in the array. This method also returns whether the point is inside the bounds of the content rectangle.</p>
+<p class="tableblock">Downloaded from forum post to adapt to this application.</p>
+<p class="tableblock">Written by J. David Saunders
+<a href="https://forums.ni.com/t5/LabVIEW/get-index-of-an-element-from-an-array-on-mouse-click/td-p/1310143/page/2" class="bare">https://forums.ni.com/t5/LabVIEW/get-index-of-an-element-from-an-array-on-mouse-click/td-p/1310143/page/2</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change Image Directory</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Change_Image_Directory.vi.png" alt="TSC Button Editor.lvclass:Change Image Directory.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This VI will change the image directory and load the images from that location.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check for Image List</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Check_for_Image_List.vi.png" alt="TSC Button Editor.lvclass:Check for Image List.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This VI will look to see if an image directory binary file exists.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Editor Data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Init_Editor_Data.vi.png" alt="TSC Button Editor.lvclass:Init Editor Data.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This VI will load the initial information from the configuration for the button editor if it exists to initialize the class.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Load VI for Subpanel</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Load_VI_for_Subpanel.vi.png" alt="TSC Button Editor.lvclass:Load VI for Subpanel.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This VI loads in the subpanel VI at program start which contains a sample Boolean control.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Save Editor Data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Save_Editor_Data.vi.png" alt="TSC Button Editor.lvclass:Save Editor Data.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This VI is called when the button editor finishes to write the object-data to an XML file for loading on next launch.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sort Image Table</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Sort_Image_Table.vi.png" alt="TSC Button Editor.lvclass:Sort Image Table.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This VI reshapes the array of images into the display for the button editor UI.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Update Custom UI for Button</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Update_Custom_UI_for_Button.vi.png" alt="TSC Button Editor.lvclass:Update Custom UI for Button.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remove the existing control and replace with the selected custom button.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User Event Close</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_User_Event_Close.vi.png" alt="TSC Button Editor.lvclass:User Event Close.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">close all user events</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User Event Init</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_User_Event_Init.vi.png" alt="TSC Button Editor.lvclass:User Event Init.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">create user events for the button editor.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edit a Button&#8212;&#8203;Material</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Edit_a_Button__Material.vi.png" alt="TSC Button Editor.lvclass:Edit a Button&#8212;&#8203;Material.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edit/create buttons based on a few built-in templates.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>S</strong>cope: <span class="image"><img src="Images/scope-protected.png" alt="scope protected"></span> &#8594; Protected | <span class="image"><img src="Images/scope-community.png" alt="scope community"></span> &#8594; Community | <span class="image"><img src="Images/scope-private.png" alt="scope private"></span> &#8594; Private</p>
+</div>
+<div class="paragraph">
+<p><strong>R</strong>eentrancy: <span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy preallocated"></span> &#8594; Preallocated reentrancy | <span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy shared"></span> &#8594; Shared reentrancy</p>
+</div>
+<div class="paragraph">
+<p><strong>I</strong>nlining: <span class="image"><img src="Images/inlined.png" alt="inlined"></span> &#8594; Inlined</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_class_constant_vis"><a class="anchor" href="#_class_constant_vis"></a><a class="link" href="#_class_constant_vis">3.2.3. Class Constant VIs</a></h4>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 4. Constant VIs Found</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">VI Name</th>
+<th class="tableblock halign-left valign-top">Data Type</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Button Editor Config&#8212;&#8203;constant.vi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsc\button-editor.xml</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Image List Column&#8212;&#8203;constant.vi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Image List&#8212;&#8203;constant.vi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsc\image-list.bin</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_material_theme_lvclass"><a class="anchor" href="#_material_theme_lvclass"></a><a class="link" href="#_material_theme_lvclass">3.3. Material Theme.lvclass</a></h3>
 <div class="paragraph">
 <p><strong>Responsibility:</strong>
 No description found (add content in lvclass description)</p>
@@ -603,7 +895,7 @@ No description found (add content in lvclass description)</p>
 <p><strong>Version:</strong> 1.0.0.3</p>
 </div>
 <div class="sect3">
-<h4 id="_diagram"><a class="anchor" href="#_diagram"></a><a class="link" href="#_diagram">3.2.1. Diagram</a></h4>
+<h4 id="_diagram_2"><a class="anchor" href="#_diagram_2"></a><a class="link" href="#_diagram_2">3.3.1. Diagram</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
 <img src="Images/diag-a8e7f6cead5f0ddecd70caf0e8a8897c152e21fcb02bd5f0643a106d58dc48bc.svg" alt="Diagram">
@@ -611,9 +903,9 @@ No description found (add content in lvclass description)</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_methods"><a class="anchor" href="#_methods"></a><a class="link" href="#_methods">3.2.2. Methods</a></h4>
+<h4 id="_methods_2"><a class="anchor" href="#_methods_2"></a><a class="link" href="#_methods_2">3.3.2. Methods</a></h4>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 3. Functions (non private scope only)</caption>
+<caption class="title">Table 5. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -640,13 +932,7 @@ No description found (add content in lvclass description)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Apply a loaded theme to the TSC Pop Up Library</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -664,13 +950,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Apply a loaded theme to a VI - will update the panel and the controls/indicators</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -688,13 +968,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">convert an ARGB text string to the equivalent hex value</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -712,12 +986,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">I have no recollection of why I made this or what it&#8217;s purpose is. I am just going to leave it in case it is important&#8230;&#8203;&#8230;&#8203;..</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -735,13 +1004,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Get the defined scheme from the loaded theme</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -759,13 +1022,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Get the defined scheme from the loaded theme</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -783,13 +1040,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">load a material theme from disk</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -807,129 +1058,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">populate the material theme from the original Material JSON that was exported</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p><strong>S</strong>cope: <span class="image"><img src="Images/scope-protected.png" alt="scope protected"></span> &#8594; Protected | <span class="image"><img src="Images/scope-community.png" alt="scope community"></span> &#8594; Community</p>
-</div>
-<div class="paragraph">
-<p><strong>R</strong>eentrancy: <span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy preallocated"></span> &#8594; Preallocated reentrancy | <span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy shared"></span> &#8594; Shared reentrancy</p>
-</div>
-<div class="paragraph">
-<p><strong>I</strong>nlining: <span class="image"><img src="Images/inlined.png" alt="inlined"></span> &#8594; Inlined</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_class_constant_vis"><a class="anchor" href="#_class_constant_vis"></a><a class="link" href="#_class_constant_vis">3.2.3. Class Constant VIs</a></h4>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>No Constant VIs Found</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_material_palette_lvclass"><a class="anchor" href="#_material_palette_lvclass"></a><a class="link" href="#_material_palette_lvclass">3.3. Material-Palette.lvclass</a></h3>
-<div class="paragraph">
-<p><strong>Responsibility:</strong>
-The Material-Palette class defines the gradients of colors</p>
-</div>
-<div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.0</p>
-</div>
-<div class="sect3">
-<h4 id="_diagram_2"><a class="anchor" href="#_diagram_2"></a><a class="link" href="#_diagram_2">3.3.1. Diagram</a></h4>
-<div class="imageblock text-center kroki">
-<div class="content">
-<img src="Images/diag-10d70b0136b6df1ef20b8a54457670e3856a3cd214c2355594baf85ca6937f26.svg" alt="Diagram">
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_methods_2"><a class="anchor" href="#_methods_2"></a><a class="link" href="#_methods_2">3.3.2. Methods</a></h4>
-<table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 4. Functions (non private scope only)</caption>
-<colgroup>
-<col style="width: 14.8148%;">
-<col style="width: 29.6296%;">
-<col style="width: 44.4444%;">
-<col style="width: 3.7037%;">
-<col style="width: 3.7037%;">
-<col style="width: 3.7038%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Connector pane</th>
-<th class="tableblock halign-left valign-top">Description</th>
-<th class="tableblock halign-left valign-top">S.</th>
-<th class="tableblock halign-left valign-top">R.</th>
-<th class="tableblock halign-left valign-top">I.</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Material.Build Palette Array</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Palette.lvclass_Material.Build_Palette_Array.vi.png" alt="TSC Material Theme.lvlib:Material-Palette.lvclass:Material.Build Palette Array.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Convert the json represenation of the palette colors into array of class palettes.</p>
-<p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">View-Palette</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Palette.lvclass_View_Palette.vi.png" alt="TSC Material Theme.lvlib:Material-Palette.lvclass:View-Palette.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">read material palette data</p>
-<p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -971,26 +1100,132 @@ Daniel Coons</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_material_scheme_lvclass"><a class="anchor" href="#_material_scheme_lvclass"></a><a class="link" href="#_material_scheme_lvclass">3.4. Material-Scheme.lvclass</a></h3>
+<h3 id="_material_palette_lvclass"><a class="anchor" href="#_material_palette_lvclass"></a><a class="link" href="#_material_palette_lvclass">3.4. Material-Palette.lvclass</a></h3>
 <div class="paragraph">
 <p><strong>Responsibility:</strong>
-The Material-Scheme class defines the coloring categories for a given theme</p>
+The Material-Palette class defines the gradients of colors</p>
 </div>
 <div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.4</p>
+<p><strong>Version:</strong> 1.0.0.0</p>
 </div>
 <div class="sect3">
 <h4 id="_diagram_3"><a class="anchor" href="#_diagram_3"></a><a class="link" href="#_diagram_3">3.4.1. Diagram</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-5fd21c067b701f319e8390716ae9d3ecdeecc75dba04c0b91b48db4a0dfeb964.svg" alt="Diagram">
+<img src="Images/diag-10d70b0136b6df1ef20b8a54457670e3856a3cd214c2355594baf85ca6937f26.svg" alt="Diagram">
 </div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_methods_3"><a class="anchor" href="#_methods_3"></a><a class="link" href="#_methods_3">3.4.2. Methods</a></h4>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 5. Functions</caption>
+<caption class="title">Table 6. Functions (non private scope only)</caption>
+<colgroup>
+<col style="width: 14.8148%;">
+<col style="width: 29.6296%;">
+<col style="width: 44.4444%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7038%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Connector pane</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">S.</th>
+<th class="tableblock halign-left valign-top">R.</th>
+<th class="tableblock halign-left valign-top">I.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Material.Build Palette Array</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Palette.lvclass_Material.Build_Palette_Array.vi.png" alt="TSC Material Theme.lvlib:Material-Palette.lvclass:Material.Build Palette Array.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convert the json represenation of the palette colors into array of class palettes.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">View-Palette</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Palette.lvclass_View_Palette.vi.png" alt="TSC Material Theme.lvlib:Material-Palette.lvclass:View-Palette.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">read material palette data</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>S</strong>cope: <span class="image"><img src="Images/scope-protected.png" alt="scope protected"></span> &#8594; Protected | <span class="image"><img src="Images/scope-community.png" alt="scope community"></span> &#8594; Community</p>
+</div>
+<div class="paragraph">
+<p><strong>R</strong>eentrancy: <span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy preallocated"></span> &#8594; Preallocated reentrancy | <span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy shared"></span> &#8594; Shared reentrancy</p>
+</div>
+<div class="paragraph">
+<p><strong>I</strong>nlining: <span class="image"><img src="Images/inlined.png" alt="inlined"></span> &#8594; Inlined</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_class_constant_vis_3"><a class="anchor" href="#_class_constant_vis_3"></a><a class="link" href="#_class_constant_vis_3">3.4.3. Class Constant VIs</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>No Constant VIs Found</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_material_scheme_lvclass"><a class="anchor" href="#_material_scheme_lvclass"></a><a class="link" href="#_material_scheme_lvclass">3.5. Material-Scheme.lvclass</a></h3>
+<div class="paragraph">
+<p><strong>Responsibility:</strong>
+The Material-Scheme class defines the coloring categories for a given theme</p>
+</div>
+<div class="paragraph">
+<p><strong>Version:</strong> 1.0.0.3</p>
+</div>
+<div class="sect3">
+<h4 id="_diagram_4"><a class="anchor" href="#_diagram_4"></a><a class="link" href="#_diagram_4">3.5.1. Diagram</a></h4>
+<div class="imageblock text-center kroki">
+<div class="content">
+<img src="Images/diag-14428b54dbb89f217c1f103ba82e8b14b9cd9826f96ac7a726f418815e30e778.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_methods_4"><a class="anchor" href="#_methods_4"></a><a class="link" href="#_methods_4">3.5.2. Methods</a></h4>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 7. Functions</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -1015,7 +1250,9 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_background.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read background.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method that provides the background color from the Scheme.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1031,7 +1268,9 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_CSS_Variables.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read CSS Variables.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the CSS Variables from the scheme.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1047,7 +1286,9 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_name.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read name.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the name for the Scheme.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1063,7 +1304,9 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surfaceContainerHighest.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surfaceContainerHighest.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the surfaceContainerHighest color from the scheme.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1079,7 +1322,9 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surfaceContainerLowest.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surfaceContainerLowest.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the surfaceContainerLowest color from the scheme.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1095,7 +1340,9 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surface.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surface.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the surface color from the scheme.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1107,6 +1354,25 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">elevated buttons</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_elevated_buttons.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:elevated buttons.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">application of the floating action button transparent buttons (text buttons) rules</p>
+<p class="tableblock"><a href="https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f" class="bare">https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f</a></p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">fab-outline buttons</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_fab_outline_buttons.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:fab-outline buttons.vi"></span></p>
@@ -1114,12 +1380,7 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">application of the floating action button (FAB) buttons coloring rules</p>
 <p class="tableblock"><a href="https://m3.material.io/components/floating-action-button/specs" class="bare">https://m3.material.io/components/floating-action-button/specs</a></p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1138,12 +1399,7 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">application of the FILLED buttons coloring rules</p>
 <p class="tableblock"><a href="https://m3.material.io/components/buttons/specs#7b9ba06e-d393-491b-830e-ae3fe0816d4b" class="bare">https://m3.material.io/components/buttons/specs#7b9ba06e-d393-491b-830e-ae3fe0816d4b</a></p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1162,12 +1418,7 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">application of the NO OUTLINE buttons coloring rules</p>
 <p class="tableblock"><a href="https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f" class="bare">https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f</a></p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1186,12 +1437,26 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">application of the TONAL buttons coloring rules</p>
 <p class="tableblock"><a href="https://m3.material.io/components/buttons/specs#31a04913-d070-49c5-9c36-41d551f20096" class="bare">https://m3.material.io/components/buttons/specs#31a04913-d070-49c5-9c36-41d551f20096</a></p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">transparent buttons</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_transparent_buttons.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:transparent buttons.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">application of the floating action button transparent buttons (text buttons) rules</p>
+<p class="tableblock"><a href="https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f" class="bare">https://m3.material.io/components/buttons/specs#9c12a1a1-9a74-499c-8139-5cff551afe4f</a></p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1209,12 +1474,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">blend the colors together with a blend ratio</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1222,7 +1482,7 @@ Daniel Coons</p></td>
 <p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1233,12 +1493,7 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">apply an opacity percentage to a color</p>
 <p class="tableblock"><strong>Note</strong>: opacity input expected to be decimal of the percentage</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1256,13 +1511,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Define the tip strip info for the Scheme &#8594; adds the hex and RGB info to the string</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1280,13 +1529,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">get the RGB string from the color box</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1305,13 +1548,7 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Change the colors of the png file using .net functions</p>
 <p class="tableblock"><strong>Note</strong>: Assumes a single color PNG file - replace old primary with new primary</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1327,7 +1564,9 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Create_CSS_Variables.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Create CSS Variables.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">for when new browser plugins get implemented, apply variables for CSS from the color scheme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">for when new browser plugins get implemented, apply variables for CSS from the color scheme</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1345,12 +1584,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Look to see if the TSC author tag has been embedded into the PNG</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1368,12 +1602,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">embed the png author text chunk into the image</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1391,12 +1620,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">check if original was transparent, if so, don&#8217;t change it, if it isn&#8217;t though, pass out the new color</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1414,12 +1638,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">convert mask data to alpha layer</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1437,12 +1656,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Write png file with alpha layer</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1458,7 +1672,9 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformChart___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformChart - Colors.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the colors of the waveform chart.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1474,7 +1690,9 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformGraph___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformGraph - Colors.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the colors for a waveform graph type.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
@@ -1492,12 +1710,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">update boolean control colors</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1515,12 +1728,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Set the boolean scheme - will be the most involved of the control types</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1539,12 +1747,7 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">loop through all the controls on a panel in order to change the appearance</p>
 <p class="tableblock">-this is a re-entrant VI because it is called recursively when there is a tab control</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1563,12 +1766,7 @@ Daniel Coons</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Change the coloring on decorations
 &#8594; If it is a text decoration, change the background color only when it wasn&#8217;t trasnparent before AND change the text color; otherwise, normal decoration just change background/foreground</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1588,12 +1786,7 @@ Daniel Coons</p></td>
 <p class="tableblock">-&#8594;this VI is <em>public</em> because it is used in the Button Editor UI</p>
 <p class="tableblock"><a href="https://m3.material.io/components/buttons/specs#6757c97e-0ae6-4802-a2d5-9e3b134a7231" class="bare">https://m3.material.io/components/buttons/specs#6757c97e-0ae6-4802-a2d5-9e3b134a7231</a></p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1614,13 +1807,25 @@ Daniel Coons</p></td>
 <p class="tableblock"><strong>WARNING</strong>
 This VI uses a dll call to the resource file for a LabVIEW VI/CTL - it is searching the binary data for the PNG images that the VI or CTL contains</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-Phone: 812 558-7100
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Update Image (Multiple)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Update_Image_(Multiple).vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Update Image (Multiple).vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Update the image of the buttons</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1638,12 +1843,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">get the colorset for the application and the color-level</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1661,12 +1861,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">build the array of scheme objects from the original data</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1684,12 +1879,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Update the image of the buttons</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1707,12 +1897,7 @@ Daniel Coons</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">scheme view UI set up like the material theme display</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation
-1983 S Liberty Drive
-Bloomington, IN 47403
-www.tsc.com/atcs</p>
-<p class="tableblock">Developer:
-Daniel Coons</p></td>
+Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -1736,7 +1921,7 @@ Daniel Coons</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_class_constant_vis_3"><a class="anchor" href="#_class_constant_vis_3"></a><a class="link" href="#_class_constant_vis_3">3.4.3. Class Constant VIs</a></h4>
+<h4 id="_class_constant_vis_4"><a class="anchor" href="#_class_constant_vis_4"></a><a class="link" href="#_class_constant_vis_4">3.5.3. Class Constant VIs</a></h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1923,7 +2108,7 @@ This is the author&#8217;s responsibility to list any of the missing product use
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-11-25 08:52:58 -0500
+Last updated 2025-12-29 14:54:29 -0500
 </div>
 </div>
 </body>
