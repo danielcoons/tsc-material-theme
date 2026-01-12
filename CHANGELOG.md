@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implement support for cursors on plots
 - Dynamically hook into an icon library???
 
+## [2.3.1] - 2026.01.12
+### Fixed
+- Fixed the bugs in the Button Editor that made the reference to the control be lost [#13](https://github.com/danielcoons/tsc-material-theme/issues/13)
+
 ## [2.3.0] - 2025.12.29
 ### Added
 - Added MULTI-IMAGE buttons!!! [#4](https://github.com/danielcoons/tsc-material-theme/issues/4) categorized the button families and button types more
