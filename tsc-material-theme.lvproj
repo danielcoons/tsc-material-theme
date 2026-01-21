@@ -191,6 +191,7 @@
 		</Item>
 		<Item Name="sandbox" Type="Folder">
 			<Item Name="test--changes.vi" Type="VI" URL="../sandbox/test--changes.vi"/>
+			<Item Name="test--find free labels on fp.vi" Type="VI" URL="../sandbox/test--find free labels on fp.vi"/>
 			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
 			<Item Name="test--load all the images in a directory.vi" Type="VI" URL="../sandbox/test--load all the images in a directory.vi"/>
 			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
