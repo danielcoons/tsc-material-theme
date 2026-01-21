@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-01-12 13:57:32" Creator="daniel.coons" Comments="" ID="04076a42745a77acd4a2d0af759f950e">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-01-21 11:18:44" Creator="daniel.coons" Comments="" ID="ee066561b5eb8ff86cb7bd8477a438c3">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>2.3.1.2</Library_Version>
+    <Library_Version>2.3.2.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -37,9 +37,9 @@
       <Copyright>Copyright (c) 2025 - 2026, Technology Service Corporation</Copyright>
       <Packager/>
       <URL>https://github.com/danielcoons/tsc-material-theme</URL>
-      <Release_Notes>## [2.3.1] - 2026.01.12
+      <Release_Notes>## [2.3.2] - 2026.01.21
 ### Fixed
-- Fixed the bugs in the Button Editor that made the reference to the control be lost [#13](https://github.com/danielcoons/tsc-material-theme/issues/13)</Release_Notes>
+- Fixed a bug in Controls Update Loop that threw an error when trying to color a caption that was not present [#15](https://github.com/danielcoons/tsc-material-theme/issues/15); this caused the downstream Decorations Loop to be skipped</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -384,7 +384,7 @@
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8F5F40AD68EA3F5E25B377C3BF6C6663</GUID>
+      <GUID>508E39B15C9FAB79002C3D4E4BDB7B4E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -475,7 +475,7 @@
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F5B36CA2020EF5FFF900ED6394F538B6</GUID>
+      <GUID>C9906A94C44B32BDA0CE5C3454AC938F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -510,7 +510,7 @@
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A8B29AF5EAA9D1E6E467C5E36437D0AB</GUID>
+      <GUID>2AA2A835DF2F155BEEA872522AFFC057</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -545,7 +545,7 @@
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B54ACB3BE53CBD3214B36146CE4C5C06</GUID>
+      <GUID>55AE6452C10EC32C6C20E13ED355C3DD</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
