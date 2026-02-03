@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implement support for cursors on plots
 - Dynamically hook into an icon library???
 
+## [2.4.0] - 2026.02.03
+### Added
+- Capability to save for previous versions of LabVIEW [#14](https://github.com/danielcoons/tsc-material-theme/issues/14)
+
 ## [2.3.2] - 2026.01.21
 ### Fixed
 - Fixed a bug in Controls Update Loop that threw an error when trying to color a caption that was not present [#15](https://github.com/danielcoons/tsc-material-theme/issues/15); this caused the downstream Decorations Loop to be skipped
