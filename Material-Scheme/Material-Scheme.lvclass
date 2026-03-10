@@ -186,13 +186,13 @@
 			<Property Name="NI.ClassItem.State" Type="Int">268972546</Property>
 		</Item>
 		<Item Name="Color Opacity Calc.vi" Type="VI" URL="../private/Color Opacity Calc.vi">
-			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#I!!!!"A!%!!!!&amp;5!(!!Z.&lt;W2J:GFF:#"$&lt;WRP=A!!%5!(!!J#97.L:X*P&gt;7ZE!!!.1!I!"W^Q97.J&gt;(E!&amp;5!(!!Z0=GFH;7ZB&lt;#"$&lt;WRP=A!!6!$Q!!Q!!!!!!!%!!!!!!!!!!A!!!!!!!Q!%!!!#!!"Y!!!!!!!!!!!!!!E!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!!+!!!!#A!!!!!!!!!!!1!&amp;!!!!!!</Property>
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#8!!!!"1!%!!!!&amp;5!(!!Z.&lt;W2J:GFF:#"$&lt;WRP=A!!$5!+!!&gt;P='&amp;D;82Z!"6!"Q!/4X*J:WFO97QA1W^M&lt;X)!!&amp;1!]!!-!!!!!!!"!!!!!!!!!!!!!!!!!!)!!Q!!!A!!?!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!I!!!!!!!!!!!%!"!!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 			<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1115684864</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">8388608</Property>
 		</Item>
 		<Item Name="convert color string summary.vi" Type="VI" URL="../private/convert color string summary.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!^!!!!!Q!11$$`````"F.U=GFO:Q!!$5!(!!&gt;Q=GFN98*Z!"A!]!!#!!!!!1)!!!A!!!E!!!!)!!!!!!%!!A!!!!!</Property>
@@ -292,6 +292,15 @@
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1082139152</Property>
+		</Item>
+		<Item Name="XYGraph - Colors.vi" Type="VI" URL="../private/XYGraph - Colors.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%F!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!'%"Q!!A!!!!'!!!+1X2M)&amp;*F:GZV&lt;1!!5%"Q!"Y!!$)96&amp;.$)%VB&gt;'6S;7&amp;M)&amp;2I:7VF,GRW&lt;'FC&amp;UVB&gt;'6S;7&amp;M,6.D;'6N:3ZM&gt;G.M98.T!!!347&amp;U:8*J97QN5W.I:7VF)'FO!!"5!0!!$!!$!!1!"!!%!!1!"!!%!!1!"1!%!!9!"Q-!!(A!!!U)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!+!!!!#!!!!!!"!!A!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">16777347</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">2</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1074541072</Property>
 		</Item>
 	</Item>
 	<Item Name="subVIs" Type="Folder">
