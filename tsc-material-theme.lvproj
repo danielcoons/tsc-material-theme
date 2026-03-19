@@ -25,6 +25,7 @@
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
 			<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
+			<Item Name="TSC Material UI Surface Level--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Surface Level--constant.vi"/>
 			<Item Name="TSC Material UI Theme Level--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--constant.vi"/>
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
 			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
@@ -187,6 +188,11 @@
 				<Item Name="Execute Set Control Level.vi" Type="VI" URL="../right-click-menus/Set Control Level.llb/Execute Set Control Level.vi"/>
 				<Item Name="Set Control Level.ctl" Type="VI" URL="../right-click-menus/Set Control Level.llb/Set Control Level.ctl"/>
 				<Item Name="Set Control Level.vi" Type="VI" URL="../right-click-menus/Set Control Level.llb/Set Control Level.vi"/>
+			</Item>
+			<Item Name="Set Panel Level.llb" Type="Folder">
+				<Item Name="Execute Set Panel Level.vi" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Execute Set Panel Level.vi"/>
+				<Item Name="Set Panel Level.ctl" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Set Panel Level.ctl"/>
+				<Item Name="Set Panel Level.vi" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Set Panel Level.vi"/>
 			</Item>
 		</Item>
 		<Item Name="sandbox" Type="Folder">
