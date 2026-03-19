@@ -13,8 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Security` in case of vulnerabilities.
 
 ## [Unreleased]
-- Implement support for cursors on plots
 - Dynamically hook into an icon library???
+
+## [2.6.0] - 2026.03.19
+### Added
+- Added the ability to define the UI `panel` level for the front panel panes: can be set to: **surface** (default value), background, surface dim, surface variant, surface bright, surface container (lowest, low, normal, high, and highest), and inverse surface [#18](https://github.com/danielcoons/tsc-material-theme/issues/18)
+- Implemented color adjustment for the cursors (same algorithm that is applied to the plots) [#9](https://github.com/danielcoons/tsc-material-theme/issues/9)
+
+## [2.5.2] - 2026.03.10
+### Fixed
+- Additional bug discovered when captions don't exist and the code is compiled to `EXE` -> 1123; this is now ignored [#17](https://github.com/danielcoons/tsc-material-theme/issues/17)
+- Bug discovered with the x-axis chart labels as color was not correctly applied [#20](https://github.com/danielcoons/tsc-material-theme/issues/20)
 
 ## [2.4.0] - 2026.02.03
 ### Added
