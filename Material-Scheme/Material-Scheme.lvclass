@@ -479,6 +479,15 @@
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 		</Item>
+		<Item Name="Panel Loop.vi" Type="VI" URL="../subVIs/Panel Loop.vi">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'+!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;"!=!!?!!!S'&amp;241S".982F=GFB&lt;#"5;'6N:3ZM&gt;GRJ9B&gt;.982F=GFB&lt;#V49WBF&lt;75O&lt;(:D&lt;'&amp;T=Q!!%UVB&gt;'6S;7&amp;M,6.D;'6N:3"P&gt;81!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!-!(!!#!!!!%M!!!!51%!!!@````]!"Q&gt;197ZF=VN&gt;!&amp;"!=!!?!!!S'&amp;241S".982F=GFB&lt;#"5;'6N:3ZM&gt;GRJ9B&gt;.982F=GFB&lt;#V49WBF&lt;75O&lt;(:D&lt;'&amp;T=Q!!%EVB&gt;'6S;7&amp;M,6.D;'6N:3"J&lt;A!!91$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!)!!E$!!"Y!!!*!!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!#!!!!!A!!!U!!!!-!!!!!!!!!!!!!!%!#A!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1074278928</Property>
+		</Item>
 	</Item>
 	<Item Name="Color Grabber.vi" Type="VI" URL="../private/Color Grabber.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%T!!!!#Q!01!=!#7^O5X6S:G&amp;D:1!.1!=!"X.V=G:B9W5!$5!(!!&gt;P&lt;E.P&lt;'^S!!N!"Q!&amp;9W^M&lt;X)!&amp;5!(!!ZD&lt;WRP=E.P&lt;H2B;7ZF=A!!$5!(!!&gt;P&gt;82M;7ZF!"&gt;!"Q!1&lt;WZ$&lt;WRP=E.P&lt;H2B;7ZF=A!!"!!!!":!-0````].9W^O&gt;(*P&lt;#VM:8:F&lt;!"11(!!(A!!-BB55U-A47&amp;U:8*J97QA6'BF&lt;75O&lt;(:M;7)847&amp;U:8*J97QN5W.I:7VF,GRW9WRB=X-!!"*.982F=GFB&lt;#V49WBF&lt;75A;7Y!!&amp;1!]!!-!!!!!1!#!!-!"!!&amp;!!9!"Q!(!!=!#!!*!A!!?!!!#1!!!!E!!!!*!!!!#1!!!!E!!!!*!!!!#1!!!!!!!!!!!!!!!!!!!AA!!!!)!!!!!!%!#A!!!!!</Property>
