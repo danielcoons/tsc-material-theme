@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-02-03 15:23:03" Creator="daniel.coons" Comments="" ID="900227d117cc0fab101c2c01cffb934e">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-03-19 14:46:04" Creator="daniel.coons" Comments="" ID="d0642c3d7f5257ef33eb67e959b00595">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>2.4.0.2</Library_Version>
+    <Library_Version>2.6.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -37,9 +37,15 @@
       <Copyright>Copyright (c) 2025 - 2026, Technology Service Corporation</Copyright>
       <Packager/>
       <URL>https://github.com/danielcoons/tsc-material-theme</URL>
-      <Release_Notes>## [2.4.0] - 2026.02.03
+      <Release_Notes>## [2.6.0] - 2026.03.19
 ### Added
-- Capability to save for previous versions of LabVIEW [#14](https://github.com/danielcoons/tsc-material-theme/issues/14)</Release_Notes>
+- Added the ability to define the UI `panel` level for the front panel panes: can be set to: **surface** (default value), background, surface dim, surface variant, surface bright, surface container (lowest, low, normal, high, and highest), and inverse surface [#18](https://github.com/danielcoons/tsc-material-theme/issues/18)
+- Implemented color adjustment for the cursors (same algorithm that is applied to the plots) [#9](https://github.com/danielcoons/tsc-material-theme/issues/9)
+
+## [2.5.2] - 2026.03.10
+### Fixed
+- Additional bug discovered when captions don't exist and the code is compiled to `EXE` -&gt; 1123; this is now ignored [#17](https://github.com/danielcoons/tsc-material-theme/issues/17)
+- Bug discovered with the x-axis chart labels as color was not correctly applied [#20](https://github.com/danielcoons/tsc-material-theme/issues/20)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -182,30 +188,6 @@
       </Destination_Overrides>
       <Destination_Overrides>
         <Path>right-click-menus</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>right-click-menus/Change Boolean Image Color.llb</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>right-click-menus/Change Boolean Image.llb</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>right-click-menus/Set Boolean Type.llb</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>right-click-menus/Set Control Level.llb</Path>
         <Destination>0</Destination>
         <Additional_Destination>true</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
@@ -384,7 +366,7 @@
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8233F4B4008A331D66A09E2A7F9A154B</GUID>
+      <GUID>0C872240BF15A1539EB98199AACA56D8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -475,7 +457,7 @@
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>40F3295978BB014F0F445729185BDF6C</GUID>
+      <GUID>06E8236A870746CDA656D62EAF69148D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -510,7 +492,7 @@
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F635AF3E0E0BE87369D90F889DAAFE70</GUID>
+      <GUID>16C879C4692ADB4FA2077E3BE612C748</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -545,7 +527,7 @@
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>01F2F9509F89B2BC85D9AB70C2A8A50E</GUID>
+      <GUID>716F34FC7BD1A85353DF0EB38FFCCFA8</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
