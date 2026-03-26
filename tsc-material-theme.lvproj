@@ -201,8 +201,7 @@
 			<Item Name="2015.vi" Type="VI" URL="../sandbox/2015.vi"/>
 			<Item Name="test--changes.vi" Type="VI" URL="../sandbox/test--changes.vi"/>
 			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
-			<Item Name="test--load all the images in a directory.vi" Type="VI" URL="../sandbox/test--load all the images in a directory.vi"/>
-			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
+			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../sandbox/test--load scheme and palette.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
