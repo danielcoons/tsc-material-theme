@@ -15,6 +15,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - Dynamically hook into an icon library???
 
+## [2.7.1] - 2026.03.27
+### Fixed
+- All `outline` and `transparent` type buttons had a shadow or decoration part that was 1x1 pixel but solid white that would show in dark mode; they have all been set to transparent now
+
+## [2.7.0] - 2026.03.27
+### Added
+- Added `Tools Menu` selection of being able to `Show Control Theme Levels` for all controls/indicators on a front panel that is active (QuickDrop Default changed to `Ctrl+C`) and to `Apply Material Theme` to change and apply the theme in edit time for a given VI (QuickDrop Default changed to `Ctrl+M`) [#16](https://github.com/danielcoons/tsc-material-theme/issues/16)
+
 ## [2.6.0] - 2026.03.19
 ### Added
 - Added the ability to define the UI `panel` level for the front panel panes: can be set to: **surface** (default value), background, surface dim, surface variant, surface bright, surface container (lowest, low, normal, high, and highest), and inverse surface [#18](https://github.com/danielcoons/tsc-material-theme/issues/18)

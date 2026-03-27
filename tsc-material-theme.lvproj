@@ -154,7 +154,7 @@
 				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
 			</Item>
 			<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../project/Convert Material JSON to LabVIEW Theme.vi"/>
-			<Item Name="Apply Theme.vi" Type="VI" URL="../project/Apply Theme.vi"/>
+			<Item Name="Apply Material Theme.vi" Type="VI" URL="../project/Apply Material Theme.vi"/>
 			<Item Name="Show Control Theme Levels.vi" Type="VI" URL="../project/Show Control Theme Levels.vi"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
