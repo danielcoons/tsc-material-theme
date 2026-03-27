@@ -149,9 +149,13 @@
 			<Item Name="tsc-material.bin3" Type="Document" URL="../Example/tsc-material.bin3"/>
 		</Item>
 		<Item Name="project" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="_button-editor" Type="Folder">
 				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
 			</Item>
+			<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../project/Convert Material JSON to LabVIEW Theme.vi"/>
+			<Item Name="Apply Material Theme.vi" Type="VI" URL="../project/Apply Material Theme.vi"/>
+			<Item Name="Show Control Theme Levels.vi" Type="VI" URL="../project/Show Control Theme Levels.vi"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
@@ -160,8 +164,6 @@
 				<Item Name="Delete TEMP FP Labels.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Delete TEMP FP Labels.vi"/>
 				<Item Name="Get References and Set TEMP FP Labels.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Get References and Set TEMP FP Labels.vi"/>
 				<Item Name="Save Button Info.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Save Button Info.vi"/>
-				<Item Name="tsc-Change Theme Edit--dialog.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/tsc-Change Theme Edit--dialog.vi"/>
-				<Item Name="tsc-Show Control Settings--dialog.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/tsc-Show Control Settings--dialog.vi"/>
 				<Item Name="tsc_Search Ring.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/tsc_Search Ring.vi"/>
 			</Item>
 			<Item Name="TSC Change Control Theme.vi" Type="VI" URL="../Quick Drop Plugins/TSC Change Control Theme.vi"/>
@@ -198,14 +200,10 @@
 		<Item Name="sandbox" Type="Folder">
 			<Item Name="2015.vi" Type="VI" URL="../sandbox/2015.vi"/>
 			<Item Name="test--changes.vi" Type="VI" URL="../sandbox/test--changes.vi"/>
-			<Item Name="test--find free labels on fp.vi" Type="VI" URL="../sandbox/test--find free labels on fp.vi"/>
 			<Item Name="test--get the control data.vi" Type="VI" URL="../sandbox/test--get the control data.vi"/>
-			<Item Name="test--load all the images in a directory.vi" Type="VI" URL="../sandbox/test--load all the images in a directory.vi"/>
-			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../test--load scheme and palette.vi"/>
-			<Item Name="test--save-for-previous.vi" Type="VI" URL="../sandbox/test--save-for-previous.vi"/>
+			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../sandbox/test--load scheme and palette.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
-		<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../Convert Material JSON to LabVIEW Theme.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
@@ -262,6 +260,7 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="LVTextColorsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVTextColorsTypeDef.ctl"/>
+				<Item Name="Menu Launch VI Information.vi" Type="VI" URL="/&lt;vilib&gt;/VIServer/Menu Launch VI Information.vi"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -296,7 +295,6 @@
 			<Item Name="Checkmark Status.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Checkmark Status.ctl"/>
 			<Item Name="Enabled Menu Item Status.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Enabled Menu Item Status.ctl"/>
 			<Item Name="Position In Menu.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Position In Menu.ctl"/>
-			<Item Name="prev-example.vi" Type="VI" URL="../sandbox/prev-example.vi"/>
 			<Item Name="Relative Position.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Relative Position.ctl"/>
 			<Item Name="Shortcut Menu Item Definition.ctl" Type="VI" URL="/&lt;resource&gt;/plugins/PopupMenus/support/Shortcut Menu Item Definition.ctl"/>
 			<Item Name="System.Drawing" Type="Document" URL="System.Drawing">
