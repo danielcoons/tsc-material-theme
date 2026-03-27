@@ -154,7 +154,7 @@
 				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
 			</Item>
 			<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../project/Convert Material JSON to LabVIEW Theme.vi"/>
-			<Item Name="Change Theme.vi" Type="VI" URL="../project/Change Theme.vi"/>
+			<Item Name="Apply Theme.vi" Type="VI" URL="../project/Apply Theme.vi"/>
 			<Item Name="Show Control Theme Levels.vi" Type="VI" URL="../project/Show Control Theme Levels.vi"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
@@ -260,6 +260,7 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="LVTextColorsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVTextColorsTypeDef.ctl"/>
+				<Item Name="Menu Launch VI Information.vi" Type="VI" URL="/&lt;vilib&gt;/VIServer/Menu Launch VI Information.vi"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
