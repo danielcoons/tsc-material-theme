@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-03-19 14:46:04" Creator="daniel.coons" Comments="" ID="d0642c3d7f5257ef33eb67e959b00595">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-03-27 11:19:11" Creator="daniel.coons" Comments="" ID="a533e0ea239fd684e0367cd28ef1ec0b">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>2.6.0.2</Library_Version>
+    <Library_Version>2.7.1.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -33,19 +33,29 @@
     <VI_Package_Configuration_File>TSC Material Theme.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary/>
-      <Description>This library of functions is meant to support the Google Material Theme and apply it to LabVIEW front panel VIs. This allows a user to create and export a JSON-based Material Design on Figma or on the material theme creator website. Those designs can then be converted to the TSC Material format and then used in application development.</Description>
+      <Description>This library of functions is meant to support the Google Material Theme and apply it to LabVIEW front panel VIs. This allows a user to create and export a JSON-based Material Design on Figma or on the material theme creator website. Those designs can then be converted to the TSC Material format and then used in application development.
+
+QuickDrop Shortcuts:
+&lt;b&gt;Ctrl+C&lt;/b&gt; - Show the list of all the front panel controls/indicators, their data types, and what their current theme levels are with ability to change
+&lt;b&gt;Ctrl+M&lt;/b&gt; - Change the Material Theme (apply a wholistic theme to the current VI and change mode to see effects)
+
+Tools Menu:
+Show Control Levels and Apply Material Theme (behavior described in QuickDrop section)
+Convert Material JSON to LabVIEW Theme - take a json file that was generated to create a dynamic theme using Google (or other's tools) and verify styles and export to use with LabVIEW and this library
+Edit a Button -- Material - UI to edit LabVIEW buttons with material style; gives lots of flexibility for color and image customization with a preview window to show what will be generated (and ability to save for previous versions)
+
+Right-Click Menus:
+Ability to change characteristics of the front panel controls/indicators and pane style levels</Description>
       <Copyright>Copyright (c) 2025 - 2026, Technology Service Corporation</Copyright>
       <Packager/>
       <URL>https://github.com/danielcoons/tsc-material-theme</URL>
-      <Release_Notes>## [2.6.0] - 2026.03.19
-### Added
-- Added the ability to define the UI `panel` level for the front panel panes: can be set to: **surface** (default value), background, surface dim, surface variant, surface bright, surface container (lowest, low, normal, high, and highest), and inverse surface [#18](https://github.com/danielcoons/tsc-material-theme/issues/18)
-- Implemented color adjustment for the cursors (same algorithm that is applied to the plots) [#9](https://github.com/danielcoons/tsc-material-theme/issues/9)
-
-## [2.5.2] - 2026.03.10
+      <Release_Notes>## [2.7.1] - 2026.03.27
 ### Fixed
-- Additional bug discovered when captions don't exist and the code is compiled to `EXE` -&gt; 1123; this is now ignored [#17](https://github.com/danielcoons/tsc-material-theme/issues/17)
-- Bug discovered with the x-axis chart labels as color was not correctly applied [#20](https://github.com/danielcoons/tsc-material-theme/issues/20)</Release_Notes>
+- All `outline` and `transparent` type buttons had a shadow or decoration part that was 1x1 pixel but solid white that would show in dark mode; they have all been set to transparent now
+
+## [2.7.0] - 2026.03.27
+### Added
+- Added `Tools Menu` selection of being able to `Show Control Theme Levels` for all controls/indicators on a front panel that is active (QuickDrop Default changed to `Ctrl+C`) and to `Apply Material Theme` to change and apply the theme in edit time for a given VI (QuickDrop Default changed to `Ctrl+M`) [#16](https://github.com/danielcoons/tsc-material-theme/issues/16)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -169,12 +179,6 @@
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>Convert Material JSON to LabVIEW Theme.vi</Path>
-        <Destination>7</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
         <Path>convert-theme-menu.rtm</Path>
         <Destination>7</Destination>
         <Additional_Destination>false</Additional_Destination>
@@ -204,6 +208,54 @@
         <Additional_Destination>true</Additional_Destination>
         <Additional_Destination_Index>2</Additional_Destination_Index>
       </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Change Boolean Image Color.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Change Boolean Image.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Set Boolean Type.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Set Control Level.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Set Panel Level.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>project/Apply Material Theme.vi</Path>
+        <Destination>7</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>project/Convert Material JSON to LabVIEW Theme.vi</Path>
+        <Destination>7</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>project/Show Control Theme Levels.vi</Path>
+        <Destination>7</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -231,9 +283,6 @@
       </Exclusions>
       <Exclusions>
         <Path>tsc-material-theme-antidoc.config</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>test--load scheme and palette.vi</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
@@ -366,7 +415,7 @@
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0C872240BF15A1539EB98199AACA56D8</GUID>
+      <GUID>3EE0C758484BC72CB428A49CD0D35A2E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -457,7 +506,7 @@
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>06E8236A870746CDA656D62EAF69148D</GUID>
+      <GUID>44BBDF815C34C832DD25767B9C2B05EA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -492,7 +541,7 @@
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>16C879C4692ADB4FA2077E3BE612C748</GUID>
+      <GUID>DA046933C2BA5F715949AC3708D546F6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -527,7 +576,7 @@
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>716F34FC7BD1A85353DF0EB38FFCCFA8</GUID>
+      <GUID>D599803A9BE000AE3F31DD97C0EE7089</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
