@@ -25,6 +25,7 @@
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
 			<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
+			<Item Name="TSC Material Theme Mode--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Mode--constant.vi"/>
 			<Item Name="TSC Material Theme Tag--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Tag--constant.vi"/>
 			<Item Name="TSC Material UI Surface Level--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Surface Level--constant.vi"/>
 			<Item Name="TSC Material UI Theme Level--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material UI Theme Level--constant.vi"/>
@@ -68,8 +69,8 @@
 				<Item Name="nooutline--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/nooutline--rounded--text.ctl"/>
 				<Item Name="outline--rectangular--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/outline--rectangular--text.ctl"/>
 				<Item Name="outline--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/outline--rounded--text.ctl"/>
-				<Item Name="tonal--text--rectangular.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/tonal--text--rectangular.ctl"/>
-				<Item Name="tonal--text--rounded.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/tonal--text--rounded.ctl"/>
+				<Item Name="tonal--text--rectangular.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_TSC/TSC UI Components/Boolean/Material-Types/tonal--text--rectangular.ctl"/>
+				<Item Name="tonal--text--rounded.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_TSC/TSC UI Components/Boolean/Material-Types/tonal--text--rounded.ctl"/>
 				<Item Name="transparent--rectangular--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/transparent--rectangular--text.ctl"/>
 				<Item Name="transparent--rounded--text.ctl" Type="VI" URL="../controls/(2) Small Button Text Only/transparent--rounded--text.ctl"/>
 			</Item>
@@ -154,7 +155,10 @@
 			<Item Name="_button-editor" Type="Folder">
 				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
 			</Item>
-			<Item Name="Convert Material JSON to LabVIEW Theme.vi" Type="VI" URL="../project/Convert Material JSON to LabVIEW Theme.vi"/>
+			<Item Name="_theme-editor" Type="Folder">
+				<Item Name="View-Buttons.vi" Type="VI" URL="../project/_theme-editor/View-Buttons.vi"/>
+			</Item>
+			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
 			<Item Name="Apply Material Theme.vi" Type="VI" URL="../project/Apply Material Theme.vi"/>
 			<Item Name="Show Control Theme Levels.vi" Type="VI" URL="../project/Show Control Theme Levels.vi"/>
 		</Item>
@@ -205,7 +209,6 @@
 			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../sandbox/test--load scheme and palette.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
-		<Item Name="TSC Material Theme Mode--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Mode--constant.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
