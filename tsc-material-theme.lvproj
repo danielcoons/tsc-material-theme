@@ -15,7 +15,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_Material Theme SubVIs" Type="Folder">
 			<Item Name="button-editor-ui.rtm" Type="Document" URL="../_Material Theme SubVIs/button-editor-ui.rtm"/>
-			<Item Name="Call Palette View.vi" Type="VI" URL="../project/_theme-editor/Call Palette View.vi"/>
 			<Item Name="Color to HSL.vi" Type="VI" URL="../_Material Theme SubVIs/Color to HSL.vi"/>
 			<Item Name="Color to Luminance.vi" Type="VI" URL="../_Material Theme SubVIs/Color to Luminance.vi"/>
 			<Item Name="colorUserItem Default--constant.vi" Type="VI" URL="../_Material Theme SubVIs/colorUserItem Default--constant.vi"/>
@@ -159,6 +158,9 @@
 			</Item>
 			<Item Name="_theme-editor" Type="Folder">
 				<Item Name="View-Buttons.vi" Type="VI" URL="../project/_theme-editor/View-Buttons.vi"/>
+				<Item Name="Call Palette View.vi" Type="VI" URL="../project/_theme-editor/Call Palette View.vi"/>
+				<Item Name="Theme Config.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Config.lvclass"/>
+				<Item Name="Theme Serializer.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Serializer/Theme Serializer.lvclass"/>
 			</Item>
 			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
 			<Item Name="Apply Material Theme.vi" Type="VI" URL="../project/Apply Material Theme.vi"/>
@@ -228,6 +230,7 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="Config File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/Config Files/Config File.lvclass"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
 				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
