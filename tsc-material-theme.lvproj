@@ -157,15 +157,14 @@
 				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
 			</Item>
 			<Item Name="_theme-editor" Type="Folder">
-				<Item Name="View-Buttons.vi" Type="VI" URL="../project/_theme-editor/View-Buttons.vi"/>
 				<Item Name="Call Palette View.vi" Type="VI" URL="../project/_theme-editor/Call Palette View.vi"/>
+				<Item Name="Free Label Color Applicator.vi" Type="VI" URL="../project/_theme-editor/Free Label Color Applicator.vi"/>
+				<Item Name="View-Buttons.vi" Type="VI" URL="../project/_theme-editor/View-Buttons.vi"/>
 				<Item Name="Theme Config.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Config/Theme Config.lvclass"/>
 				<Item Name="Theme Serializer.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Serializer/Theme Serializer.lvclass"/>
-				<Item Name="Free Label Color Applicator.vi" Type="VI" URL="../project/_theme-editor/Free Label Color Applicator.vi"/>
 			</Item>
 			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
-			<Item Name="Apply Material Theme.vi" Type="VI" URL="../project/Apply Material Theme.vi"/>
-			<Item Name="Show Control Theme Levels.vi" Type="VI" URL="../project/Show Control Theme Levels.vi"/>
+			<Item Name="Edit VI Theme.vi" Type="VI" URL="../project/Edit VI Theme.vi"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
@@ -173,11 +172,11 @@
 				<Item Name="Create TEMP FP Label (Single).vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Create TEMP FP Label (Single).vi"/>
 				<Item Name="Delete TEMP FP Labels.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Delete TEMP FP Labels.vi"/>
 				<Item Name="Get References and Set TEMP FP Labels.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Get References and Set TEMP FP Labels.vi"/>
+				<Item Name="Grab Tag Information.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Grab Tag Information.vi"/>
 				<Item Name="Save Button Info.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Save Button Info.vi"/>
 				<Item Name="tsc_Search Ring.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/tsc_Search Ring.vi"/>
 			</Item>
 			<Item Name="TSC Change Control Theme.vi" Type="VI" URL="../Quick Drop Plugins/TSC Change Control Theme.vi"/>
-			<Item Name="TSC Theme Application.vi" Type="VI" URL="../Quick Drop Plugins/TSC Theme Application.vi"/>
 		</Item>
 		<Item Name="right-click-menus" Type="Folder">
 			<Item Name="Change Boolean Image Color.llb" Type="Folder">
