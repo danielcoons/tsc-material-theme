@@ -28,6 +28,7 @@
 			<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
 			<Item Name="TSC Material Color Roles--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Color Roles--constant.vi"/>
 			<Item Name="TSC Material Panel Color Levels--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Panel Color Levels--constant.vi"/>
+			<Item Name="TSC Material Tab Color Levels--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Tab Color Levels--constant.vi"/>
 			<Item Name="TSC Material Theme Mode--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Mode--constant.vi"/>
 			<Item Name="TSC Material Theme Tag--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Tag--constant.vi"/>
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
@@ -204,6 +205,11 @@
 				<Item Name="Execute Set Panel Level.vi" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Execute Set Panel Level.vi"/>
 				<Item Name="Set Panel Level.ctl" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Set Panel Level.ctl"/>
 				<Item Name="Set Panel Level.vi" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Set Panel Level.vi"/>
+			</Item>
+			<Item Name="Set Tab Level.llb" Type="Folder">
+				<Item Name="Execute Set Tab Level.vi" Type="VI" URL="../right-click-menus/Set Tab Level.llb/Execute Set Tab Level.vi"/>
+				<Item Name="Set Tab Level.ctl" Type="VI" URL="../right-click-menus/Set Tab Level.llb/Set Tab Level.ctl"/>
+				<Item Name="Set Tab Level.vi" Type="VI" URL="../right-click-menus/Set Tab Level.llb/Set Tab Level.vi"/>
 			</Item>
 		</Item>
 		<Item Name="sandbox" Type="Folder">
