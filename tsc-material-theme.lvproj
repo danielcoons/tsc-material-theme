@@ -161,6 +161,7 @@
 				<Item Name="Call Palette View.vi" Type="VI" URL="../project/_theme-editor/Call Palette View.vi"/>
 				<Item Name="Theme Config.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Config/Theme Config.lvclass"/>
 				<Item Name="Theme Serializer.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Serializer/Theme Serializer.lvclass"/>
+				<Item Name="Free Label Color Applicator.vi" Type="VI" URL="../project/_theme-editor/Free Label Color Applicator.vi"/>
 			</Item>
 			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
 			<Item Name="Apply Material Theme.vi" Type="VI" URL="../project/Apply Material Theme.vi"/>
@@ -213,7 +214,6 @@
 			<Item Name="test--load scheme and palette.vi" Type="VI" URL="../sandbox/test--load scheme and palette.vi"/>
 			<Item Name="test--ui.vi" Type="VI" URL="../sandbox/test--ui.vi"/>
 		</Item>
-		<Item Name="Free Label Color Applicator.vi" Type="VI" URL="../project/_theme-editor/Free Label Color Applicator.vi"/>
 		<Item Name="TSC Material Theme.lvlib" Type="Library" URL="../TSC Material Theme.lvlib"/>
 		<Item Name="ui--test plot updates.vi" Type="VI" URL="../ui--test plot updates.vi"/>
 		<Item Name="ui--test the theme.vi" Type="VI" URL="../ui--test the theme.vi"/>
