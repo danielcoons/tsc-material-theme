@@ -166,6 +166,7 @@
 			</Item>
 			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
 			<Item Name="Edit VI Theme.vi" Type="VI" URL="../project/Edit VI Theme.vi"/>
+			<Item Name="VIew VI&apos;s Color Palette.vi" Type="VI" URL="../project/VIew VI&apos;s Color Palette.vi"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
