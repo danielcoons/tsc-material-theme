@@ -201,6 +201,11 @@
 				<Item Name="Set Control Level.ctl" Type="VI" URL="../right-click-menus/Set Control Level.llb/Set Control Level.ctl"/>
 				<Item Name="Set Control Level.vi" Type="VI" URL="../right-click-menus/Set Control Level.llb/Set Control Level.vi"/>
 			</Item>
+			<Item Name="Set Decoration Level.llb" Type="Folder">
+				<Item Name="Execute Set Decoration Level.vi" Type="VI" URL="../right-click-menus/Set Decoration Level.llb/Execute Set Decoration Level.vi"/>
+				<Item Name="Set Decoration Level.ctl" Type="VI" URL="../right-click-menus/Set Decoration Level.llb/Set Decoration Level.ctl"/>
+				<Item Name="Set Decoration Level.vi" Type="VI" URL="../right-click-menus/Set Decoration Level.llb/Set Decoration Level.vi"/>
+			</Item>
 			<Item Name="Set Panel Level.llb" Type="Folder">
 				<Item Name="Execute Set Panel Level.vi" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Execute Set Panel Level.vi"/>
 				<Item Name="Set Panel Level.ctl" Type="VI" URL="../right-click-menus/Set Panel Level.llb/Set Panel Level.ctl"/>
