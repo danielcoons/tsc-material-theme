@@ -24,6 +24,7 @@
 			<Item Name="material json scheme.ctl" Type="VI" URL="../_Material Theme SubVIs/material json scheme.ctl"/>
 			<Item Name="material theme.ctl" Type="VI" URL="../_Material Theme SubVIs/material theme.ctl"/>
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
+			<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
 			<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
 			<Item Name="TSC Material Color Roles--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Color Roles--constant.vi"/>
@@ -172,10 +173,13 @@
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
 				<Item Name="control info.ctl" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/control info.ctl"/>
 				<Item Name="Create TEMP FP Label (Single).vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Create TEMP FP Label (Single).vi"/>
+				<Item Name="decorations info--typedef.ctl" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/decorations info--typedef.ctl"/>
 				<Item Name="Delete TEMP FP Labels.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Delete TEMP FP Labels.vi"/>
 				<Item Name="Get References and Set TEMP FP Labels.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Get References and Set TEMP FP Labels.vi"/>
+				<Item Name="Grab Tag Information - Decorations.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Grab Tag Information - Decorations.vi"/>
 				<Item Name="Grab Tag Information.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Grab Tag Information.vi"/>
 				<Item Name="Save Button Info.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Save Button Info.vi"/>
+				<Item Name="Save Decoration Info.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Save Decoration Info.vi"/>
 				<Item Name="tsc_Search Ring.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/tsc_Search Ring.vi"/>
 			</Item>
 			<Item Name="TSC Change Control Theme.vi" Type="VI" URL="../Quick Drop Plugins/TSC Change Control Theme.vi"/>
@@ -193,7 +197,6 @@
 			</Item>
 			<Item Name="Set Boolean Type.llb" Type="Folder">
 				<Item Name="Execute Set Boolean Type.vi" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Execute Set Boolean Type.vi"/>
-				<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 				<Item Name="Set Boolean Type.ctl" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Set Boolean Type.ctl"/>
 				<Item Name="Set Boolean Type.vi" Type="VI" URL="../right-click-menus/Set Boolean Type.llb/Set Boolean Type.vi"/>
 			</Item>
