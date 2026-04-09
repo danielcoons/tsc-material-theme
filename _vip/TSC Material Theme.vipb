@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-03-27 11:19:11" Creator="daniel.coons" Comments="" ID="a533e0ea239fd684e0367cd28ef1ec0b">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-04-08 12:54:28" Creator="daniel.coons" Comments="" ID="275187aa22420371b9724a65395e954f">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>2.7.1.3</Library_Version>
+    <Library_Version>2.8.0.10</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -239,19 +239,37 @@ Ability to change characteristics of the front panel controls/indicators and pan
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>project/Apply Material Theme.vi</Path>
+        <Path>project/_theme-editor</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>2</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>project/Edit VI Theme.vi</Path>
         <Destination>7</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>project/Convert Material JSON to LabVIEW Theme.vi</Path>
+        <Path>project/Material Theme Editor.vi</Path>
         <Destination>7</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>project/Show Control Theme Levels.vi</Path>
+        <Path>right-click-menus/Set Tab Level.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>right-click-menus/Set Decoration Level.llb</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>project/VIew VI's Color Palette.vi</Path>
         <Destination>7</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
@@ -415,7 +433,7 @@ Ability to change characteristics of the front panel controls/indicators and pan
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3EE0C758484BC72CB428A49CD0D35A2E</GUID>
+      <GUID>B281F853D506C5A4A3BFBCE9E322FC0A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -506,7 +524,7 @@ Ability to change characteristics of the front panel controls/indicators and pan
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>44BBDF815C34C832DD25767B9C2B05EA</GUID>
+      <GUID>B772CBF63A2DF727BA637FFE0562DC08</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -541,7 +559,7 @@ Ability to change characteristics of the front panel controls/indicators and pan
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DA046933C2BA5F715949AC3708D546F6</GUID>
+      <GUID>C58FABC4B94FE8A02B6DAA25F917F04F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -576,7 +594,7 @@ Ability to change characteristics of the front panel controls/indicators and pan
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D599803A9BE000AE3F31DD97C0EE7089</GUID>
+      <GUID>E8EAAA04B0BCFFF835662C7FB28FCB8C</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
