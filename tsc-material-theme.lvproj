@@ -2,7 +2,9 @@
 <Project Type="Project" LVVersion="21008000">
 	<Property Name="NI.LV.All.SaveVersion" Type="Str">21.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="NI.Project.Description" Type="Str">The TSC Material Theme Toolkit implements the rules spelled out in Google's Material UI guidelines to LabVIEW VIs.
+
+Source: https://github.com/danielcoons/tsc-material-theme </Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
