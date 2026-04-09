@@ -14,10 +14,18 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_Material Theme SubVIs" Type="Folder">
+			<Item Name="constants" Type="Folder">
+				<Item Name="colorUserItem Default--constant.vi" Type="VI" URL="../_Material Theme SubVIs/colorUserItem Default--constant.vi"/>
+				<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
+				<Item Name="TSC Material Color Roles--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Color Roles--constant.vi"/>
+				<Item Name="TSC Material Panel Color Levels--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Panel Color Levels--constant.vi"/>
+				<Item Name="TSC Material Tab Color Levels--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Tab Color Levels--constant.vi"/>
+				<Item Name="TSC Material Theme Mode--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Mode--constant.vi"/>
+				<Item Name="TSC Material Theme Tag--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Tag--constant.vi"/>
+			</Item>
 			<Item Name="button-editor-ui.rtm" Type="Document" URL="../_Material Theme SubVIs/button-editor-ui.rtm"/>
 			<Item Name="Color to HSL.vi" Type="VI" URL="../_Material Theme SubVIs/Color to HSL.vi"/>
 			<Item Name="Color to Luminance.vi" Type="VI" URL="../_Material Theme SubVIs/Color to Luminance.vi"/>
-			<Item Name="colorUserItem Default--constant.vi" Type="VI" URL="../_Material Theme SubVIs/colorUserItem Default--constant.vi"/>
 			<Item Name="Contrast Ratio Checker.vi" Type="VI" URL="../_Material Theme SubVIs/Contrast Ratio Checker.vi"/>
 			<Item Name="HSL to Color.vi" Type="VI" URL="../_Material Theme SubVIs/HSL to Color.vi"/>
 			<Item Name="material json palette.ctl" Type="VI" URL="../_Material Theme SubVIs/material json palette.ctl"/>
@@ -26,12 +34,6 @@
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
 			<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
-			<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
-			<Item Name="TSC Material Color Roles--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Color Roles--constant.vi"/>
-			<Item Name="TSC Material Panel Color Levels--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Panel Color Levels--constant.vi"/>
-			<Item Name="TSC Material Tab Color Levels--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Tab Color Levels--constant.vi"/>
-			<Item Name="TSC Material Theme Mode--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Mode--constant.vi"/>
-			<Item Name="TSC Material Theme Tag--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Theme Tag--constant.vi"/>
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>
 			<Item Name="tsc--Determine Dominant Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Determine Dominant Color.vi"/>
 			<Item Name="tsc--Hex to Color.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Hex to Color.vi"/>
@@ -171,7 +173,7 @@
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
-				<Item Name="control info.ctl" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/control info.ctl"/>
+				<Item Name="control info--typedef.ctl" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/control info--typedef.ctl"/>
 				<Item Name="Create TEMP FP Label (Single).vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Create TEMP FP Label (Single).vi"/>
 				<Item Name="decorations info--typedef.ctl" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/decorations info--typedef.ctl"/>
 				<Item Name="Delete TEMP FP Labels.vi" Type="VI" URL="../Quick Drop Plugins/TSC Control Theme Application.llb/Delete TEMP FP Labels.vi"/>
