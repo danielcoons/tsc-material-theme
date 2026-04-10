@@ -18,6 +18,7 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 		<Item Name="_Material Theme SubVIs" Type="Folder">
 			<Item Name="constants" Type="Folder">
 				<Item Name="colorUserItem Default--constant.vi" Type="VI" URL="../_Material Theme SubVIs/colorUserItem Default--constant.vi"/>
+				<Item Name="Relative Path Tag--constant.vi" Type="VI" URL="../_Material Theme SubVIs/Relative Path Tag--constant.vi"/>
 				<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
 				<Item Name="TSC Material Color Roles--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Color Roles--constant.vi"/>
 				<Item Name="TSC Material Panel Color Levels--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Panel Color Levels--constant.vi"/>
@@ -33,6 +34,7 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 			<Item Name="material json palette.ctl" Type="VI" URL="../_Material Theme SubVIs/material json palette.ctl"/>
 			<Item Name="material json scheme.ctl" Type="VI" URL="../_Material Theme SubVIs/material json scheme.ctl"/>
 			<Item Name="material theme.ctl" Type="VI" URL="../_Material Theme SubVIs/material theme.ctl"/>
+			<Item Name="material--AB_RW_Convert_Path_to_Relative.vi" Type="VI" URL="../_Material Theme SubVIs/material--AB_RW_Convert_Path_to_Relative.vi"/>
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
 			<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
@@ -238,6 +240,8 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
+				<Item Name="AB_Relative_Path_Type.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Relative_Path_Type.ctl"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Base64/Base64 Support.lvlib"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -249,6 +253,7 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
 				<Item Name="Config File.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/Config Files/Config File.lvclass"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
