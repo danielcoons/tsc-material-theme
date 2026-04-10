@@ -456,9 +456,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_classes_overview">3.1. Classes overview</a></li>
 <li><a href="#_tsc_button_editor_lvclass">3.2. TSC Button Editor.lvclass</a></li>
-<li><a href="#_material_theme_lvclass">3.3. Material Theme.lvclass</a></li>
-<li><a href="#_material_palette_lvclass">3.4. Material-Palette.lvclass</a></li>
-<li><a href="#_material_scheme_lvclass">3.5. Material-Scheme.lvclass</a></li>
+<li><a href="#_theme_config_lvclass">3.3. Theme Config.lvclass</a></li>
+<li><a href="#_theme_serializer_lvclass">3.4. Theme Serializer.lvclass</a></li>
+<li><a href="#_material_theme_lvclass">3.5. Material Theme.lvclass</a></li>
+<li><a href="#_material_palette_lvclass">3.6. Material-Palette.lvclass</a></li>
+<li><a href="#_material_scheme_lvclass">3.7. Material-Scheme.lvclass</a></li>
 </ul>
 </li>
 <li><a href="#_legal_information">4. Legal Information</a>
@@ -475,7 +477,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_project_description"><a class="anchor" href="#_project_description"></a><a class="link" href="#_project_description">1. Project description</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>No description found (add content in project description)</p>
+<p>The TSC Material Theme Toolkit implements the rules spelled out in Google&#8217;s Material UI guidelines to LabVIEW VIs.</p>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/danielcoons/tsc-material-theme" class="bare">https://github.com/danielcoons/tsc-material-theme</a></p>
 </div>
 </div>
 </div>
@@ -495,7 +500,7 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 <p><a href="https://m3.material.io/" class="bare">https://m3.material.io/</a></p>
 </div>
 <div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.0</p>
+<p><strong>Version:</strong> 3.0.0.0</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
 <caption class="title">Table 1. Nested libraries</caption>
@@ -559,7 +564,7 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 <div class="sect2">
 <h3 id="_classes_overview"><a class="anchor" href="#_classes_overview"></a><a class="link" href="#_classes_overview">3.1. Classes overview</a></h3>
 <div class="paragraph">
-<p>This project contains 4 classes and 0 interface.</p>
+<p>This project contains 6 classes and 0 interface.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
 <caption class="title">Table 2. Classes list</caption>
@@ -579,6 +584,14 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_theme_config_lvclass">Theme Config.lvclass</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_theme_serializer_lvclass">Theme Serializer.lvclass</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_material_theme_lvclass">Material Theme.lvclass</a></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
@@ -594,7 +607,7 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 </table>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-320e69ea2634579e9dd38c5993825540fceb4766809cd797386ca9d48716a558.svg" alt="Diagram">
+<img src="Images/diag-0135a15f9e42c0c8f5f549d3d23113d5744aa16e89460da5a129599f1a9dc264.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -605,13 +618,13 @@ Implement the Google Material Theme coloring to LabVIEW</p>
 The button editor class to keep track of helper functions and shared data</p>
 </div>
 <div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.10</p>
+<p><strong>Version:</strong> 3.0.0.0</p>
 </div>
 <div class="sect3">
 <h4 id="_diagram"><a class="anchor" href="#_diagram"></a><a class="link" href="#_diagram">3.2.1. Diagram</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-00115380939041252c30380779fea4e911e8d94bcb1af16dec56657079d2980a.svg" alt="Diagram">
+<img src="Images/diag-c5319fb80f6079f6568efce12233233e6daa50f6db60ba85629e3bfa0c9f2866.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -694,6 +707,24 @@ Technology Service Corporation</p></td>
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grab LabVIEW Versions</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Grab_LabVIEW_Versions.vi.png" alt="TSC Button Editor.lvclass:Grab LabVIEW Versions.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See all of the available versions to save the button for compatiblity.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Init Editor Data</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Button_Editor.lvclass_Init_Editor_Data.vi.png" alt="TSC Button Editor.lvclass:Init Editor Data.vi"></span></p>
@@ -705,7 +736,7 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
@@ -723,10 +754,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -741,10 +772,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -759,10 +790,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -777,10 +808,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -795,10 +826,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -813,10 +844,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -886,19 +917,19 @@ Technology Service Corporation</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_material_theme_lvclass"><a class="anchor" href="#_material_theme_lvclass"></a><a class="link" href="#_material_theme_lvclass">3.3. Material Theme.lvclass</a></h3>
+<h3 id="_theme_config_lvclass"><a class="anchor" href="#_theme_config_lvclass"></a><a class="link" href="#_theme_config_lvclass">3.3. Theme Config.lvclass</a></h3>
 <div class="paragraph">
 <p><strong>Responsibility:</strong>
-No description found (add content in lvclass description)</p>
+The configuration class for the theme data that will track user settings and implement the jsontext toolkit to save updates.</p>
 </div>
 <div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.3</p>
+<p><strong>Version:</strong> 3.0.0.0</p>
 </div>
 <div class="sect3">
 <h4 id="_diagram_2"><a class="anchor" href="#_diagram_2"></a><a class="link" href="#_diagram_2">3.3.1. Diagram</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-a8e7f6cead5f0ddecd70caf0e8a8897c152e21fcb02bd5f0643a106d58dc48bc.svg" alt="Diagram">
+<img src="Images/diag-d5a93bd17578e6c6936a69d18805a0c23a6b73746bf8dbf646c31a283ee72390.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -906,6 +937,331 @@ No description found (add content in lvclass description)</p>
 <h4 id="_methods_2"><a class="anchor" href="#_methods_2"></a><a class="link" href="#_methods_2">3.3.2. Methods</a></h4>
 <table class="tableblock frame-all grid-all stripes-none stretch">
 <caption class="title">Table 5. Functions (non private scope only)</caption>
+<colgroup>
+<col style="width: 14.8148%;">
+<col style="width: 29.6296%;">
+<col style="width: 44.4444%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7038%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Connector pane</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">S.</th>
+<th class="tableblock halign-left valign-top">R.</th>
+<th class="tableblock halign-left valign-top">I.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get Theme Mode</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_Get_Theme_Mode.vi.png" alt="Theme Config.lvclass:Get Theme Mode.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">data member access:</p>
+<p class="tableblock">get the theme mode</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set Theme Mode</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_Set_Theme_Mode.vi.png" alt="Theme Config.lvclass:Set Theme Mode.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">data member access:</p>
+<p class="tableblock">set the theme mode</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get theme path</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_Get_theme_path.vi.png" alt="Theme Config.lvclass:Get theme path.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">data member access:</p>
+<p class="tableblock">get the theme path</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set theme path</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_Set_theme_path.vi.png" alt="Theme Config.lvclass:Set theme path.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">data member access:</p>
+<p class="tableblock">set the theme path</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">From JSON</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_From_JSON.vi.png" alt="Theme Config.lvclass:From JSON.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">convert the class data into a json cluster for proper conversion</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Load Configuration</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_Load_Configuration.vi.png" alt="Theme Config.lvclass:Load Configuration.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Load the configuration from file; if it doesn&#8217;t exist, go ahead and create it so it can be referenced in the future.</p>
+<p class="tableblock">This will allow persistence of the Material File in the editor and the Last Theme Mod implemented.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Save Configuration</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_Save_Configuration.vi.png" alt="Theme Config.lvclass:Save Configuration.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">save the changed values of the configuration class.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To JSON</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Config.lvclass_To_JSON.vi.png" alt="Theme Config.lvclass:To JSON.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convert the class data into a cluster that can be easily flattened to json using the jsontext toolkit.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>S</strong>cope: <span class="image"><img src="Images/scope-protected.png" alt="scope protected"></span> &#8594; Protected | <span class="image"><img src="Images/scope-community.png" alt="scope community"></span> &#8594; Community</p>
+</div>
+<div class="paragraph">
+<p><strong>R</strong>eentrancy: <span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy preallocated"></span> &#8594; Preallocated reentrancy | <span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy shared"></span> &#8594; Shared reentrancy</p>
+</div>
+<div class="paragraph">
+<p><strong>I</strong>nlining: <span class="image"><img src="Images/inlined.png" alt="inlined"></span> &#8594; Inlined</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_class_constant_vis_2"><a class="anchor" href="#_class_constant_vis_2"></a><a class="link" href="#_class_constant_vis_2">3.3.3. Class Constant VIs</a></h4>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 6. Constant VIs Found</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">VI Name</th>
+<th class="tableblock halign-left valign-top">Data Type</th>
+<th class="tableblock halign-left valign-top">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Theme Editor Config&#8212;&#8203;constant.vi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tsc\theme-editor.json</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_theme_serializer_lvclass"><a class="anchor" href="#_theme_serializer_lvclass"></a><a class="link" href="#_theme_serializer_lvclass">3.4. Theme Serializer.lvclass</a></h3>
+<div class="paragraph">
+<p><strong>Responsibility:</strong>
+Implements the necessary serialization functions for the JSONtext toolkit actions.</p>
+</div>
+<div class="paragraph">
+<p><strong>Version:</strong> 3.0.0.0</p>
+</div>
+<div class="sect3">
+<h4 id="_diagram_3"><a class="anchor" href="#_diagram_3"></a><a class="link" href="#_diagram_3">3.4.1. Diagram</a></h4>
+<div class="imageblock text-center kroki">
+<div class="content">
+<img src="Images/diag-4f8bbb783f559ba4326950f2170cdfe4a85a9a145ae856710b0bfca8fda73eb4.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_methods_3"><a class="anchor" href="#_methods_3"></a><a class="link" href="#_methods_3">3.4.2. Methods</a></h4>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 7. Functions (non private scope only)</caption>
+<colgroup>
+<col style="width: 14.8148%;">
+<col style="width: 29.6296%;">
+<col style="width: 44.4444%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7037%;">
+<col style="width: 3.7038%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Connector pane</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">S.</th>
+<th class="tableblock halign-left valign-top">R.</th>
+<th class="tableblock halign-left valign-top">I.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JSON to LVObject</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Serializer.lvclass_JSON_to_LVObject.vi.png" alt="Theme Serializer.lvclass:JSON to LVObject.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convert JSON to an Object of a LabVIEW Class.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LVObject to JSON</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Theme_Serializer.lvclass_LVObject_to_JSON.vi.png" alt="Theme Serializer.lvclass:LVObject to JSON.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convert Object of a LabVIEW Class to a JSON representation.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>S</strong>cope: <span class="image"><img src="Images/scope-protected.png" alt="scope protected"></span> &#8594; Protected | <span class="image"><img src="Images/scope-community.png" alt="scope community"></span> &#8594; Community</p>
+</div>
+<div class="paragraph">
+<p><strong>R</strong>eentrancy: <span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy preallocated"></span> &#8594; Preallocated reentrancy | <span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy shared"></span> &#8594; Shared reentrancy</p>
+</div>
+<div class="paragraph">
+<p><strong>I</strong>nlining: <span class="image"><img src="Images/inlined.png" alt="inlined"></span> &#8594; Inlined</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_class_constant_vis_3"><a class="anchor" href="#_class_constant_vis_3"></a><a class="link" href="#_class_constant_vis_3">3.4.3. Class Constant VIs</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>No Constant VIs Found</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_material_theme_lvclass"><a class="anchor" href="#_material_theme_lvclass"></a><a class="link" href="#_material_theme_lvclass">3.5. Material Theme.lvclass</a></h3>
+<div class="paragraph">
+<p><strong>Responsibility:</strong>
+The material theme class provides the data structure for all of the schemes and high-level functions for the material theme.</p>
+</div>
+<div class="paragraph">
+<p><strong>Version:</strong> 3.0.0.0</p>
+</div>
+<div class="sect3">
+<h4 id="_diagram_4"><a class="anchor" href="#_diagram_4"></a><a class="link" href="#_diagram_4">3.5.1. Diagram</a></h4>
+<div class="imageblock text-center kroki">
+<div class="content">
+<img src="Images/diag-4d5861d0c99ac6c5865ad312d2b64693c363094adcba0ea0cbe2dbeb3aaaad26.svg" alt="Diagram">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_methods_4"><a class="anchor" href="#_methods_4"></a><a class="link" href="#_methods_4">3.5.2. Methods</a></h4>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 8. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -950,6 +1306,7 @@ Technology Service Corporation</p></td>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Apply a loaded theme to a VI - will update the panel and the controls/indicators</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
 Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
@@ -1034,6 +1391,25 @@ Technology Service Corporation</p></td>
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get Theme Data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Theme.lvclass_Get_Theme_Data.vi.png" alt="TSC Material Theme.lvlib:Material Theme.lvclass:Get Theme Data.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the VI&#8217;s user tag data if it exists for the last theme and last theme level applied</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Load Material Theme</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Theme.lvclass_Load_Material_Theme.vi.png" alt="TSC Material Theme.lvlib:Material Theme.lvclass:Load Material Theme.vi"></span></p>
@@ -1069,6 +1445,25 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set Theme Data</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Theme.lvclass_Set_Theme_Data.vi.png" alt="TSC Material Theme.lvlib:Material Theme.lvclass:Set Theme Data.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the VI&#8217;s User Tag data to track the theme and theme mode applied.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -1082,7 +1477,7 @@ Technology Service Corporation</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_class_constant_vis_2"><a class="anchor" href="#_class_constant_vis_2"></a><a class="link" href="#_class_constant_vis_2">3.3.3. Class Constant VIs</a></h4>
+<h4 id="_class_constant_vis_4"><a class="anchor" href="#_class_constant_vis_4"></a><a class="link" href="#_class_constant_vis_4">3.5.3. Class Constant VIs</a></h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1100,16 +1495,16 @@ Technology Service Corporation</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_material_palette_lvclass"><a class="anchor" href="#_material_palette_lvclass"></a><a class="link" href="#_material_palette_lvclass">3.4. Material-Palette.lvclass</a></h3>
+<h3 id="_material_palette_lvclass"><a class="anchor" href="#_material_palette_lvclass"></a><a class="link" href="#_material_palette_lvclass">3.6. Material-Palette.lvclass</a></h3>
 <div class="paragraph">
 <p><strong>Responsibility:</strong>
 The Material-Palette class defines the gradients of colors</p>
 </div>
 <div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.0</p>
+<p><strong>Version:</strong> 3.0.0.0</p>
 </div>
 <div class="sect3">
-<h4 id="_diagram_3"><a class="anchor" href="#_diagram_3"></a><a class="link" href="#_diagram_3">3.4.1. Diagram</a></h4>
+<h4 id="_diagram_5"><a class="anchor" href="#_diagram_5"></a><a class="link" href="#_diagram_5">3.6.1. Diagram</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
 <img src="Images/diag-10d70b0136b6df1ef20b8a54457670e3856a3cd214c2355594baf85ca6937f26.svg" alt="Diagram">
@@ -1117,9 +1512,9 @@ The Material-Palette class defines the gradients of colors</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_methods_3"><a class="anchor" href="#_methods_3"></a><a class="link" href="#_methods_3">3.4.2. Methods</a></h4>
+<h4 id="_methods_5"><a class="anchor" href="#_methods_5"></a><a class="link" href="#_methods_5">3.6.2. Methods</a></h4>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 6. Functions (non private scope only)</caption>
+<caption class="title">Table 9. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -1188,7 +1583,7 @@ Technology Service Corporation</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_class_constant_vis_3"><a class="anchor" href="#_class_constant_vis_3"></a><a class="link" href="#_class_constant_vis_3">3.4.3. Class Constant VIs</a></h4>
+<h4 id="_class_constant_vis_5"><a class="anchor" href="#_class_constant_vis_5"></a><a class="link" href="#_class_constant_vis_5">3.6.3. Class Constant VIs</a></h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1206,26 +1601,26 @@ Technology Service Corporation</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_material_scheme_lvclass"><a class="anchor" href="#_material_scheme_lvclass"></a><a class="link" href="#_material_scheme_lvclass">3.5. Material-Scheme.lvclass</a></h3>
+<h3 id="_material_scheme_lvclass"><a class="anchor" href="#_material_scheme_lvclass"></a><a class="link" href="#_material_scheme_lvclass">3.7. Material-Scheme.lvclass</a></h3>
 <div class="paragraph">
 <p><strong>Responsibility:</strong>
-The Material-Scheme class defines the coloring categories for a given theme</p>
+The Material-Scheme class defines the coloring categories for a given theme.</p>
 </div>
 <div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.3</p>
+<p><strong>Version:</strong> 3.0.0.0</p>
 </div>
 <div class="sect3">
-<h4 id="_diagram_4"><a class="anchor" href="#_diagram_4"></a><a class="link" href="#_diagram_4">3.5.1. Diagram</a></h4>
+<h4 id="_diagram_6"><a class="anchor" href="#_diagram_6"></a><a class="link" href="#_diagram_6">3.7.1. Diagram</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-14428b54dbb89f217c1f103ba82e8b14b9cd9826f96ac7a726f418815e30e778.svg" alt="Diagram">
+<img src="Images/diag-989c2528c95e95c8da9545d71492d02aef5b29f7e6786f2df3483faa77e6533f.svg" alt="Diagram">
 </div>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_methods_4"><a class="anchor" href="#_methods_4"></a><a class="link" href="#_methods_4">3.5.2. Methods</a></h4>
+<h4 id="_methods_6"><a class="anchor" href="#_methods_6"></a><a class="link" href="#_methods_6">3.7.2. Methods</a></h4>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 7. Functions</caption>
+<caption class="title">Table 10. Functions</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -1246,12 +1641,203 @@ The Material-Scheme class defines the coloring categories for a given theme</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Read background</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get background</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_background.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read background.vi"></span></p>
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_background.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get background.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method that provides the background color from the Scheme.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: background</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surface</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surface.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surface.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surface</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceContainerHighest</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceContainerHighest.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceContainerHighest.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceContainerHighest</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceContainerLowest</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceContainerLowest.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceContainerLowest.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceContainerLowest</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceVariant</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceVariant.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceVariant.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceVariant</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get inverseSurface</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_inverseSurface.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get inverseSurface.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: inverseSurface</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceDim</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceDim.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceDim.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceDim</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceBright</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceBright.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceBright.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceBright</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceContainerLow</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceContainerLow.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceContainerLow.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceContainerLow</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceContainer</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceContainer.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceContainer.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceContainer</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get surfaceContainerHigh</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_get_surfaceContainerHigh.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:get surfaceContainerHigh.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">get the value for the color from the scheme class: surfaceContainerHigh</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
 Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
@@ -1287,60 +1873,6 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_name.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read name.vi"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the name for the Scheme.</p>
-<p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Read surfaceContainerHighest</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surfaceContainerHighest.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surfaceContainerHighest.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the surfaceContainerHighest color from the scheme.</p>
-<p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Read surfaceContainerLowest</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surfaceContainerLowest.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surfaceContainerLowest.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the surfaceContainerLowest color from the scheme.</p>
-<p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy-preallocated.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Read surface</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Read_surface.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Read surface.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data member access method to read the surface color from the scheme.</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
 Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -1468,6 +2000,126 @@ Technology Service Corporation</p></td>
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DigitalGraph - Colors</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_DigitalGraph___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:DigitalGraph - Colors.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the colors of the digital graph.</p>
+<p class="tableblock">Color Rules:
+- Frame, Plot BG: surfaceContainerLowest (preserve transparency)
+- Plot Border: surfaceContainerHighest (preserve transparency)
+- X&amp;Y Scale text: onSurface
+- X&amp;Y Scale gridlines: surfaceContainerHigh (preserve transparency)
+- Plots recolored according to surfaceContainerLowest blending and ratio checking
+- Cursors recolored according to surfaceContainerLowest blending and ratio checking
+- Bus recolored according to surfaceContainerLowest blending and ratio checking</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tab Control - Colors</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Tab_Control___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Tab Control - Colors.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply Color Rules to the tab control based on the tag data or defaults.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WaveformChart - Colors</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformChart___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformChart - Colors.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the colors of the waveform chart.</p>
+<p class="tableblock">Color Rules:
+- Frame, Plot BG: surfaceContainerLowest (preserve transparency)
+- Plot Border: surfaceContainerHighest (preserve transparency)
+- X&amp;Y Scale text: onSurface
+- X&amp;Y Scale gridlines: surfaceContainerHigh (preserve transparency)
+- Digital Numbers: onSurface for text and surfaceContainerHigh for background
+- Plots recolored according to surfaceContainerLowest blending and ratio checking</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WaveformGraph - Colors</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformGraph___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformGraph - Colors.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the colors for a waveform graph type.</p>
+<p class="tableblock">Color Rules:
+- Frame, Plot BG: surfaceContainerLowest (preserve transparency)
+- Plot Border: surfaceContainerHighest (preserve transparency)
+- X&amp;Y Scale text: onSurface
+- X&amp;Y Scale gridlines: surfaceContainerHigh (preserve transparency)
+- Plots recolored according to surfaceContainerLowest blending and ratio checking
+- Cursors recolored according to surfaceContainerLowest blending and ratio checking</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XYGraph - Colors</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_XYGraph___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:XYGraph - Colors.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the colors for an XY waveform graph type.</p>
+<p class="tableblock">Color Rules:
+- Frame, Plot BG: surfaceContainerLowest (preserve transparency)
+- Plot Border: surfaceContainerHighest (preserve transparency)
+- X&amp;Y Scale text: onSurface
+- X&amp;Y Scale gridlines: surfaceContainerHigh (preserve transparency)
+- Plots recolored according to surfaceContainerLowest blending and ratio checking
+- Cursors recolored according to surfaceContainerLowest blending and ratio checking</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Blend Colors</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Blend_Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Blend Colors.vi"></span></p>
@@ -1482,7 +2134,7 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1553,7 +2205,7 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
@@ -1571,7 +2223,7 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
@@ -1589,10 +2241,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1607,10 +2259,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1632,6 +2284,25 @@ Technology Service Corporation</p></td>
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Label and Caption Color</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Label_and_Caption_Color.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Label and Caption Color.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Color labels and captions in this subVI - running into different errors when a caption does not exist, so first I will check if the caption exists and then only color if it does so that the error shouldn&#8217;t be thrown.</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Mask to Alpha</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Mask_to_Alpha.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Mask to Alpha.vi"></span></p>
@@ -1643,10 +2314,10 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1668,36 +2339,37 @@ Technology Service Corporation</p></td>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">WaveformChart - Colors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reset User Colors</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformChart___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformChart - Colors.vi"></span></p>
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Reset_User_Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Reset User Colors.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the colors of the waveform chart.</p>
-<p class="tableblock"><strong>Code Developed By:</strong>
-Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">reset the LabVIEW Environment User Colors back to the default colors.</p>
+<p class="tableblock"><strong>Note:</strong> will require restart of LabVIEW</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">WaveformGraph - Colors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Save Color User Items</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_WaveformGraph___Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:WaveformGraph - Colors.vi"></span></p>
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Save_Color_User_Items.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Save Color User Items.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Set the colors for a waveform graph type.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Save out custom colors from the scheme to the <em>colorUserItem</em> tag in the LabVIEW ini file.</p>
+<p class="tableblock"><strong>Note:</strong> will require restart of LabVIEW</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
 Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/scope-private.png" alt="scope-private.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
@@ -1745,7 +2417,6 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Controls_Loop.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Controls Loop.vi"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">loop through all the controls on a panel in order to change the appearance</p>
-<p class="tableblock">-this is a re-entrant VI because it is called recursively when there is a tab control</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
 Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -1819,12 +2490,15 @@ Technology Service Corporation</p></td>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Update Image (Multiple)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Panel Loop</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Update_Image_(Multiple).vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Update Image (Multiple).vi"></span></p>
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Panel_Loop.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Panel Loop.vi"></span></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Update the image of the buttons</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apply coloring to all panes on the given Panel based on its item-tag data.</p>
+<p class="tableblock">Tag Name: panel-level
+Default: Surface</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
+Daniel Coons
 Technology Service Corporation</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
@@ -1851,7 +2525,7 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+<p><span class="image"><img src="Images/inlined.png" alt="inlined.png"></span></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1866,6 +2540,24 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy-shared.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheme.Update Image</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Scheme.Update_Image.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Scheme.Update Image.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Update the image of the buttons</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -1873,9 +2565,9 @@ Technology Service Corporation</p></td>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Update Image</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheme.Update Image (Multiple)</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Update_Image.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Update Image.vi"></span></p>
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_Scheme.Update_Image_(Multiple).vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:Scheme.Update Image (Multiple).vi"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Update the image of the buttons</p>
 <p class="tableblock"><strong>Code Developed By:</strong>
@@ -1908,6 +2600,25 @@ Technology Service Corporation</p></td>
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">View-User Colors</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/TSC_Material_Theme.lvlib_Material_Scheme.lvclass_View_User_Colors.vi.png" alt="TSC Material Theme.lvlib:Material-Scheme.lvclass:View-User Colors.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allow developers to copy the colors from the scheme or save to the <em>User Colors</em> in the LabVIEW Configuration.</p>
+<p class="tableblock"><strong>Note:</strong> Updates to User Colors in the LabVIEW Config File require a restart</p>
+<p class="tableblock"><strong>Code Developed By:</strong>
+Technology Service Corporation</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -1921,7 +2632,7 @@ Technology Service Corporation</p></td>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_class_constant_vis_4"><a class="anchor" href="#_class_constant_vis_4"></a><a class="link" href="#_class_constant_vis_4">3.5.3. Class Constant VIs</a></h4>
+<h4 id="_class_constant_vis_6"><a class="anchor" href="#_class_constant_vis_6"></a><a class="link" href="#_class_constant_vis_6">3.7.3. Class Constant VIs</a></h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2108,7 +2819,7 @@ This is the author&#8217;s responsibility to list any of the missing product use
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-01-21 11:54:19 -0500
+Last updated 2026-04-10 14:14:19 -0400
 </div>
 </div>
 </body>

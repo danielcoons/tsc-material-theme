@@ -1,9 +1,9 @@
-== Material-Palette.lvclass
+== Theme Serializer.lvclass
 
 *Responsibility:*
-The Material-Palette class defines the gradients of colors
+Implements the necessary serialization functions for the JSONtext toolkit actions.
 
-*Version:* 1.0.0.0
+*Version:* 3.0.0.0
 
 === Diagram
 
@@ -17,29 +17,12 @@ skinparam ClassFontColor #000000
 skinparam ClassHeaderBackgroundColor #808080
 
 skinparam top to bottom direction
-class "TSC Material Theme.lvlib:Material-Palette" {
-{field} -0 : U32
-{field} -5 : U32
-{field} -10 : U32
-{field} -15 : U32
-{field} -20 : U32
-{field} -25 : U32
-{field} -30 : U32
-{field} -35 : U32
-{field} -40 : U32
-{field} -50 : U32
-{field} -60 : U32
-{field} -70 : U32
-{field} -80 : U32
-{field} -90 : U32
-{field} -95 : U32
-{field} -98 : U32
-{field} -99 : U32
-{field} -100 : U32
-{static} {method} +Material.Build Palette Array()
-{static} {method} +View-Palette()
+class "Theme Serializer" {
+{method} +JSON to LVObject()
+{method} +LVObject to JSON()
 
 }
+"JSONtext LVClass Serializer" <|-- "Theme Serializer"
 
 
 
@@ -53,26 +36,18 @@ class "TSC Material Theme.lvlib:Material-Palette" {
 |===
 |Name |Connector pane |Description |S. |R. |I.
 
-|Material.Build Palette Array
-|image:TSC_Material_Theme.lvlib_Material_Palette.lvclass_Material.Build_Palette_Array.vi.png[TSC Material Theme.lvlib:Material-Palette.lvclass:Material.Build Palette Array.vi]
-|Convert the json represenation of the palette colors into array of class palettes.
-
-**Code Developed By:**
-Technology Service Corporation
-
+|JSON to LVObject
+|image:Theme_Serializer.lvclass_JSON_to_LVObject.vi.png[Theme Serializer.lvclass:JSON to LVObject.vi]
+|Convert JSON to an Object of a LabVIEW Class.
 |image:empty.png[empty.png]
-|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
 |image:empty.png[empty.png]
 
-|View-Palette
-|image:TSC_Material_Theme.lvlib_Material_Palette.lvclass_View_Palette.vi.png[TSC Material Theme.lvlib:Material-Palette.lvclass:View-Palette.vi]
-|read material palette data
-
-**Code Developed By:**
-Technology Service Corporation
-
+|LVObject to JSON
+|image:Theme_Serializer.lvclass_LVObject_to_JSON.vi.png[Theme Serializer.lvclass:LVObject to JSON.vi]
+|Convert Object of a LabVIEW Class to a JSON representation.
 |image:empty.png[empty.png]
-|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
 |image:empty.png[empty.png]
 |===
 

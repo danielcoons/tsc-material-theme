@@ -5,7 +5,7 @@ Implement the Google Material Theme coloring to LabVIEW
 
 https://m3.material.io/
 
-*Version:* 1.0.0.0
+*Version:* 3.0.0.0
 
 .Nested libraries
 [cols="", %autowidth, frame=all, grid=all, stripes=none]

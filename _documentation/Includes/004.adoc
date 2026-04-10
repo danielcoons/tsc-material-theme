@@ -1,9 +1,9 @@
-== Material Theme.lvclass
+== Theme Config.lvclass
 
 *Responsibility:*
-No description found (add content in lvclass description)
+The configuration class for the theme data that will track user settings and implement the jsontext toolkit to save updates.
 
-*Version:* 1.0.0.3
+*Version:* 3.0.0.0
 
 === Diagram
 
@@ -17,25 +17,22 @@ skinparam ClassFontColor #000000
 skinparam ClassHeaderBackgroundColor #808080
 
 skinparam top to bottom direction
-class "TSC Material Theme.lvlib:Material Theme" {
-{field} -description : String
-{field} -seed : U32
-{field} -coreColors : Cluster
-{field} -Schemes : Array of LV Class
-{field} -Palettes : Array of LV Class
-{static} {method} +Apply TSC Pop Up()
-{static} {method} +Apply UI Theme()
-{static} {method} +convert string to hex()
-{static} {method} +Create JS File()
-{static} {method} +Get Palettes()
-{static} {method} +Get Scheme()
-{static} {method} +Load Material Theme()
-{static} {method} +Material.Convert to LabVIEW()
+class "Theme Config" {
+{field} -Theme Mode : U16
+{field} -theme path : Path
+{static} {method} +Get Theme Mode()
+{static} {method} +Set Theme Mode()
+{static} {method} +Get theme path()
+{static} {method} +Set theme path()
+{static} {method} +From JSON()
+{static} {method} +Load Configuration()
+{static} {method} +Save Configuration()
+{static} {method} +Theme Editor Config--constant()
+{static} {method} +To JSON()
 
 }
+"Config File" <|-- "Theme Config"
 
-"TSC Material Theme.lvlib:Material Theme" o-- "TSC Material Theme.lvlib:Material-Scheme"
-"TSC Material Theme.lvlib:Material Theme" o-- "TSC Material Theme.lvlib:Material-Palette"
 
 
 @enduml
@@ -48,92 +45,90 @@ class "TSC Material Theme.lvlib:Material Theme" {
 |===
 |Name |Connector pane |Description |S. |R. |I.
 
-|Apply TSC Pop Up
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Apply_TSC_Pop_Up.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Apply TSC Pop Up.vi]
-|Apply a loaded theme to the TSC Pop Up Library
+|Get Theme Mode
+|image:Theme_Config.lvclass_Get_Theme_Mode.vi.png[Theme Config.lvclass:Get Theme Mode.vi]
+|data member access:
 
-**Code Developed By:**
-Technology Service Corporation
-
+get the theme mode
 |image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Apply UI Theme
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Apply_UI_Theme.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Apply UI Theme.vi]
-|Apply a loaded theme to a VI - will update the panel and the controls/indicators
-
-**Code Developed By:**
-Technology Service Corporation
-
-|image:empty.png[empty.png]
-|image:reentrancy-shared.png[reentrancy-shared.png]
-|image:empty.png[empty.png]
-
-|convert string to hex
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_convert_string_to_hex.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:convert string to hex.vi]
-|convert an ARGB text string to the equivalent hex value
-
-**Code Developed By:**
-Technology Service Corporation
-
-|image:empty.png[empty.png]
-|image:reentrancy-shared.png[reentrancy-shared.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
 |image:inlined.png[inlined.png]
 
-|Create JS File
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Create_JS_File.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Create JS File.vi]
-|I have no recollection of why I made this or what it's purpose is. I am just going to leave it in case it is important........
+|Set Theme Mode
+|image:Theme_Config.lvclass_Set_Theme_Mode.vi.png[Theme Config.lvclass:Set Theme Mode.vi]
+|data member access:
+
+set the theme mode
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Get theme path
+|image:Theme_Config.lvclass_Get_theme_path.vi.png[Theme Config.lvclass:Get theme path.vi]
+|data member access:
+
+get the theme path
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|Set theme path
+|image:Theme_Config.lvclass_Set_theme_path.vi.png[Theme Config.lvclass:Set theme path.vi]
+|data member access:
+
+set the theme path
+|image:empty.png[empty.png]
+|image:reentrancy-preallocated.png[reentrancy-preallocated.png]
+|image:inlined.png[inlined.png]
+
+|From JSON
+|image:Theme_Config.lvclass_From_JSON.vi.png[Theme Config.lvclass:From JSON.vi]
+|convert the class data into a json cluster for proper conversion
 
 **Code Developed By:**
-Technology Service Corporation
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Get Palettes
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Get_Palettes.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Get Palettes.vi]
-|Get the defined scheme from the loaded theme
-
-**Code Developed By:**
-Technology Service Corporation
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Get Scheme
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Get_Scheme.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Get Scheme.vi]
-|Get the defined scheme from the loaded theme
-
-**Code Developed By:**
+Daniel Coons
 Technology Service Corporation
 
 |image:empty.png[empty.png]
 |image:reentrancy-shared.png[reentrancy-shared.png]
 |image:empty.png[empty.png]
 
-|Load Material Theme
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Load_Material_Theme.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Load Material Theme.vi]
-|load a material theme from disk
+|Load Configuration
+|image:Theme_Config.lvclass_Load_Configuration.vi.png[Theme Config.lvclass:Load Configuration.vi]
+|Load the configuration from file; if it doesn't exist, go ahead and create it so it can be referenced in the future.
+
+This will allow persistence of the Material File in the editor and the Last Theme Mod implemented.
 
 **Code Developed By:**
+Daniel Coons
 Technology Service Corporation
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|Material.Convert to LabVIEW
-|image:TSC_Material_Theme.lvlib_Material_Theme.lvclass_Material.Convert_to_LabVIEW.vi.png[TSC Material Theme.lvlib:Material Theme.lvclass:Material.Convert to LabVIEW.vi]
-|populate the material theme from the original Material JSON that was exported
+|Save Configuration
+|image:Theme_Config.lvclass_Save_Configuration.vi.png[Theme Config.lvclass:Save Configuration.vi]
+|save the changed values of the configuration class.
 
 **Code Developed By:**
+Daniel Coons
 Technology Service Corporation
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|To JSON
+|image:Theme_Config.lvclass_To_JSON.vi.png[Theme Config.lvclass:To JSON.vi]
+|Convert the class data into a cluster that can be easily flattened to json using the jsontext toolkit.
+
+**Code Developed By:**
+Daniel Coons
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:reentrancy-shared.png[reentrancy-shared.png]
 |image:empty.png[empty.png]
 |===
 
@@ -145,7 +140,12 @@ Technology Service Corporation
 
 === Class Constant VIs
 
-[NOTE]
-====
-No Constant VIs Found
-====
+.Constant VIs Found
+[cols="<.<3d,<.<3d,<.<6d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|VI Name |Data Type |Value
+
+|Theme Editor Config--constant.vi
+|Path
+|tsc\theme-editor.json
+|===
