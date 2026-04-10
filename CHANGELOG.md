@@ -15,6 +15,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - Dynamically hook into an icon library???
 
+## [3.0.0] - 2026.04.10
+### Added
+- Added better access to color levels! User can show the full palette of colors for the theme/theme mode [#19](https://github.com/danielcoons/tsc-material-theme/issues/19)
+    - User can stop the VI and directly copy/paste the colors to a new VI or colorbox
+    - User can save up to 18 colors from the theme to the LabVIEW `User Colors` list that shows up in the color picker
+    - Also added button examples for the different types to the theme editor so they can be easily copy and pasted to new VI in a new tab
+- Included ability to define the color rule for a tab control through right click [#22](https://github.com/danielcoons/tsc-material-theme/issues/22)
+- Included *Decoration* right click option
+- Included coloring rules for a *Digital Graph*
+- Persistence of last theme and mode used across menus; when working on a specific VI, it will load the theme saved with it and if that is blank, it will use last that was used in the tool [#23](https://github.com/danielcoons/tsc-material-theme/issues/23)
+- Added support in the `Tools->TSC->Edit VI Theme...` interface: [#24](https://github.com/danielcoons/tsc-material-theme/issues/24)
+    - **Controls**: color rules, boolean type (if applicable), tab control rule (if applicable)
+    - **Decorations**: color rules
+    - **Front Panel**: color rule
+    - Selection of theme file and theme mode
+    - Ability to apply control coloring and decoration coloring
+    - Ability to save the VI with all tag data for coloring and VI Tag Data that will keep track of the theme and mode
+
+### Changed
+- Right-click menus have been restructured to order where they are; will be inserted above *Properties* in the menus [#21](https://github.com/danielcoons/tsc-material-theme/issues/21)
+- Quick Drop Shortcut combined to only `Ctrl+C` default action to `Edit VI Theme` : combined capability of what was previously two different screens
+- Tools Menu options now include:
+    - `Edit VI Theme` : gives access to the currently open VI to adjust its information for theme, controls, panel, and decorations (also invoked by QD Shortcut)
+    - `Edit a Button Material` : allows user to apply themes and easily create colorable buttons following the Google Material rulesets
+    - `Material Theme Editor` : previously just allowed import of theme and conversion to from JSON to LabVIEW-Compatible, but updated to now allow developer to load already saved themes, copy and paste buttons or colors, and get easy access to the full color palette
+    - `View VI's Color Palette` : shows the color palette that is saved for the current VI (can be edited with the Edit VI Theme action); will load from the theme file and the theme mode currently applied and will allow user to Export to LabVIEW `User Colors` if desired
+- Coloring rules for Plot types were updated to change the major/minor axes colors to a more complimentary color
+
+### Fixed
+- Fixed that it was only coloring the first X or Y Axis; included support for multi-axis plots [#25](https://github.com/danielcoons/tsc-material-theme/issues/25)
+
 ## [2.7.1] - 2026.03.27
 ### Fixed
 - All `outline` and `transparent` type buttons had a shadow or decoration part that was 1x1 pixel but solid white that would show in dark mode; they have all been set to transparent now
