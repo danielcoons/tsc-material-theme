@@ -1,6 +1,6 @@
 == Classes overview
 
-This project contains 4 classes and 0 interface.
+This project contains 6 classes and 0 interface.
 
 .Classes list
 [cols="", %autowidth, frame=all, grid=all, stripes=none]
@@ -8,6 +8,12 @@ This project contains 4 classes and 0 interface.
 |Classes |Interfaces
 
 |<<TSC Button Editor.lvclass>>
+|
+
+|<<Theme Config.lvclass>>
+|
+
+|<<Theme Serializer.lvclass>>
 |
 
 |<<Material Theme.lvclass>>
@@ -40,12 +46,13 @@ class "TSC Button Editor" {
 {field} -Image Names : Array of String
 {field} -Images : Array of Cluster
 {field} -Filtered Image Names : Array of String
-{static} {method} -Array Point to RowCol()
 {static} {method} -Button Editor Config--constant()
-{static} {method} -Change Image Directory()
-{static} {method} -Check for Image List()
 {static} {method} -Image List Column--constant()
 {static} {method} -Image List--constant()
+{static} {method} -Array Point to RowCol()
+{static} {method} -Change Image Directory()
+{static} {method} -Check for Image List()
+{static} {method} -Grab LabVIEW Versions()
 {static} {method} -Init Editor Data()
 {static} {method} -Load VI for Subpanel()
 {static} {method} -Save Editor Data()
@@ -59,20 +66,48 @@ class "TSC Button Editor" {
 "TSC Button Editor" *-- "TSC Material Theme.lvlib:Material Theme"
 
 
+class "Theme Config" {
+{field} -Theme Mode : U16
+{field} -theme path : Path
+{static} {method} +Get Theme Mode()
+{static} {method} +Set Theme Mode()
+{static} {method} +Get theme path()
+{static} {method} +Set theme path()
+{static} {method} +From JSON()
+{static} {method} +Load Configuration()
+{static} {method} +Save Configuration()
+{static} {method} +Theme Editor Config--constant()
+{static} {method} +To JSON()
+
+}
+"Config File" <|-- "Theme Config"
+
+
+class "Theme Serializer" {
+{method} +JSON to LVObject()
+{method} +LVObject to JSON()
+
+}
+"JSONtext LVClass Serializer" <|-- "Theme Serializer"
+
+
 class "TSC Material Theme.lvlib:Material Theme" {
 {field} -description : String
 {field} -seed : U32
 {field} -coreColors : Cluster
 {field} -Schemes : Array of LV Class
 {field} -Palettes : Array of LV Class
+{field} -Theme Path : Path
 {static} {method} +Apply TSC Pop Up()
 {static} {method} +Apply UI Theme()
 {static} {method} +convert string to hex()
 {static} {method} +Create JS File()
 {static} {method} +Get Palettes()
 {static} {method} +Get Scheme()
+{static} {method} +Get Theme Data()
 {static} {method} +Load Material Theme()
 {static} {method} +Material.Convert to LabVIEW()
+{static} {method} +Set Theme Data()
 
 }
 
@@ -123,9 +158,9 @@ class "TSC Material Theme.lvlib:Material-Scheme" {
 {field} -onError : U32
 {field} -errorContainer : U32
 {field} -onErrorContainer : U32
-{field} +background : U32
+{field} -background : U32
 {field} -onBackground : U32
-{field} +surface : U32
+{field} -surface : U32
 {field} -onSurface : U32
 {field} -surfaceVariant : U32
 {field} -onSurfaceVariant : U32
@@ -150,18 +185,34 @@ class "TSC Material Theme.lvlib:Material-Scheme" {
 {field} -onTertiaryFixedVariant : U32
 {field} -surfaceDim : U32
 {field} -surfaceBright : U32
-{field} +surfaceContainerLowest : U32
+{field} -surfaceContainerLowest : U32
 {field} -surfaceContainerLow : U32
 {field} -surfaceContainer : U32
 {field} -surfaceContainerHigh : U32
-{field} +surfaceContainerHighest : U32
+{field} -surfaceContainerHighest : U32
 {field} -CSS variable List : String
+{static} {method} +get background()
+{static} {method} +get surface()
+{static} {method} +get surfaceContainerHighest()
+{static} {method} +get surfaceContainerLowest()
+{static} {method} +get surfaceVariant()
+{static} {method} +get inverseSurface()
+{static} {method} +get surfaceDim()
+{static} {method} +get surfaceBright()
+{static} {method} +get surfaceContainerLow()
+{static} {method} +get surfaceContainer()
+{static} {method} +get surfaceContainerHigh()
 {static} {method} -elevated buttons()
 {static} {method} -fab-outline buttons()
 {static} {method} -filled buttons()
 {static} {method} -nooutline buttons()
 {static} {method} -tonal buttons()
 {static} {method} -transparent buttons()
+{static} {method} -DigitalGraph - Colors()
+{static} {method} -Tab Control - Colors()
+{static} {method} -WaveformChart - Colors()
+{static} {method} -WaveformGraph - Colors()
+{static} {method} -XYGraph - Colors()
 {static} {method} -Blend Colors()
 {static} {method} -Color Opacity Calc()
 {static} {method} -convert color string summary()
@@ -171,20 +222,23 @@ class "TSC Material Theme.lvlib:Material-Scheme" {
 {static} {method} -Find TSC tEXt Chunk()
 {static} {method} -Insert TSC tEXt Chunk()
 {static} {method} -Is Color Transparent()
+{static} {method} -Label and Caption Color()
 {static} {method} -Mask to Alpha()
-{static} {method} -WaveformChart - Colors()
-{static} {method} -WaveformGraph - Colors()
+{static} {method} -Reset User Colors()
+{static} {method} -Save Color User Items()
 {static} {method} +Boolean Update - Colors()
 {static} {method} +Boolean Update()
 {static} {method} +Controls Loop()
 {static} {method} +Decorations Loop()
 {static} {method} +outline buttons()
 {static} {method} +Replace Image()
-{static} {method} +Update Image (Multiple)()
+{static} {method} +Panel Loop()
 {static} {method} +Color Grabber()
 {static} {method} +Material.Build Scheme Array()
-{static} {method} +Update Image()
+{static} {method} +Scheme.Update Image()
+{static} {method} +Scheme.Update Image (Multiple)()
 {static} {method} +View-Scheme()
+{static} {method} +View-User Colors()
 
 }
 
