@@ -1,3 +1,5 @@
 == Project description
 
-No description found (add content in project description)
+The TSC Material Theme Toolkit implements the rules spelled out in Google's Material UI guidelines to LabVIEW VIs.
+
+Source: https://github.com/danielcoons/tsc-material-theme 

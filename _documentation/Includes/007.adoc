@@ -1,35 +1,90 @@
-== Antidoc
+== Material-Palette.lvclass
 
-Project website: https://gitlab.com/wovalab/open-source/labview-doc-generator[Antidoc] 
+*Responsibility:*
+The Material-Palette class defines the gradients of colors
 
-Maintainer website: https://www.wovalab.com[Wovalab] 
+*Version:* 3.0.0.0
 
-BSD 3-Clause License
+=== Diagram
 
-Copyright (C) 2019-2025, Wovalab,
-All rights reserved.
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+skinparam top to bottom direction
+class "TSC Material Theme.lvlib:Material-Palette" {
+{field} -0 : U32
+{field} -5 : U32
+{field} -10 : U32
+{field} -15 : U32
+{field} -20 : U32
+{field} -25 : U32
+{field} -30 : U32
+{field} -35 : U32
+{field} -40 : U32
+{field} -50 : U32
+{field} -60 : U32
+{field} -70 : U32
+{field} -80 : U32
+{field} -90 : U32
+{field} -95 : U32
+{field} -98 : U32
+{field} -99 : U32
+{field} -100 : U32
+{static} {method} +Material.Build Palette Array()
+{static} {method} +View-Palette()
 
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
+}
 
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
 
-* Neither the name of the copyright holder nor the names of its
-  contributors may be used to endorse or promote products derived from
-  this software without specific prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+@enduml
+....
+
+=== Methods
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Material.Build Palette Array
+|image:TSC_Material_Theme.lvlib_Material_Palette.lvclass_Material.Build_Palette_Array.vi.png[TSC Material Theme.lvlib:Material-Palette.lvclass:Material.Build Palette Array.vi]
+|Convert the json represenation of the palette colors into array of class palettes.
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|View-Palette
+|image:TSC_Material_Theme.lvlib_Material_Palette.lvclass_View_Palette.vi.png[TSC Material Theme.lvlib:Material-Palette.lvclass:View-Palette.vi]
+|read material palette data
+
+**Code Developed By:**
+Technology Service Corporation
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
+
+=== Class Constant VIs
+
+[NOTE]
+====
+No Constant VIs Found
+====
