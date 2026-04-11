@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - Dynamically hook into an icon library???
 
+## [3.0.1] - 2026.04.11
+### Fixed
+- Fixed bug with circular dependency in the jsontext library; removed vim reference
+
 ## [3.0.0] - 2026.04.10
 ### Added
 - Added better access to color levels! User can show the full palette of colors for the theme/theme mode [#19](https://github.com/danielcoons/tsc-material-theme/issues/19)
