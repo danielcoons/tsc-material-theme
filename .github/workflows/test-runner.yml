@@ -1,0 +1,17 @@
+name: Test Runner
+
+on: [push]
+  
+jobs:
+  test:
+    runs-on: [self-hosted, windows, labview]
+
+    steps:
+      - name: Check machine
+        run: |
+          hostname
+          whoami
+
+      - name: Check LabVIEW CLI
+        run: |
+          LabVIEWCLI -Version
