@@ -57,15 +57,6 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342713858</Property>
 	</Item>
-	<Item Name="Create JS File.vi" Type="VI" URL="../Create JS File.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;E!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%Z!=!!?!!!R'&amp;241S".982F=GFB&lt;#"5;'6N:3ZM&gt;GRJ9B:.982F=GFB&lt;#"5;'6N:3ZM&gt;G.M98.T!"*.982F=GFB&lt;#"5;'6N:3"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!4%"Q!"Y!!$%96&amp;.$)%VB&gt;'6S;7&amp;M)&amp;2I:7VF,GRW&lt;'FC&amp;EVB&gt;'6S;7&amp;M)&amp;2I:7VF,GRW9WRB=X-!%5VB&gt;'6S;7&amp;M)&amp;2I:7VF)'FO!'%!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"!!(!Q!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!!1!!!.!!!!$!!!!!!!!!!!!!!"!!A!!!!!</Property>
-		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
-		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
-		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
-	</Item>
 	<Item Name="Get Palettes.vi" Type="VI" URL="../Get Palettes.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(-!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%R!=!!?!!!T'&amp;241S".982F=GFB&lt;#"5;'6N:3ZM&gt;GRJ9BB.982F=GFB&lt;#V197RF&gt;(2F,GRW9WRB=X-!$UVB&gt;'6S;7&amp;M,6.D;'6N:1!=1%!!!@````]!"1^.982F=GFB&lt;#V49WBF&lt;75!4E"Q!"Y!!$%96&amp;.$)%VB&gt;'6S;7&amp;M)&amp;2I:7VF,GRW&lt;'FC&amp;EVB&gt;'6S;7&amp;M)&amp;2I:7VF,GRW9WRB=X-!%EVB&gt;'6S;7&amp;M)&amp;2I:7VF)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"-1(!!(A!!-2B55U-A47&amp;U:8*J97QA6'BF&lt;75O&lt;(:M;7)747&amp;U:8*J97QA6'BF&lt;75O&lt;(:D&lt;'&amp;T=Q!247&amp;U:8*J97QA6'BF&lt;75A;7Y!91$Q!!Q!!Q!%!!9!"Q!%!!1!"!!%!!A!"!!%!!E#!!"Y!!!.#!!!!!!!!!E!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!!!!!!"!!!!U!!!!-!!!!!!!!!!!!!!%!#A!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
