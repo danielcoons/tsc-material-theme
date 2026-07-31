@@ -1174,7 +1174,7 @@
 			</Item>
 		</Item>
 		<Item Name="name" Type="Property Definition">
-			<Property Name="NI.ClassItem.Property.LongName" Type="Str">Name</Property>
+			<Property Name="NI.ClassItem.Property.LongName" Type="Str">Name</Property>
 			<Property Name="NI.ClassItem.Property.ShortName" Type="Str">name</Property>
 			<Property Name="NI.ClassItem.Property.SortKey" Type="Int">-1</Property>
 			<Item Name="Get name.vi" Type="VI" URL="../data member access/Get name.vi">
