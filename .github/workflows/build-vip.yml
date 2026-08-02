@@ -1,0 +1,45 @@
+name: Build VIP
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on:
+      - self-hosted
+      - windows
+
+    env:
+      LV_VERSION: "2021"
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Restore Dependencies
+      shell: powershell
+      run: |
+        ./build/Install-Dependencies.ps1
+
+    - name: Build VIP
+      shell: powershell
+      run: |
+        ./build/Build-VIP.ps1 `
+            -VIPB "TSC Material Theme.vipb" `
+            -LabVIEWVersion $env:LV_VERSION
+
+    - name: Upload VIP
+      uses: actions/upload-artifact@v4
+      with:
+        name: vip-package
+        path: |
+          **/*.vip
