@@ -36,6 +36,7 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 			<Item Name="material theme.ctl" Type="VI" URL="../_Material Theme SubVIs/material theme.ctl"/>
 			<Item Name="material--AB_RW_Convert_Path_to_Relative.vi" Type="VI" URL="../_Material Theme SubVIs/material--AB_RW_Convert_Path_to_Relative.vi"/>
 			<Item Name="Read Image on Button.vi" Type="VI" URL="../_Material Theme SubVIs/Read Image on Button.vi"/>
+			<Item Name="scheme--enum.ctl" Type="VI" URL="../_Material Theme SubVIs/scheme--enum.ctl"/>
 			<Item Name="Select and Translate Tag.vi" Type="VI" URL="../_Material Theme SubVIs/Select and Translate Tag.vi"/>
 			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
 			<Item Name="tsc--Color Picker.vi" Type="VI" URL="../_Material Theme SubVIs/tsc--Color Picker.vi"/>

@@ -1,0 +1,22 @@
+name: Test Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on:
+      - self-hosted
+      - windows
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Who am I?
+        shell: powershell
+        run: |
+          Write-Host "Hello!"
+          hostname
+          whoami
+          Get-Location
+          Get-ChildItem
