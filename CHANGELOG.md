@@ -15,6 +15,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - Dynamically hook into an icon library???
 
+## [3.1.0] - 2026.08.04
+### Added
+- Created HSL selection option in the `tsc-color-picker` that shows when editing colors in the `Material Theme Editor` UI
+    - FEATURE: [#32](https://github.com/danielcoons/tsc-material-theme/issues/32) from NORM
+    - Selection of RGB vs HSL will persist from launch to launch
+### Fixed
+- Manually editing colors in the `Material Theme Editor` was not keeping changes [#28](https://github.com/danielcoons/tsc-material-theme/issues/28)
+    - Exposed all scheme color attributes via property nodes and made sure scheme class (for a given color level) was kept updated via changes
+    - Saving this from the UI will pass the data to the file as well
+- Forced the `VI Refnum` to be a **required** input on the `Apply Theme.vi' [#30](https://github.com/danielcoons/tsc-material-theme/issues/30)
+
 ## [3.0.1] - 2026.04.11
 ### Fixed
 - Fixed bug with circular dependency in the jsontext library; removed vim reference
