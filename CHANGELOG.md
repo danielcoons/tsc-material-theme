@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - Dynamically hook into an icon library???
 
+## [3.1.1] - 2026.08.12
+### Fixed
+- Clear `error 1043` that was caused by trying to **save** when in an executable [#35](https://github.com/danielcoons/tsc-material-theme/issues/35)
+
 ## [3.1.0] - 2026.08.04
 ### Added
 - Created HSL selection option in the `tsc-color-picker` that shows when editing colors in the `Material Theme Editor` UI

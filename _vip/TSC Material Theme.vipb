@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-08-04 12:48:27" Creator="daniel.coons" Comments="" ID="54818ffe6c58d3bb974e316ece0d7877">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-03-04 07:27:04" Modified_Date="2026-08-12 09:48:11" Creator="daniel.coons" Comments="" ID="2c3ee56f4a477648d2f73d30c27eca38">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>3.1.0.7</Library_Version>
+    <Library_Version>3.1.1.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -57,16 +57,9 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
       <Copyright>Copyright (c) 2025 - 2026, Technology Service Corporation</Copyright>
       <Packager/>
       <URL>https://github.com/danielcoons/tsc-material-theme</URL>
-      <Release_Notes>## [3.1.0] - 2026.08.04
-### Added
-- Created HSL selection option in the `tsc-color-picker` that shows when editing colors in the `Material Theme Editor` UI
-    - FEATURE: [#32](https://github.com/danielcoons/tsc-material-theme/issues/32) from NORM
-    - Selection of RGB vs HSL will persist from launch to launch
+      <Release_Notes>## [3.1.1] - 2026.08.12
 ### Fixed
-- Manually editing colors in the `Material Theme Editor` was not keeping changes [#28](https://github.com/danielcoons/tsc-material-theme/issues/28)
-    - Exposed all scheme color attributes via property nodes and made sure scheme class (for a given color level) was kept updated via changes
-    - Saving this from the UI will pass the data to the file as well
-- Forced the `VI Refnum` to be a **required** input on the `Apply Theme.vi' [#30](https://github.com/danielcoons/tsc-material-theme/issues/30)</Release_Notes>
+- Clear `error 1043` that was caused by trying to **save** when in an executable [#35](https://github.com/danielcoons/tsc-material-theme/issues/35)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -456,7 +449,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4799192B22E1D24E133047762AF29161</GUID>
+      <GUID>624A4E0C53C6ECE1C83027C23719A307</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -547,7 +540,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\Material Theme\Apply TSC Pop Up.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4300B6AECCB57F5F8005197E434FB9F4</GUID>
+      <GUID>40137C15BE4C3DCE975E3BE7547B78D5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -582,7 +575,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>98780BFE0DAFBA65760793CCAA9FA15B</GUID>
+      <GUID>8CA3F9E9CA86AF648BF358E605707135</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -617,7 +610,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3675CE07956DA8F4DA4FF4826197BF2F</GUID>
+      <GUID>7D1BDBE3B2FE8408E8F812587BB04A91</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
