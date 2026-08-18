@@ -5,7 +5,9 @@ Find the VIP here: [![Image](https://www.vipm.io/package/tsc_lib_tsc_material_th
 ## 📌 Reference Sites:
 This code is based on Google's Material 3 User Interface Coloring/Design Guidelines: <https://m3.material.io>  
 Material Icons Toolkit: <https://github.com/danielcoons/material-icons-toolkit> easy access to various sizes of the material icon library images  
-Create Theme JSON: <https://material-foundation.github.io/material-theme-builder/>
+Create Theme JSON*: <https://material-foundation.github.io/material-theme-builder/>  
+<small>_*Note: Use the "Create JSON" option, not the "XML" option, then convert it to a TSC Material Toolkit file with the [Material Theme Editor](#material-theme-editor)._</small>
+
 
 ## 🛠️ Toolkit Description
 The TSC Material Tookit implements the theory and application of color schemes to LabVIEW front panels. Installing the **VIP** file will add **FOUR** menu items to the LabVIEW Tools bar:
