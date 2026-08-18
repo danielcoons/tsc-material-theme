@@ -11,6 +11,9 @@ https://m3.material.io/</Property>
 	<Item Name="convert string to hex.vi" Type="VI" URL="../Material Theme/convert string to hex.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="convert hex to string.vi" Type="VI" URL="../Material Theme/convert hex to string.vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Serializer-Palette.lvclass" Type="LVClass" URL="../Serializer-Palette/Serializer-Palette.lvclass">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>

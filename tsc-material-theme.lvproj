@@ -18,6 +18,7 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 		<Item Name="_Material Theme SubVIs" Type="Folder">
 			<Item Name="constants" Type="Folder">
 				<Item Name="colorUserItem Default--constant.vi" Type="VI" URL="../_Material Theme SubVIs/colorUserItem Default--constant.vi"/>
+				<Item Name="Path to Example Theme--constant.vi" Type="VI" URL="../_Material Theme SubVIs/Path to Example Theme--constant.vi"/>
 				<Item Name="Relative Path Tag--constant.vi" Type="VI" URL="../_Material Theme SubVIs/Relative Path Tag--constant.vi"/>
 				<Item Name="TSC Material Boolean Type--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Boolean Type--constant.vi"/>
 				<Item Name="TSC Material Color Roles--constant.vi" Type="VI" URL="../_Material Theme SubVIs/TSC Material Color Roles--constant.vi"/>
