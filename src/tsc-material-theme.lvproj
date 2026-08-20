@@ -15,10 +15,6 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="_Material Theme SubVIs" Type="Folder">
-			<Item Name="button-editor-ui.rtm" Type="Document" URL="../_Material Theme SubVIs/button-editor-ui.rtm"/>
-			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../_Material Theme SubVIs/theme-converter-menu.rtm"/>
-		</Item>
 		<Item Name="controls" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="(1) Small Button Single Image 24px" Type="Folder">
@@ -124,21 +120,23 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 			<Item Name="subpanel--button preview.vi" Type="VI" URL="../controls/subpanel--button preview.vi"/>
 		</Item>
 		<Item Name="project" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="_button-editor" Type="Folder">
 				<Item Name="TSC Button Editor.lvclass" Type="LVClass" URL="../project/_button-editor/TSC Button Editor.lvclass"/>
 			</Item>
 			<Item Name="_theme-editor" Type="Folder">
 				<Item Name="Call Palette View.vi" Type="VI" URL="../project/_theme-editor/Call Palette View.vi"/>
 				<Item Name="Free Label Color Applicator.vi" Type="VI" URL="../project/_theme-editor/Free Label Color Applicator.vi"/>
-				<Item Name="View-Buttons.vi" Type="VI" URL="../project/_theme-editor/View-Buttons.vi"/>
 				<Item Name="Theme Config.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Config/Theme Config.lvclass"/>
 				<Item Name="Theme Serializer.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Serializer/Theme Serializer.lvclass"/>
+				<Item Name="View-Buttons.vi" Type="VI" URL="../project/_theme-editor/View-Buttons.vi"/>
 			</Item>
-			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
+			<Item Name="button-editor-ui.rtm" Type="Document" URL="../project/button-editor-ui.rtm"/>
 			<Item Name="Edit VI Theme.vi" Type="VI" URL="../project/Edit VI Theme.vi"/>
-			<Item Name="VIew VI&apos;s Color Palette.vi" Type="VI" URL="../project/VIew VI&apos;s Color Palette.vi"/>
+			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
+			<Item Name="theme-converter-menu.rtm" Type="Document" URL="../project/theme-converter-menu.rtm"/>
 			<Item Name="TSC.txt" Type="Document" URL="../project/TSC.txt"/>
+			<Item Name="VIew VI&apos;s Color Palette.vi" Type="VI" URL="../project/VIew VI&apos;s Color Palette.vi"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
