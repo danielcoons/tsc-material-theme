@@ -10,10 +10,10 @@ Create Theme JSON: <https://material-foundation.github.io/material-theme-builder
 ## 🛠️ Toolkit Description
 The TSC Material Tookit implements the theory and application of color schemes to LabVIEW front panels. Installing the **VIP** file will add **FOUR** menu items to the LabVIEW Tools bar:
 
+[Tools->TSC->Material Theme Editor...](#material-theme-editor)  
+[Tools->TSC->Edit a Button--Material...](##button-editor-ui)  
 [Tools->TSC->Edit VI Theme...](#edit-vi-theme) 
     Can also be invoked by Quick Drop Shortcut! `Ctrl+C` by default  
-[Tools->TSC->Edit a Button--Material...](##button-editor-ui)  
-[Tools->TSC->Material Theme Editor...](#material-theme-editor)  
 [Tools->TSC->View VI's Color Palette](#color-palette-ui)
 
 ## Edit VI Theme
@@ -25,7 +25,7 @@ Select the coloring rules for:
     - Boolean Type (if applicable)
     - Tab Color (if applicable)
 #### 💾 Save the VI to keep metadata of Theme File and Theme Mode!
-<img src="./assets/images/edit-vi-theme.png" alt = "Edit VI Theme" /> 
+<img src="./docs/assets/images/edit-vi-theme.png" alt = "Edit VI Theme" /> 
 
 ## Button Editor UI
 Launch the Button Editor UI to create new buttons following the theme rules easily and quickly. Choose a theme file (`.xml`) and then make choices for the theme type, the color level, the button family, and the button type to see a preview of all changes made. Colors for the six Boolean Actions (`False, True, Click when False, Click when True, Hover when False, and Hover when True`) will load directly from the Material rules, but can be edited. Change other aspects for the Boolean as desired and save when ready. 
@@ -34,7 +34,7 @@ Launch the Button Editor UI to create new buttons following the theme rules easi
 
 When a mutliple-image type is chosen, there will be paths to load in choices for all `FOUR` button images (`False, True, Click when False, and Click when True`).
 
-<img src="./assets/images/Button Editor UI.png" alt = "Button Editor UI" />
+<img src="./docs/assets/images/Button Editor UI.png" alt = "Button Editor UI" />
 
 #### 💡 The *Glyphs* tab allows user to define an image library to easily drag and drop glyphs to buttons!  
 #### 📚 Reference https://github.com/danielcoons/material-icons-toolkit as a place to get easy access to the Archive of PNG images of the Google Material Library!
@@ -50,7 +50,7 @@ Save the theme for use in LabVIEW with the **disk** FAB or using `Ctrl+S`. For t
 
 Click on the **color palette** button to see the list of colors for this theme in the new interface which allows for import into LabVIEW's `User Colors` see [here](#color-palette-ui) for more details!
 
-<img src="./assets/images/ui--material theme editor.png" alt = "Material Theme Editor UI" /> 
+<img src="./docs/assets/images/ui--material theme editor.png" alt = "Material Theme Editor UI" /> 
 
 ## Color Palette UI
 The color palette UI gives easy access to all color rules/levels in the theme file and theme mode that are saved with a VI or selected the Material Theme Editor interface.
@@ -63,21 +63,21 @@ Additionally, developers can use this window to:
 - Easily access to the colors for copy and paste (when Stopping the VI using the button)
 - See the HEX codes for all colors in the theme
 - Restore the LabVIEW defaults if no longer wanting the colors to be applied from the theme
-<img src="./assets/images/ui--color palette.png" alt = "Color Palette UI" /> 
+<img src="./docs/assets/images/ui--color palette.png" alt = "Color Palette UI" /> 
 
 When colors are exported to the `User Colors`, they can be accessed directly in the color picker tools with the `Tools Palette`
-<img src="./assets/images/tool selection--colors.png" alt = "Color Selection" /> 
+<img src="./docs/assets/images/tool selection--colors.png" alt = "Color Selection" /> 
 
 ## Apply Theme to LabVIEW Code Dynamically
 There are two main VIs used to apply the LabVIEW theme to a given VI
     
 ### Load Material Theme.vi
-<img src="./assets/images/VI--load material theme.png" alt = "Load Material Theme.vi" /> 
+<img src="./docs/assets/images/VI--load material theme.png" alt = "Load Material Theme.vi" /> 
 
     Provide an input path to the **file path** (.xml extension)
 
 ### Apply UI Theme.vi
-<img src="./assets/images/VI--apply ui theme.png" alt = "Apply UI Theme.vi" /> 
+<img src="./docs/assets/images/VI--apply ui theme.png" alt = "Apply UI Theme.vi" /> 
 
     Provide a reference to the VI to update theme colors
     Choose the Theme Level selection
@@ -91,22 +91,22 @@ Using the automatic coloring involves setting the color rules to a control, indi
 #### 💡 **Note:** Save the VI after setting any of these options
 
 ### Control Color Rule:
-<img src="./assets/images/right-click--color rule.png" alt = "Control Color Rule" /> 
+<img src="./docs/assets/images/right-click--color rule.png" alt = "Control Color Rule" /> 
 
 
 ### Button Description of Type:
 Defines the `Boolean Type Level` (which is how coloring decisions are made)
 
-<img src="./assets/images/right-click--boolean level.png" alt = "Boolean Types" /> 
+<img src="./docs/assets/images/right-click--boolean level.png" alt = "Boolean Types" /> 
 
 ### Tab Control Rules:
 
-<img src="./assets/images/right-click--tab control.png" alt = "Tab Control Colors" /> 
+<img src="./docs/assets/images/right-click--tab control.png" alt = "Tab Control Colors" /> 
 
 ### Decoration Rules:
 
-<img src="./assets/images/right-click--decoration.png" alt = "Decoration Colors" /> 
+<img src="./docs/assets/images/right-click--decoration.png" alt = "Decoration Colors" /> 
 
 ### Front Panel Rules:
 
-<img src="./assets/images/right-click--panel.png" alt = "Front Panel Colors" /> 
+<img src="./docs/assets/images/right-click--panel.png" alt = "Front Panel Colors" /> 
