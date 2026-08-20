@@ -130,8 +130,6 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 			</Item>
 			<Item Name="_theme-editor" Type="Folder">
 				<Item Name="Call Palette View.vi" Type="VI" URL="../project/_theme-editor/Call Palette View.vi"/>
-				<Item Name="Replace Scheme Color.vi" Type="VI" URL="../Material Theme/Replace Scheme Color.vi"/>
-				<Item Name="scheme--enum.ctl" Type="VI" URL="../Material Theme/scheme--enum.ctl"/>
 				<Item Name="Free Label Color Applicator.vi" Type="VI" URL="../project/_theme-editor/Free Label Color Applicator.vi"/>
 				<Item Name="View-Buttons.vi" Type="VI" URL="../project/_theme-editor/View-Buttons.vi"/>
 				<Item Name="Theme Config.lvclass" Type="LVClass" URL="../project/_theme-editor/Theme Config/Theme Config.lvclass"/>
@@ -140,6 +138,7 @@ Source: https://github.com/danielcoons/tsc-material-theme </Property>
 			<Item Name="Material Theme Editor.vi" Type="VI" URL="../project/Material Theme Editor.vi"/>
 			<Item Name="Edit VI Theme.vi" Type="VI" URL="../project/Edit VI Theme.vi"/>
 			<Item Name="VIew VI&apos;s Color Palette.vi" Type="VI" URL="../project/VIew VI&apos;s Color Palette.vi"/>
+			<Item Name="TSC.txt" Type="Document" URL="../project/TSC.txt"/>
 		</Item>
 		<Item Name="Quick Drop Plugins" Type="Folder">
 			<Item Name="TSC Control Theme Application.llb" Type="Folder">
