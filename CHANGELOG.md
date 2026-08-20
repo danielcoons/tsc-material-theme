@@ -14,6 +14,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 - Dynamically hook into an icon library???
+- Need to test if new method of direct json parsing makes PPL compatiblity easier to satisfy [#31](https://github.com/danielcoons/tsc-material-theme/issues/31)
+  - I believe updated method will not have the issues that the XML tools did
+- Update documentation for use of the tool!
+- See if it is possible to run any algorithms when components of the material file are missing or undefined
+
+## [3.2.0] - 2026.08.20
+### Added
+- Implementation of direct json theme structure necessitated addition of a `save` action in the `Material Theme Editor UI` that will create a Material-compatible json output
+
+### Changed
+- Folder structure updated to follow a modern, github dev proccess setup
+- Addressing of [#33](https://github.com/danielcoons/tsc-material-theme/issues/33) in place
+  - No longer a need to convert json theme to local XML
+  - Use direct exports of json file from Material Builder tools
+  - Added parsing for `AI Created` material json files - seemed to not have full, compatible json styles, but no official schema exists. Parsed making assumptions on how structure was generated using multiple `AI Tools` - Gemini and Chat GPT both used to generate a `Material Theme json File`
+
+### Fixed
+- On a clean install, the `example folder` json file will be automatically added in UI tools [#38](https://github.com/danielcoons/tsc-material-theme/issues/38)
+- Save immediately in Button Editor was throwing an error for `Current Version` because of how the FP was initialized [#39](https://github.com/danielcoons/tsc-material-theme/issues/39)
 
 ## [3.1.1] - 2026.08.12
 ### Fixed

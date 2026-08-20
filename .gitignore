@@ -2,3 +2,7 @@
 *.aliases
 *.lvlps
 .cache/
+*.UserState
+
+# Location of the vip builds
+/dist
