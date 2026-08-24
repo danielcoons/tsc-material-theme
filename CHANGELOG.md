@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update documentation for use of the tool!
 - See if it is possible to run any algorithms when components of the material file are missing or undefined
 
+## [3.2.1] - 2026.08.24
+### Fixed
+- Folder structure updates messed up the VIP build to not correctly put in the right-click functions
+
 ## [3.2.0] - 2026.08.20
 ### Added
 - Implementation of direct json theme structure necessitated addition of a `save` action in the `Material Theme Editor UI` that will create a Material-compatible json output

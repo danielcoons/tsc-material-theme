@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-08-19 14:21:23" Modified_Date="2026-08-20 14:32:08" Creator="daniel.coons" Comments="" ID="d3f7db322acac14bdafd89933b580336">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-08-19 14:21:23" Modified_Date="2026-08-24 13:52:01" Creator="daniel.coons" Comments="" ID="25a645b6f9bce0ad76e1e7ebaba97270">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>3.2.0.8</Library_Version>
+    <Library_Version>3.2.1.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\dist</Library_Output_Folder>
@@ -57,7 +57,11 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
       <Copyright>Copyright (c) 2025 - 2026, Technology Service Corporation</Copyright>
       <Packager/>
       <URL>https://github.com/danielcoons/tsc-material-theme</URL>
-      <Release_Notes>## [3.2.0] - 2026.08.20
+      <Release_Notes>## [3.2.1] - 2026.08.24
+### Fixed
+- Folder structure updates messed up the VIP build to not correctly put in the right-click functions
+
+## [3.2.0] - 2026.08.20
 ### Added
 - Implementation of direct json theme structure necessitated addition of a `save` action in the `Material Theme Editor UI` that will create a Material-compatible json output
 
@@ -290,11 +294,14 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
       <Exclusions>
         <Path>docs/assets/images</Path>
       </Exclusions>
-      <Exclusions>
-        <Path>docs/tsc-material-theme-antidoc.config</Path>
-      </Exclusions>
       <Place_Folder_Contents>
         <Path/>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>src/right-click-menus</Path>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>src/Quick Drop Plugins</Path>
       </Place_Folder_Contents>
     </Source_Files>
     <License_Agreement_Filepath>..\LICENSE</License_Agreement_Filepath>
@@ -424,7 +431,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\_vip\TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CAD898C41EFFCA4069A392D772064554</GUID>
+      <GUID>AF0473D9956BC144C75D0F9FEDDF8940</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -515,7 +522,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material Theme\Get Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C183C72621AF9C59B9B5AB58659AAC0D</GUID>
+      <GUID>DDB16CE4206FF8F1FEE6F7B2BF5BDB9D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -550,7 +557,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>014A4718BFFE9BCDAE414ADCCDA5936F</GUID>
+      <GUID>327651A58435809B35BDAEDF0278ED09</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -585,7 +592,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1A8FE135CD626595CEFDC60EE2B20F0F</GUID>
+      <GUID>013FBEFB3066F96FCA01686792E6916E</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
