@@ -19,6 +19,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update documentation for use of the tool!
 - See if it is possible to run any algorithms when components of the material file are missing or undefined
 
+## [3.3.0] - 2026.09.17
+### Added
+- VIs to test save (`true` or `false`) when in an EXE or when in a PPL
+- Added a documentation VI to track the screenshot documentation for the different button types in Material Library
+
+### Changed
+- Removed all references to `RGB to Color.vi` since it doesn't have a reentrant version and was using in some paralellized loops
+
+### Fixed
+- Cleared the system control color error [#41](https://github.com/danielcoons/tsc-material-theme/issues/41)
+- Reduced the file size of the vip file [#42](https://github.com/danielcoons/tsc-material-theme/issues/42)
+- Ignored the `save` action if the VI is inside a built packed project library
+
 ## [3.2.1] - 2026.08.24
 ### Fixed
 - Folder structure updates messed up the VIP build to not correctly put in the right-click functions
