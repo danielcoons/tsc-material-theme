@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-08-19 14:21:23" Modified_Date="2026-09-15 07:56:53" Creator="daniel.coons" Comments="" ID="3e9f243f9cff9b382cb2a634fd324f3e">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-08-19 14:21:23" Modified_Date="2026-09-17 06:29:25" Creator="daniel.coons" Comments="" ID="2dd3335b17ee8830b72edd18c4315ac3">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>3.3.0.2</Library_Version>
+    <Library_Version>3.3.0.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\dist</Library_Output_Folder>
@@ -289,6 +289,9 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
       <Exclusions>
         <Path>src/.lvversion</Path>
       </Exclusions>
+      <Exclusions>
+        <Path>dist</Path>
+      </Exclusions>
       <Place_Folder_Contents>
         <Path/>
       </Place_Folder_Contents>
@@ -426,7 +429,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\_vip\TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3617ECABE948145CA2284EB35472C974</GUID>
+      <GUID>CA7CA0244AC05C704960E33385F87778</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -517,7 +520,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material Theme\Get Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C0A17F247B0ADAD76093664350F0F87B</GUID>
+      <GUID>71D19D6A713F2A2C8D6E56FA3A26530B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -552,7 +555,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B3FF5AB8B6A5B7D571DFE8032AD6CF1A</GUID>
+      <GUID>017ACFA43BE3511EEBBBEFB35B51CB3C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -587,7 +590,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>131726CA5DD92CD00C93DB3A71F8484A</GUID>
+      <GUID>B2A2D5F0EEFDCE1F11A469AE02375807</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
