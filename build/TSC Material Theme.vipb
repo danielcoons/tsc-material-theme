@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-08-19 14:21:23" Modified_Date="2026-09-17 06:29:25" Creator="daniel.coons" Comments="" ID="2dd3335b17ee8830b72edd18c4315ac3">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-08-19 14:21:23" Modified_Date="2026-09-17 09:01:59" Creator="daniel.coons" Comments="" ID="0738b43e3a1c6ea4e389f897024eb684">
   <Library_General_Settings>
     <Package_File_Name>TSC_lib_TSC_Material_Theme</Package_File_Name>
-    <Library_Version>3.3.0.4</Library_Version>
+    <Library_Version>3.3.0.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\dist</Library_Output_Folder>
@@ -55,24 +55,18 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
       <Copyright>Copyright (c) 2025 - 2026, Technology Service Corporation</Copyright>
       <Packager/>
       <URL>https://github.com/danielcoons/tsc-material-theme</URL>
-      <Release_Notes>## [3.2.1] - 2026.08.24
-### Fixed
-- Folder structure updates messed up the VIP build to not correctly put in the right-click functions
-
-## [3.2.0] - 2026.08.20
+      <Release_Notes>## [3.3.0] - 2026.09.17
 ### Added
-- Implementation of direct json theme structure necessitated addition of a `save` action in the `Material Theme Editor UI` that will create a Material-compatible json output
+- VIs to test save (`true` or `false`) when in an EXE or when in a PPL
+- Added a documentation VI to track the screenshot documentation for the different button types in Material Library
 
 ### Changed
-- Folder structure updated to follow a modern, github dev proccess setup
-- Addressing of [#33](https://github.com/danielcoons/tsc-material-theme/issues/33) in place
-  - No longer a need to convert json theme to local XML
-  - Use direct exports of json file from Material Builder tools
-  - Added parsing for `AI Created` material json files - seemed to not have full, compatible json styles, but no official schema exists. Parsed making assumptions on how structure was generated using multiple `AI Tools` - Gemini and Chat GPT both used to generate a `Material Theme json File`
+- Removed all references to `RGB to Color.vi` since it doesn't have a reentrant version and was using in some paralellized loops
 
 ### Fixed
-- On a clean install, the `example folder` json file will be automatically added in UI tools [#38](https://github.com/danielcoons/tsc-material-theme/issues/38)
-- Save immediately in Button Editor was throwing an error for `Current Version` because of how the FP was initialized [#39](https://github.com/danielcoons/tsc-material-theme/issues/39)</Release_Notes>
+- Cleared the system control color error [#41](https://github.com/danielcoons/tsc-material-theme/issues/41)
+- Reduced the file size of the vip file [#42](https://github.com/danielcoons/tsc-material-theme/issues/42)
+- Ignored the `save` action if the VI is inside a built packed project library</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -429,7 +423,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\_vip\TSC Material Theme\Material-Scheme</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CA7CA0244AC05C704960E33385F87778</GUID>
+      <GUID>7966200979A542C86E0FBC0723E7A716</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -520,7 +514,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material Theme\Get Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>71D19D6A713F2A2C8D6E56FA3A26530B</GUID>
+      <GUID>F3DCF9C9A560EA42187E2B7E9C31F838</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -555,7 +549,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material-Palette\View-Palette.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>017ACFA43BE3511EEBBBEFB35B51CB3C</GUID>
+      <GUID>E2633F13FCAB409B4D8DD5D5970D58B6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -590,7 +584,7 @@ Create Theme JSON: &lt;https://material-foundation.github.io/material-theme-buil
         <Path>..\src\Material-Scheme\View-Scheme.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B2A2D5F0EEFDCE1F11A469AE02375807</GUID>
+      <GUID>3E93449180D2D0D64C08445F8BFD055E</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
