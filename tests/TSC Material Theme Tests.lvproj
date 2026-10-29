@@ -16,35 +16,18 @@
 		<Item Name="unit" Type="Folder">
 			<Item Name="Color" Type="Folder">
 				<Item Name="Color to HSL.lvclass" Type="LVClass" URL="../unit/Color/Color to HSL/Color to HSL.lvclass"/>
+				<Item Name="Color to Luminance.lvclass" Type="LVClass" URL="../unit/Color/Color to Luminance/Color to Luminance.lvclass"/>
 				<Item Name="Hex to Color.lvclass" Type="LVClass" URL="../unit/Color/Hex to Color/Hex to Color.lvclass"/>
+				<Item Name="HSL Hue Wrap.lvclass" Type="LVClass" URL="../unit/Color/HSL Hue Wrap/HSL Hue Wrap.lvclass"/>
+				<Item Name="HSL Integer Rounding.lvclass" Type="LVClass" URL="../unit/Color/HSL Integer Rounding/HSL Integer Rounding.lvclass"/>
+				<Item Name="HSL to Color.lvclass" Type="LVClass" URL="../unit/Color/HSL to Color/HSL to Color.lvclass"/>
+			</Item>
+			<Item Name="PNG" Type="Folder">
+				<Item Name="PNG Determine Dominant Color.lvclass" Type="LVClass" URL="../unit/PNG/PNG Determine Dominant Color/PNG Determine Dominant Color.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="Material SubVIs.lvlib" Type="Library" URL="../../src/Material SubVIs/Material SubVIs.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
-				<Item Name="AB_Relative_Path_Type.ctl" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/AB_Relative_Path_Type.ctl"/>
-				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
-				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
-				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
-				<Item Name="LUnit Runnable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/LUnit Runnable.lvclass"/>
-				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
-				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
-				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
-				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
-				<Item Name="Test Case.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/Test Case.lvclass"/>
-				<Item Name="Test Suite.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/Test Suite.lvclass"/>
-				<Item Name="UserTags.lvlib" Type="Library" URL="/&lt;vilib&gt;/UserTags/UserTags.lvlib"/>
-			</Item>
-			<Item Name="System.Drawing" Type="Document" URL="System.Drawing">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
