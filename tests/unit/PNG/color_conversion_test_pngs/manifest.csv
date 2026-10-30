@@ -1,0 +1,65 @@
+filename,dimensions,mode,pixel_setup,expected_dominant_color
+uniform_black_1x1.png,1x1,RGB,"Every pixel is RGB(0, 0, 0); opaque",#000000
+uniform_black_2x2.png,2x2,RGB,"Every pixel is RGB(0, 0, 0); opaque",#000000
+uniform_black_10x10.png,10x10,RGB,"Every pixel is RGB(0, 0, 0); opaque",#000000
+uniform_black_100x100.png,100x100,RGB,"Every pixel is RGB(0, 0, 0); opaque",#000000
+uniform_white_1x1.png,1x1,RGB,"Every pixel is RGB(255, 255, 255); opaque",#FFFFFF
+uniform_white_2x2.png,2x2,RGB,"Every pixel is RGB(255, 255, 255); opaque",#FFFFFF
+uniform_white_10x10.png,10x10,RGB,"Every pixel is RGB(255, 255, 255); opaque",#FFFFFF
+uniform_white_100x100.png,100x100,RGB,"Every pixel is RGB(255, 255, 255); opaque",#FFFFFF
+uniform_red_1x1.png,1x1,RGB,"Every pixel is RGB(255, 0, 0); opaque",#FF0000
+uniform_red_2x2.png,2x2,RGB,"Every pixel is RGB(255, 0, 0); opaque",#FF0000
+uniform_red_10x10.png,10x10,RGB,"Every pixel is RGB(255, 0, 0); opaque",#FF0000
+uniform_red_100x100.png,100x100,RGB,"Every pixel is RGB(255, 0, 0); opaque",#FF0000
+uniform_green_1x1.png,1x1,RGB,"Every pixel is RGB(0, 255, 0); opaque",#00FF00
+uniform_green_2x2.png,2x2,RGB,"Every pixel is RGB(0, 255, 0); opaque",#00FF00
+uniform_green_10x10.png,10x10,RGB,"Every pixel is RGB(0, 255, 0); opaque",#00FF00
+uniform_green_100x100.png,100x100,RGB,"Every pixel is RGB(0, 255, 0); opaque",#00FF00
+uniform_blue_1x1.png,1x1,RGB,"Every pixel is RGB(0, 0, 255); opaque",#0000FF
+uniform_blue_2x2.png,2x2,RGB,"Every pixel is RGB(0, 0, 255); opaque",#0000FF
+uniform_blue_10x10.png,10x10,RGB,"Every pixel is RGB(0, 0, 255); opaque",#0000FF
+uniform_blue_100x100.png,100x100,RGB,"Every pixel is RGB(0, 0, 255); opaque",#0000FF
+uniform_yellow_1x1.png,1x1,RGB,"Every pixel is RGB(255, 255, 0); opaque",#FFFF00
+uniform_cyan_1x1.png,1x1,RGB,"Every pixel is RGB(0, 255, 255); opaque",#00FFFF
+uniform_magenta_1x1.png,1x1,RGB,"Every pixel is RGB(255, 0, 255); opaque",#FF00FF
+uniform_gray_128_1x1.png,1x1,RGB,"Every pixel is RGB(128, 128, 128); opaque",#808080
+uniform_gray_128_2x2.png,2x2,RGB,"Every pixel is RGB(128, 128, 128); opaque",#808080
+uniform_gray_128_10x10.png,10x10,RGB,"Every pixel is RGB(128, 128, 128); opaque",#808080
+uniform_gray_128_100x100.png,100x100,RGB,"Every pixel is RGB(128, 128, 128); opaque",#808080
+uniform_low_values_010203_1x1.png,1x1,RGB,"Every pixel is RGB(1, 2, 3); opaque",#010203
+uniform_low_values_010203_2x2.png,2x2,RGB,"Every pixel is RGB(1, 2, 3); opaque",#010203
+uniform_low_values_010203_10x10.png,10x10,RGB,"Every pixel is RGB(1, 2, 3); opaque",#010203
+uniform_low_values_010203_100x100.png,100x100,RGB,"Every pixel is RGB(1, 2, 3); opaque",#010203
+uniform_mixed_123456_1x1.png,1x1,RGB,"Every pixel is RGB(18, 52, 86); opaque",#123456
+uniform_mixed_123456_2x2.png,2x2,RGB,"Every pixel is RGB(18, 52, 86); opaque",#123456
+uniform_mixed_123456_10x10.png,10x10,RGB,"Every pixel is RGB(18, 52, 86); opaque",#123456
+uniform_mixed_123456_100x100.png,100x100,RGB,"Every pixel is RGB(18, 52, 86); opaque",#123456
+uniform_material_purple_6200EE_1x1.png,1x1,RGB,"Every pixel is RGB(98, 0, 238); opaque",#6200EE
+uniform_material_purple_6200EE_2x2.png,2x2,RGB,"Every pixel is RGB(98, 0, 238); opaque",#6200EE
+uniform_material_purple_6200EE_10x10.png,10x10,RGB,"Every pixel is RGB(98, 0, 238); opaque",#6200EE
+uniform_material_purple_6200EE_100x100.png,100x100,RGB,"Every pixel is RGB(98, 0, 238); opaque",#6200EE
+uniform_orange_FF8000_1x1.png,1x1,RGB,"Every pixel is RGB(255, 128, 0); opaque",#FF8000
+uniform_purple_8000FF_1x1.png,1x1,RGB,"Every pixel is RGB(128, 0, 255); opaque",#8000FF
+uniform_teal_008080_1x1.png,1x1,RGB,"Every pixel is RGB(0, 128, 128); opaque",#008080
+uniform_maroon_800000_1x1.png,1x1,RGB,"Every pixel is RGB(128, 0, 0); opaque",#800000
+uniform_dark_green_008000_1x1.png,1x1,RGB,"Every pixel is RGB(0, 128, 0); opaque",#008000
+uniform_navy_000080_1x1.png,1x1,RGB,"Every pixel is RGB(0, 0, 128); opaque",#000080
+uniform_gray_333333_1x1.png,1x1,RGB,"Every pixel is RGB(51, 51, 51); opaque",#333333
+uniform_gray_CCCCCC_1x1.png,1x1,RGB,"Every pixel is RGB(204, 204, 204); opaque",#CCCCCC
+uniform_near_white_FEFEFE_1x1.png,1x1,RGB,"Every pixel is RGB(254, 254, 254); opaque",#FEFEFE
+uniform_near_black_010101_1x1.png,1x1,RGB,"Every pixel is RGB(1, 1, 1); opaque",#010101
+uniform_channel_edges_0F1011_1x1.png,1x1,RGB,"Every pixel is RGB(15, 16, 17); opaque",#0F1011
+uniform_red_1000x1000.png,1000x1000,RGB,"Every pixel is RGB(255,0,0); opaque",#FF0000
+rgba_red_opaque_10x10.png,10x10,RGBA,"Every pixel RGBA(255,0,0,255)",#FF0000 if RGB is considered regardless of alpha; ignore fully transparent pixels when alpha=0
+rgba_red_half_alpha_10x10.png,10x10,RGBA,"Every pixel RGBA(255,0,0,128)",#FF0000 if RGB is considered regardless of alpha; ignore fully transparent pixels when alpha=0
+rgba_red_alpha_1_10x10.png,10x10,RGBA,"Every pixel RGBA(255,0,0,1)",#FF0000 if RGB is considered regardless of alpha; ignore fully transparent pixels when alpha=0
+rgba_red_fully_transparent_10x10.png,10x10,RGBA,"Every pixel RGBA(255,0,0,0)",#FF0000 if RGB is considered regardless of alpha; ignore fully transparent pixels when alpha=0
+rgba_blue_half_alpha_10x10.png,10x10,RGBA,"Every pixel RGBA(0,0,255,128)",#0000FF if RGB is considered regardless of alpha
+fully_transparent_hidden_red_10x10.png,10x10,RGBA,"Every pixel RGBA(255,0,0,0); hidden RGB is red but fully transparent",No visible color; expected result should follow documented empty/transparent-image policy
+transparent_bg_red_center_10x10.png,10x10,RGBA,96 fully transparent pixels plus 4 opaque red pixels,#FF0000 if transparent pixels are ignored; otherwise depends on alpha policy
+two_colors_75_red_25_blue_4x4.png,4x4,RGB,12 red pixels and 4 blue pixels,#FF0000
+three_colors_60_30_10_10x10.png,10x10,RGB,"60 red, 30 green, 10 blue pixels",#FF0000
+two_colors_tie_red_blue_4x2.png,4x2,RGB,4 red pixels and 4 blue pixels; tie case,Either #FF0000 or #0000FF depending on documented tie-breaking policy
+three_colors_equal_3x1.png,3x1,RGB,"One red, one green, one blue pixel; three-way tie",Any of the three colors depending on documented tie-breaking policy
+red_blue_checkerboard_8x8.png,8x8,RGB,32 red and 32 blue pixels in checkerboard pattern; tie case,Either #FF0000 or #0000FF depending on documented tie-breaking policy
+single_pixel_each_rgb_3x1.png,3x1,RGB,"Three pixels: red, green, blue",Tie; policy-dependent
