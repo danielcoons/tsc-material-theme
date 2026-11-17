@@ -2,33 +2,40 @@
 # Change TOOLKIT (and IMAGES_DIR if needed) per repo. See SETUP.md for the SITE_REPO_TOKEN secret.
 #   tsc-material-theme : TOOLKIT=material-theme  IMAGES_DIR=docs/assets/images
 name: Publish docs to site
+
 on:
   push:
     branches: [main, documentation-blitz]
     paths: ['docs/user-guide/**', '.github/workflows/publish-docs.yml']
   workflow_dispatch:
+
 concurrency:
   group: publish-docs
   cancel-in-progress: false
+
 env:
   SITE_REPO: danielcoons/landing-page   # <owner>/<site repo name>
   TOOLKIT: material-theme
   IMAGES_DIR: docs/user-guide/assets/material-theme/images
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+
       - uses: actions/checkout@v7
         with:
           repository: ${{ env.SITE_REPO }}
           token: ${{ secrets.SITE_REPO_TOKEN }}
           path: site-repo
+
       - name: Sync docs into the site repo
         run: |
           mkdir -p "site-repo/site/content/$TOOLKIT" "site-repo/site/assets/$TOOLKIT/images"
-          rsync -a --delete docs/user-guide/ "site-repo/site/content/$TOOLKIT/"
+          rsync -a --delete docs/user-guide/content/ "site-repo/site/content/$TOOLKIT/"
           rsync -a --delete "$IMAGES_DIR/" "site-repo/site/assets/$TOOLKIT/images/"
+
       - name: Commit and push
         working-directory: site-repo
         run: |
