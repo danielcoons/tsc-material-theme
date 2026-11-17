@@ -17,6 +17,6 @@ Save the theme for use in LabVIEW with the **disk** button or `Ctrl+S`. Changes 
 
 Click the **color palette** button to open the [Color Palette UI](/material-theme/color-palette/), which supports importing colors into LabVIEW's User Colors.
 
-![Material Theme Editor UI](/assets/images/Theme-Editor--UI--main.png)
+![Material Theme Editor UI](/assets/material-theme/images/Theme-Editor--UI--main.png)
 
 📌 If wanting to convert from previous versions that used `.xml` files, go to the Convert Tab next to the file path, navigate to the legacy `.xml`, verify and save the output and it will do the proper conversion.

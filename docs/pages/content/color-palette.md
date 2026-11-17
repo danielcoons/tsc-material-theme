@@ -17,8 +17,8 @@ With this window you can:
 - See the hex codes for all colors in the theme.
 - Restore the LabVIEW defaults if you no longer want the theme colors applied.
 
-![Color Palette UI](/assets/images/Color-Palette--color%20palette.png)
+![Color Palette UI](/assets/material-theme/images/Color-Palette--color%20palette.png)
 
 Exported colors are available in the color picker tools of the Tools palette.
 
-![Color selection](/assets/images/Color-Palette--tool%20selection--colors.png)
+![Color selection](/assets/material-theme/images/Color-Palette--tool%20selection--colors.png)
