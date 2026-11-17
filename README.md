@@ -17,7 +17,7 @@ The TSC Material Tookit implements the theory and application of color schemes t
 
 ## 📜 Prerequisites
 
-- LabVIEW 2021 (32-bit), LabVIEW 2021 (64-bit), or any newer version.  
+LabVIEW 2021 (32-bit), LabVIEW 2021 (64-bit), or any newer version.  
 
 ## 📥 Installation
 
