@@ -11,7 +11,7 @@ concurrency:
   group: publish-docs
   cancel-in-progress: false
 env:
-  SITE_REPO: danielcoons/labview-page   # <owner>/<site repo name>
+  SITE_REPO: danielcoons/landing-page   # <owner>/<site repo name>
   TOOLKIT: material-theme
   IMAGES_DIR: docs/user-guide/assets/material-theme/images
 jobs:
