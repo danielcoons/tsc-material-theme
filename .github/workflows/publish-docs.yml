@@ -1,0 +1,44 @@
+# Copy this file to .github/workflows/publish-docs.yml in EACH toolkit repo.
+# Change TOOLKIT (and IMAGES_DIR if needed) per repo. See SETUP.md for the SITE_REPO_TOKEN secret.
+#   tsc-material-theme : TOOLKIT=material-theme  IMAGES_DIR=docs/assets/images
+name: Publish docs to site
+on:
+  push:
+    branches: [main, documentation-blitz]
+    paths: ['docs/user-guide/**', '.github/workflows/publish-docs.yml']
+  workflow_dispatch:
+concurrency:
+  group: publish-docs
+  cancel-in-progress: false
+env:
+  SITE_REPO: danielcoons/labview-page   # <owner>/<site repo name>
+  TOOLKIT: material-theme
+  IMAGES_DIR: docs/user-guide/assets/material-theme/images
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: ${{ env.SITE_REPO }}
+          token: ${{ secrets.SITE_REPO_TOKEN }}
+          path: site-repo
+      - name: Sync docs into the site repo
+        run: |
+          mkdir -p "site-repo/site/content/$TOOLKIT" "site-repo/site/assets/$TOOLKIT/images"
+          rsync -a --delete docs/user-guide/ "site-repo/site/content/$TOOLKIT/"
+          rsync -a --delete "$IMAGES_DIR/" "site-repo/site/assets/$TOOLKIT/images/"
+      - name: Commit and push
+        working-directory: site-repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "docs($TOOLKIT): sync from ${{ github.repository }}@${GITHUB_SHA::7}"
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          exit 1
