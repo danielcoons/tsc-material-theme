@@ -31,4 +31,5 @@ Create Theme JSON: <https://material-foundation.github.io/material-theme-builder
 ## 💡 Documentation & learning resources
 
 - Full documentation: [danielcoons.com/material-theme](https://danielcoons.com/material-theme/)
-- Building a Better LabVIEW UI (LIVE!) [2026 GDevCon N.A.](https://youtu.be/a39VLdWuR3c?si=PkVYpbaPA3hWtIer)
+- Building a Better LabVIEW UI (LIVE!) [2026 GDevCon N.A.](https://youtu.be/a39VLdWuR3c?si=PkVYpbaPA3hWtIer)  
+_Note: it is no longer required to convert the JSON export to an XML file as referenced in the video!_
