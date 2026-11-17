@@ -11,7 +11,7 @@ Two main VIs apply the theme to a given VI.
 
 Provide the **file path** of the theme file (`.json` extension) to load the theme object into the application.
 
-![Load Material Theme.vi](/assets/material-theme/images/VI--load%20material%20theme.png)
+![Load Material Theme.vi](/assets/images/VI--load%20material%20theme.png)
 
 This VI returns the `Theme` object that can be used throughout the application.
 
@@ -31,7 +31,7 @@ This VI is what is used to apply the theme object properties to the UI elements 
 
 - Duplicate of the Material Theme out
 
-![Apply UI Theme.vi](/assets/material-theme/images/VI--apply%20ui%20theme.png)
+![Apply UI Theme.vi](/assets/images/VI--apply%20ui%20theme.png)
 
 💎The following VI is special case use for when you are also using the TSC Pop-Up Library [VIPM](https://www.vipm.io/package/tsc_lib_tsc_pop_up/)
 
@@ -56,4 +56,4 @@ Use the material theme to apply to the rules of the TSC Pop Up Library
 - Material.Scheme out : cluster of the Scheme information to apply to the Pop Up tools
 - Materials.Details out : duplicate output of the details cluster
 
-![Apply TSC Pop Up.vi](/assets/material-theme/images/VI--apply-tsc-popup.png)
+![Apply TSC Pop Up.vi](/assets/images/VI--apply-tsc-popup.png)

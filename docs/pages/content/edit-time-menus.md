@@ -15,22 +15,22 @@ Automatic coloring uses color rules set on a control, indicator, panel or decora
 
 ## Control color rule
 
-![Control color rule](/assets/material-theme/images/right-click--color%20rule.png)
+![Control color rule](/assets/images/right-click--color%20rule.png)
 
 ## Button description of type
 
 Defines the **Boolean type level**, which is how coloring decisions are made.
 
-![Boolean types](/assets/material-theme/images/right-click--boolean%20level.png)
+![Boolean types](/assets/images/right-click--boolean%20level.png)
 
 ## Tab control rules
 
-![Tab control colors](/assets/material-theme/images/right-click--tab%20control.png)
+![Tab control colors](/assets/images/right-click--tab%20control.png)
 
 ## Decoration rules
 
-![Decoration colors](/assets/material-theme/images/right-click--decoration.png)
+![Decoration colors](/assets/images/right-click--decoration.png)
 
 ## Front panel rules
 
-![Front panel colors](/assets/material-theme/images/right-click--panel.png)
+![Front panel colors](/assets/images/right-click--panel.png)

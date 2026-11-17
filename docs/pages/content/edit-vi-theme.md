@@ -20,4 +20,4 @@ Select the coloring rules for:
 
 > **Save the VI to keep the metadata of the theme file and theme mode.**
 
-![Edit VI Theme](/assets/material-theme/images/edit-vi-theme.png)
+![Edit VI Theme](/assets/images/edit-vi-theme.png)

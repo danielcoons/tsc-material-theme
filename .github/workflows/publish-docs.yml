@@ -14,7 +14,7 @@ concurrency:
 env:
   SITE_REPO: danielcoons/landing-page   # <owner>/<site repo name>
   TOOLKIT: material-theme
-  IMAGES_DIR: docs/pages/assets/material-theme/images
+  IMAGES_DIR: docs/pages/assets/images
 
 jobs:
   publish:
